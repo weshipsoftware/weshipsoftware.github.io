@@ -1,0 +1,17 @@
+/* #include !stylesheets/font-faces.css */
+
+:root {
+  --font-bryant:          "bryant",          system-ui,    sans-serif;
+  --font-bryant-alt:      "bryant-alt",      system-ui,    sans-serif;
+  --font-charter:         "charter",         serif;
+  --font-concourse:       "concourse",       system-ui,    sans-serif;
+  --font-gorton:          "gorton",          system-ui,    sans-serif;
+  --font-indie-flower:    "indie-flower",    system-ui,    sans-serif;
+  --font-source-code-pro: "source-code-pro", ui-monospace, monospace;
+
+  font-size: 25px;
+}
+
+body {
+  font-family: var(--font-bryant);
+}

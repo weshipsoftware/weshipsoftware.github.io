@@ -1,0 +1,223 @@
+@font-face {
+  font-family: "bryant";
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  src: url("/!assets/fonts/bryant-light.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "bryant";
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: italic;
+  src: url("/!assets/fonts/bryant-light-italic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "bryant";
+  font-weight: 300;
+  font-stretch: condensed;
+  font-style: normal;
+  src: url("/!assets/fonts/bryant-light-condensed.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "bryant";
+  font-weight: 300;
+  font-stretch: extra-condensed;
+  font-style: normal;
+  src: url("/!assets/fonts/bryant-light-compressed.woff2") format("woff2");
+ }
+
+@font-face {
+  font-family: "bryant";
+  font-weight: 400;
+  font-stretch: normal;
+  font-style: normal;
+  src: url("/!assets/fonts/bryant-regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "bryant";
+  font-weight: 400;
+  font-stretch: normal;
+  font-style: italic;
+  src: url("/!assets/fonts/bryant-regular-italic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "bryant";
+  font-weight: 400;
+  font-stretch: condensed;
+  font-style: normal;
+  src: url("/!assets/fonts/bryant-regular-condensed.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "bryant";
+  font-weight: 400;
+  font-stretch: extra-condensed;
+  font-style: normal;
+  src: url("/!assets/fonts/bryant-regular-compressed.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "bryant";
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  src: url("/!assets/fonts/bryant-medium.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "bryant";
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: italic;
+  src: url("/!assets/fonts/bryant-medium-italic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "bryant";
+  font-weight: 500;
+  font-stretch: condensed;
+  font-style: normal;
+  src: url("/!assets/fonts/bryant-medium-condensed.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "bryant";
+  font-weight: 500;
+  font-stretch: extra-condensed;
+  font-style: normal;
+  src: url("/!assets/fonts/bryant-medium-compressed.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "bryant";
+  font-weight: 700;
+  font-stretch: normal;
+  font-style: normal;
+  src: url("/!assets/fonts/bryant-bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "bryant";
+  font-weight: 700;
+  font-stretch: normal;
+  font-style: italic;
+  src: url("/!assets/fonts/bryant-bold-italic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "bryant";
+  font-weight: 700;
+  font-stretch: condensed;
+  font-style: normal;
+  src: url("/!assets/fonts/bryant-bold-condensed.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "bryant";
+  font-weight: 700;
+  font-stretch: extra-condensed;
+  font-style: normal;
+  src: url("/!assets/fonts/bryant-bold-compressed.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "bryant-alt";
+  font-weight: 300;
+  src: url("/!assets/fonts/bryant-light-alt.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "bryant-alt";
+  font-weight: 400;
+  src: url("/!assets/fonts/bryant-regular-alt.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "bryant-alt";
+  font-weight: 500;
+  src: url("/!assets/fonts/bryant-medium-alt.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "bryant-alt";
+  font-weight: 700;
+  src: url("/!assets/fonts/bryant-bold-alt.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "charter";
+  font-style: normal;
+  font-weight: normal;
+  src: url("/!assets/fonts/charter-regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "charter";
+  font-style: italic;
+  font-weight: normal;
+  src: url("/!assets/fonts/charter-italic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "charter";
+  font-style: normal;
+  font-weight: bold;
+  src: url("/!assets/fonts/charter-bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "concourse";
+  font-weight: 900;
+  src: url("/!assets/fonts/concourse.woff2") format("woff2");
+}
+
+@font-face{
+  font-family: "gorton";
+  font-weight: 300 900;
+  src: url("/!assets/fonts/gorton-variable.woff2") format("woff2-variations"),
+       url("/!assets/fonts/gorton-variable.woff2") format("woff2 supports variations");
+}
+
+@font-face {
+  font-family: "indie-flower";
+  src: url("/!assets/fonts/indie-flower.woff2") format("woff2");
+}
+
+@font-face{
+  font-family: "source-code-pro";
+  font-weight: 300 900;
+  font-style: normal;
+  src: url("/!assets/fonts/source-code-pro-upright.woff2") format("woff2-variations"),
+       url("/!assets/fonts/source-code-pro-upright.woff2") format("woff2 supports variations");
+}
+
+@font-face{
+  font-family: "source-code-pro";
+  font-weight: 200 900;
+  font-style: italic;
+  src: url("/!assets/fonts/source-code-pro-italic.woff2") format("woff2-variations"),
+       url("/!assets/fonts/source-code-pro-italic.woff2") format("woff2 supports variations");
+}
+
+
+:root {
+  --font-bryant:          "bryant",          system-ui,    sans-serif;
+  --font-bryant-alt:      "bryant-alt",      system-ui,    sans-serif;
+  --font-charter:         "charter",         serif;
+  --font-concourse:       "concourse",       system-ui,    sans-serif;
+  --font-gorton:          "gorton",          system-ui,    sans-serif;
+  --font-indie-flower:    "indie-flower",    system-ui,    sans-serif;
+  --font-source-code-pro: "source-code-pro", ui-monospace, monospace;
+
+  font-size: 25px;
+}
+
+body {
+  font-family: var(--font-bryant);
+}
