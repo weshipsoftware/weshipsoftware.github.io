@@ -1,0 +1,13 @@
+{
+  "actions" : {
+    "build" : {
+      "enabled" : true,
+      "script" : "alternator .alternator ."
+    },
+    "run" : {
+      "enabled" : true,
+      "script" : "alternator .alternator . -w"
+    }
+  },
+  "openLogOnRun" : "fail"
+}
