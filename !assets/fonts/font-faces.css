@@ -1,0 +1,49 @@
+@font-face { font-family: "Bryant"; font-weight: 300; font-style: normal; src: url("/!assets/fonts/Bryant/Light.woff2");         }
+@font-face { font-family: "Bryant"; font-weight: 300; font-style: italic; src: url("/!assets/fonts/Bryant/LightItalic.woff2");   }
+@font-face { font-family: "Bryant"; font-weight: 400; font-style: normal; src: url("/!assets/fonts/Bryant/Regular.woff2");       }
+@font-face { font-family: "Bryant"; font-weight: 400; font-style: italic; src: url("/!assets/fonts/Bryant/RegularItalic.woff2"); }
+@font-face { font-family: "Bryant"; font-weight: 500; font-style: normal; src: url("/!assets/fonts/Bryant/Medium.woff2");        }
+@font-face { font-family: "Bryant"; font-weight: 500; font-style: italic; src: url("/!assets/fonts/Bryant/MediumItalic.woff2");  }
+@font-face { font-family: "Bryant"; font-weight: 700; font-style: normal; src: url("/!assets/fonts/Bryant/Bold.woff2");          }
+@font-face { font-family: "Bryant"; font-weight: 700; font-style: italic; src: url("/!assets/fonts/Bryant/BoldItalic.woff2");    }
+
+@font-face { font-family: "BryantAlt"; font-weight: 300; src: url("/!assets/fonts/BryantAlt/Light.woff2");   }
+@font-face { font-family: "BryantAlt"; font-weight: 400; src: url("/!assets/fonts/BryantAlt/Regular.woff2"); }
+@font-face { font-family: "BryantAlt"; font-weight: 500; src: url("/!assets/fonts/BryantAlt/Medium.woff2");  }
+@font-face { font-family: "BryantAlt"; font-weight: 700; src: url("/!assets/fonts/BryantAlt/Bold.woff2");    }
+
+@font-face { font-family: "Concourse"; font-weight: 900; src: url("/!assets/fonts/Concourse/Black.woff2"); }
+
+@font-face { font-family: "Elena"; font-weight: 300; font-style: normal; src: url("/!assets/fonts/Elena/Light.woff2");         }
+@font-face { font-family: "Elena"; font-weight: 300; font-style: italic; src: url("/!assets/fonts/Elena/LightItalic.woff2");   }
+@font-face { font-family: "Elena"; font-weight: 400; font-style: normal; src: url("/!assets/fonts/Elena/Regular.woff2");       }
+@font-face { font-family: "Elena"; font-weight: 400; font-style: italic; src: url("/!assets/fonts/Elena/RegularItalic.woff2"); }
+@font-face { font-family: "Elena"; font-weight: 500; font-style: normal; src: url("/!assets/fonts/Elena/Medium.woff2");        }
+@font-face { font-family: "Elena"; font-weight: 500; font-style: italic; src: url("/!assets/fonts/Elena/MediumItalic.woff2");  }
+@font-face { font-family: "Elena"; font-weight: 700; font-style: normal; src: url("/!assets/fonts/Elena/Bold.woff2");          }
+@font-face { font-family: "Elena"; font-weight: 700; font-style: italic; src: url("/!assets/fonts/Elena/BoldItalic.woff2");    }
+
+@font-face { font-family: "Gorton"; font-weight: 300 900;
+  src: url("/!assets/fonts/Gorton/Variable.woff2") format("woff2-variations"),
+       url("/!assets/fonts/Gorton/Variable.woff2") format("woff2 supports variations"); }
+
+@font-face { font-family: "IndieFlower"; src: url("/!assets/fonts/IndieFlower/Regular.woff2"); }
+
+@font-face { font-family: "Seravek"; font-weight: 100; font-style: normal; src: url("/!assets/fonts/Seravek/ExtraLight.woff2");       }
+@font-face { font-family: "Seravek"; font-weight: 100; font-style: italic; src: url("/!assets/fonts/Seravek/ExtraLightItalic.woff2"); }
+@font-face { font-family: "Seravek"; font-weight: 300; font-style: normal; src: url("/!assets/fonts/Seravek/Light.woff2");            }
+@font-face { font-family: "Seravek"; font-weight: 300; font-style: italic; src: url("/!assets/fonts/Seravek/LightItalic.woff2");      }
+@font-face { font-family: "Seravek"; font-weight: 400; font-style: normal; src: url("/!assets/fonts/Seravek/Regular.woff2");          }
+@font-face { font-family: "Seravek"; font-weight: 400; font-style: italic; src: url("/!assets/fonts/Seravek/RegularItalic.woff2");    }
+@font-face { font-family: "Seravek"; font-weight: 500; font-style: normal; src: url("/!assets/fonts/Seravek/Medium.woff2");           }
+@font-face { font-family: "Seravek"; font-weight: 500; font-style: italic; src: url("/!assets/fonts/Seravek/MediumItalic.woff2");     }
+@font-face { font-family: "Seravek"; font-weight: 700; font-style: normal; src: url("/!assets/fonts/Seravek/Bold.woff2");             }
+@font-face { font-family: "Seravek"; font-weight: 700; font-style: italic; src: url("/!assets/fonts/Seravek/BoldItalic.woff2");       }
+
+@font-face { font-family: "SourceCodePro"; font-weight: 300 900; font-style: normal;
+  src: url("/!assets/fonts/SourceCodePro/Upright.woff2") format("woff2-variations"),
+       url("/!assets/fonts/SourceCodePro/Upright.woff2") format("woff2 supports variations"); }
+
+@font-face { font-family: "SourceCodePro"; font-weight: 200 900; font-style: italic;
+  src: url("/!assets/fonts/SourceCodePro/Italic.woff2") format("woff2-variations"),
+       url("/!assets/fonts/SourceCodePro/Italic.woff2") format("woff2 supports variations"); }
