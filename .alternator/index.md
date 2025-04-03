@@ -7,7 +7,7 @@
 **We Ship Software** is a new service by
 [Richard Rissanen](https://richard.is) and
 [Jarrod Taylor](http://jarrodtaylor.me/readme)
-focusing on one simple thing &mdash; shipping software.
+focused on one thing: **shipping software**.
 
 <aside class="right pointing">What you'll tell people after working with us.</aside>
 
