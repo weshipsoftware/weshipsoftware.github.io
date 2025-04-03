@@ -2,10 +2,18 @@
 @font-face { font-family: "Hyperlegible"; font-weight: 100 900; src: url("/!assets/fonts/Hyperlegible.woff2"); }
 @font-face { font-family: "IndieFlower";                        src: url("/!assets/fonts/IndieFlower.woff2");  }
 
-:root { font: 16px/1.3 "Hyperlegible", sans-serif; }
+:root { font: 16px/1.45 "Hyperlegible", sans-serif; }
 
-@media (min-width: 63rem) { :root { font-size: 18px; } }
-@media (min-width: 74rem) { :root { font-size: 20px; } }
+@media (min-width: 48rem) { :root { font-size: 17px; } }
+@media (min-width: 50rem) { :root { font-size: 18px; } }
+@media (min-width: 53rem) { :root { font-size: 19px; } }
+@media (min-width: 56rem) { :root { font-size: 20px; } }
+@media (min-width: 59rem) { :root { font-size: 21px; } }
+@media (min-width: 62rem) { :root { font-size: 22px; } }
+@media (min-width: 65rem) { :root { font-size: 23px; } }
+@media (min-width: 67rem) { :root { font-size: 24px; } }
+@media (min-width: 70rem) { :root { font-size: 25px; } }
+
 
 ::selection { background-color: greenyellow; }
 
@@ -24,7 +32,7 @@ a[rel="external"]:hover { box-shadow: inset 0 -1.1em 0 #00bfff33; }
 article {
   margin: auto;
   padding: 0 2rem;
-  width: 30rem;
+  width: 22.5rem;
 }
 
 aside {
@@ -32,15 +40,15 @@ aside {
   font-family: "IndieFlower", sans-serif;
   font-size: .9rem;
   float: left;
-  margin-left: -8.5rem;
+  margin-left: -11rem;
   text-align: right;
   transform: rotate(-2deg);
-  width: 6rem;
+  width: 8rem;
 }
 
 aside.right {
   float: right;
-  margin-right: -8.5rem;
+  margin-right: -11rem;
   text-align: left;
   transform: rotate(2deg);
 }
@@ -51,7 +59,6 @@ aside.pointing::after {
   float: right;
   font-size: 1.25rem;
   margin-right: -1.5em;
-  margin-top: -1rem;
   transform: rotate(-3deg);
   width: 1em;
 }
@@ -62,20 +69,19 @@ aside.right.pointing::before {
   float: left;
   font-size: 1.25rem;
   margin-left: -1.5em;
-  margin-top: .5rem;
   transform: rotate(-3deg);
   width: 1em;
 }
 
 aside.right.pointing::after { content: none; }
 
-@media (max-width: 46rem) { aside { display: none; } }
+@media (max-width: 47rem) { aside { display: none; } }
 
 blockquote {
   color: #000000DD;
   border-left: 3px solid lightslategray;
   margin: 0;
-  padding: 0 1rem 0 calc(1rem - 3px);
+  padding: 0 .8rem 0 calc(.8rem - 3px);
 }
 
 blockquote::before {
@@ -84,7 +90,7 @@ blockquote::before {
   display: block;
   font-size: 3rem;
   position: absolute;
-  margin: -.5rem 0 0 -3rem;
+  margin: -.5rem 0 0 -2.5rem;
 }
 
 blockquote p {
@@ -93,7 +99,7 @@ blockquote p {
 }
 
 body {
-  background-color: snow;
+  background-color: white;
   margin: 0;
 }
 
@@ -113,16 +119,13 @@ dl.services dt {
   padding-top: 1rem;
 }
 
-em {
-  font-style: oblique;
-}
+em { font-style: oblique; }
 
 footer {
   background-color: white;
-  border-top: 1px dashed gainsboro;
   color: dimgray;
   font-family: "Aleo", sans-serif;
-  min-width: 32rem;
+  min-width: 24.5rem;
   padding: 1rem;
 }
 
@@ -183,9 +186,8 @@ h3 {
 
 header {
   background-color: white;
-  border-bottom: 1px dashed gainsboro;
   font-family: "Aleo", sans-serif;
-  min-width: 32rem;
+  min-width: 24.5rem;
   padding: 1rem;
 }
 
@@ -212,6 +214,8 @@ header a:first-child::before {
 header a:first-child:hover::before { transform: scale(1.2); }
 
 header span { color: slategray; }
+
+@media (max-width: 35rem) { header span { display: none; } }
 
 header span::before {
   color: gainsboro;
@@ -248,11 +252,13 @@ img {
 li::marker { color: lightslategray; }
 
 main {
+  background-color: snow;
+  border: 1px dashed gainsboro;
+  border-width: 1px 0;
   color: #000000CC;
   margin: auto;
-  padding: 3rem 0;
-  max-width: 48rem;
-  min-width: 30rem;
+  padding: 2rem 0;
+  width: 100%;
 }
 
 main h1:first-child { margin-top: 0; }
@@ -281,4 +287,4 @@ strong { font-weight: 500; }
   width: 2rem;
 }
 
-@media (max-width: 35rem) { .readme h1::before { display: none; } }
+@media (max-width: 28rem) { .readme h1::before { display: none; } }
