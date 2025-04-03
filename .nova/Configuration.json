@@ -1,5 +1,6 @@
 {
   "workspace.art_style" : 0,
   "workspace.color" : 0,
-  "workspace.name" : "We Ship Software"
+  "workspace.name" : "We Ship Software",
+  "workspace.preview_server_allow_external" : true
 }

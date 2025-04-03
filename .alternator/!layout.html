@@ -1,6 +1,10 @@
+---
+@subtitle: readme
+---
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- TODO: Add viewport that zooms on mobile. X-ems? -->
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -18,12 +22,31 @@
     <link rel="alternate" href="https://weshipsoftware.com/feed" type="application/rss+xml" title="RSS">
     <link rel="apple-touch-icon" href="/!assets/images/touch-icon.png">
     <link rel="icon" sizes="192x192" href="/!assets/images/touch-icon.png">
-    <link rel="stylesheet" href="/styles.css">
-    <script async src="/async.js"></script>
+    <link rel="stylesheet" href="/!assets/styles.css">
+    <!-- <script async src="/async.js"></script> -->
     <script defer src="/defer.js"></script>
-    <title>We Ship Software</title>
+    <title>We Ship Software / <!-- @subtitle --></title>
   </head>
-  <body>
-    <!-- #content -->
+  <body class="<!-- @class -->">
+    <header>
+      <a href="/">We Ship Software</a>
+      <span><!-- @subtitle --></span>
+      <a href="mailto:email@weshipsoftware.com" rel="author">email@weshipsoftware.com</a>
+    </header>
+    <main>
+      <article>
+        <!-- #content -->
+      </article>
+    </main>
+    <footer>
+      Made with <a href="https://alternator.sh">Alternator</a>.
+      <span>
+        <!-- <a href="https://weshipsoftware.com/feed">RSS Feed</a> -->
+        <!-- &nbsp;•&nbsp; -->
+        <a href="https://github.com/weshipsoftware">GitHub</a>
+        &nbsp;•&nbsp;
+        <a href="https://linkedin.com/weshipsoftware">LinkedIn</a>
+      </span>
+    </footer>
   </body>
 </html>
