@@ -14,7 +14,6 @@
 @media (min-width: 67rem) { :root { font-size: 24px; } }
 @media (min-width: 70rem) { :root { font-size: 25px; } }
 
-
 ::selection { background-color: greenyellow; }
 
 a {
@@ -45,6 +44,8 @@ aside {
   transform: rotate(-2deg);
   width: 8rem;
 }
+
+@media (prefers-color-scheme: dark) { aside { color: slategray; } }
 
 aside.right {
   float: right;
@@ -84,6 +85,13 @@ blockquote {
   padding: 0 .8rem 0 calc(.8rem - 3px);
 }
 
+@media (prefers-color-scheme: dark) {
+  blockquote {
+    border-color: darkslategray;
+    color: #FFFFFFDD;
+  }
+}
+
 blockquote::before {
   color: gainsboro;
   content: "“";
@@ -92,6 +100,8 @@ blockquote::before {
   position: absolute;
   margin: -.5rem 0 0 -2.5rem;
 }
+
+@media (prefers-color-scheme: dark) { blockquote::before { color: slategray; } }
 
 blockquote p {
   font-style: oblique;
@@ -102,6 +112,8 @@ body {
   background-color: white;
   margin: 0;
 }
+
+@media (prefers-color-scheme: dark) { body { background-color: black; } }
 
 dt {
   font-weight: 500;
@@ -119,6 +131,8 @@ dl.services dt {
   padding-top: 1rem;
 }
 
+@media (prefers-color-scheme: dark) { dl.services dt { border-color: slategray; } }
+
 em { font-style: oblique; }
 
 footer {
@@ -128,6 +142,8 @@ footer {
   min-width: 24.5rem;
   padding: 1rem;
 }
+
+@media (prefers-color-scheme: dark) { footer { background-color: black; } }
 
 footer a {
   box-shadow: none !important;
@@ -142,6 +158,8 @@ footer span {
   float: right;
 }
 
+@media (prefers-color-scheme: dark) { footer span { color: dimgray; } }
+
 footer span a { color: darkslategray; }
 
 h1, h2, h3 {
@@ -155,16 +173,22 @@ h1 {
   font-weight: 900;
 }
 
+@media (prefers-color-scheme: dark) { h1 { color: snow; } }
+
 h1 + p {
   color: #000000DD;
   font-size: 1.25rem;
 }
+
+@media (prefers-color-scheme: dark) { h1 + p { color: #FFFFFFDD; } }
 
 h2 {
   color: maroon;
   font-size: 1.5rem;
   font-weight: 700;
 }
+
+@media (prefers-color-scheme: dark) { h2 { color: cadetblue; } }
 
 h2::before {
   color: gainsboro;
@@ -177,6 +201,8 @@ h2::before {
   width: 1rem;
 }
 
+@media (prefers-color-scheme: dark) { h2::before { color: slategray; } }
+
 h3 {
   color: #000000EE;
   font-size: 1rem;
@@ -184,12 +210,16 @@ h3 {
   font-weight: 700;
 }
 
+@media (prefers-color-scheme: dark) { h3 { color: #FFFFFFEE; } }
+
 header {
   background-color: white;
   font-family: "Aleo", sans-serif;
   min-width: 24.5rem;
   padding: 1rem;
 }
+
+@media (prefers-color-scheme: dark) { header { background-color: black; } }
 
 header a { box-shadow: none; }
 
@@ -222,6 +252,8 @@ header span::before {
   content: "/ ";
 }
 
+@media (prefers-color-scheme: dark) { header span::before { color: darkslategray } }
+
 header a:last-child {
   background-color: rebeccapurple;
   color: white;
@@ -230,6 +262,8 @@ header a:last-child {
   font-weight: 500;
   padding: .1rem .3rem;
 }
+
+@media (prefers-color-scheme: dark) { header a:last-child { color: snow; } }
 
 hr {
   border: none;
@@ -261,11 +295,20 @@ main {
   width: 100%;
 }
 
+@media (prefers-color-scheme: dark) {
+  main {
+    background-color: #1b1d1f;
+    border-color: darkslategray;
+    color: snow;
+  }
+}
+
 main h1:first-child { margin-top: 0; }
 
 mark {
   background-color: yellow;
   border-radius: 1px;
+  color: black;
   font-weight: 400;
 }
 
