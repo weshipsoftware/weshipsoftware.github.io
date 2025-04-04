@@ -1,9 +1,28 @@
-@font-face { font-family: "Aleo";         font-weight: 100 900; src: url("/!assets/fonts/Aleo.woff2");         }
-@font-face { font-family: "Hyperlegible"; font-weight: 100 900; src: url("/!assets/fonts/Hyperlegible.woff2"); }
-@font-face { font-family: "IndieFlower";                        src: url("/!assets/fonts/IndieFlower.woff2");  }
+/* TOOD: $ as a gutter ::before on prices. */
 
-:root { font: 16px/1.45 "Hyperlegible", sans-serif; }
+@font-face {
+  font-family: "Aleo";
+  font-weight: 100 900;
+  src: url("/!assets/fonts/Aleo.woff2");
+}
 
+@font-face {
+  font-family: "Hyperlegible";
+  font-weight: 100 900;
+  src: url("/!assets/fonts/Hyperlegible.woff2");
+}
+
+@font-face {
+  font-family: "IndieFlower";
+  src: url("/!assets/fonts/IndieFlower.woff2");
+}
+
+:root {
+  color-scheme: light dark;
+  font: 16px/1.45 "Hyperlegible", sans-serif;
+}
+
+/* TODO: 3em increments? */
 @media (min-width: 48rem) { :root { font-size: 17px; } }
 @media (min-width: 50rem) { :root { font-size: 18px; } }
 @media (min-width: 53rem) { :root { font-size: 19px; } }
@@ -35,7 +54,7 @@ article {
 }
 
 aside {
-  color: lightslategray;
+  color: light-dark(lightslategray, slategray);
   font-family: "IndieFlower", sans-serif;
   font-size: .9rem;
   float: left;
@@ -45,14 +64,7 @@ aside {
   width: 8rem;
 }
 
-@media (prefers-color-scheme: dark) { aside { color: slategray; } }
-
-aside.right {
-  float: right;
-  margin-right: -11rem;
-  text-align: left;
-  transform: rotate(2deg);
-}
+@media (max-width: 47rem) { aside { display: none; } }
 
 aside.pointing::after {
   content: "☞";
@@ -62,6 +74,13 @@ aside.pointing::after {
   margin-right: -1.5em;
   transform: rotate(-3deg);
   width: 1em;
+}
+
+aside.right {
+  float: right;
+  margin-right: -11rem;
+  text-align: left;
+  transform: rotate(2deg);
 }
 
 aside.right.pointing::before {
@@ -76,24 +95,15 @@ aside.right.pointing::before {
 
 aside.right.pointing::after { content: none; }
 
-@media (max-width: 47rem) { aside { display: none; } }
-
 blockquote {
-  color: #000000DD;
-  border-left: 3px solid lightslategray;
+  border-left: 3px solid light-dark(lightslategray, darkslategray);
+  color: light-dark(#000000DD, #FFFFFFDD);
   margin: 0;
   padding: 0 .8rem 0 calc(.8rem - 3px);
 }
 
-@media (prefers-color-scheme: dark) {
-  blockquote {
-    border-color: darkslategray;
-    color: #FFFFFFDD;
-  }
-}
-
 blockquote::before {
-  color: gainsboro;
+  color: light-dark(gainsboro, slategray);
   content: "“";
   display: block;
   font-size: 3rem;
@@ -101,23 +111,14 @@ blockquote::before {
   margin: -.5rem 0 0 -2.5rem;
 }
 
-@media (prefers-color-scheme: dark) { blockquote::before { color: slategray; } }
-
 blockquote p {
   font-style: oblique;
   font-weight: 400;
 }
 
 body {
-  background-color: white;
+  background-color: light-dark(white, black);
   margin: 0;
-}
-
-@media (prefers-color-scheme: dark) { body { background-color: black; } }
-
-dt {
-  font-weight: 500;
-  margin-bottom: .3rem;
 }
 
 dd {
@@ -126,24 +127,24 @@ dd {
 }
 
 dl.services dt {
-  border-top: 1px solid gainsboro;
+  border-top: 1px solid light-dark(gainsboro, slategray);
   margin-top: 2rem;
   padding-top: 1rem;
 }
 
-@media (prefers-color-scheme: dark) { dl.services dt { border-color: slategray; } }
+dt {
+  font-weight: 500;
+  margin-bottom: .3rem;
+}
 
 em { font-style: oblique; }
 
 footer {
-  background-color: white;
   color: dimgray;
   font-family: "Aleo", sans-serif;
   min-width: 24.5rem;
   padding: 1rem;
 }
-
-@media (prefers-color-scheme: dark) { footer { background-color: black; } }
 
 footer a {
   box-shadow: none !important;
@@ -154,11 +155,9 @@ footer a {
 footer a:hover { text-decoration: underline; }
 
 footer span {
-  color: silver;
+  color: light-dark(silver, dimgray);
   float: right;
 }
-
-@media (prefers-color-scheme: dark) { footer span { color: dimgray; } }
 
 footer span a { color: darkslategray; }
 
@@ -168,30 +167,24 @@ h1, h2, h3 {
 }
 
 h1 {
-  color: black;
+  color: light-dark(black, snow);
   font-size: 2rem;
   font-weight: 900;
 }
 
-@media (prefers-color-scheme: dark) { h1 { color: snow; } }
-
 h1 + p {
-  color: #000000DD;
+  color: light-dark(#000000DD, #FFFFFFDD);
   font-size: 1.25rem;
 }
 
-@media (prefers-color-scheme: dark) { h1 + p { color: #FFFFFFDD; } }
-
 h2 {
-  color: maroon;
+  color: light-dark(maroon, cadetblue);
   font-size: 1.5rem;
   font-weight: 700;
 }
 
-@media (prefers-color-scheme: dark) { h2 { color: cadetblue; } }
-
 h2::before {
-  color: gainsboro;
+  color: light-dark(gainsboro, slategray);
   content: "#";
   display: inline-block;
   font-weight: 400;
@@ -201,25 +194,18 @@ h2::before {
   width: 1rem;
 }
 
-@media (prefers-color-scheme: dark) { h2::before { color: slategray; } }
-
 h3 {
-  color: #000000EE;
+  color: light-dark(#000000EE, #FFFFFFEE);
   font-size: 1rem;
   font-variant: all-small-caps;
   font-weight: 700;
 }
 
-@media (prefers-color-scheme: dark) { h3 { color: #FFFFFFEE; } }
-
 header {
-  background-color: white;
   font-family: "Aleo", sans-serif;
   min-width: 24.5rem;
   padding: 1rem;
 }
-
-@media (prefers-color-scheme: dark) { header { background-color: black; } }
 
 header a { box-shadow: none; }
 
@@ -248,22 +234,18 @@ header span { color: slategray; }
 @media (max-width: 35rem) { header span { display: none; } }
 
 header span::before {
-  color: gainsboro;
+  color: light-dark(gainsboro, darkslategray);
   content: "/ ";
 }
 
-@media (prefers-color-scheme: dark) { header span::before { color: darkslategray } }
-
 header a:last-child {
   background-color: rebeccapurple;
-  color: white;
+  color: snow;
   float: right;
   font-size: .8rem;
   font-weight: 500;
   padding: .1rem .3rem;
 }
-
-@media (prefers-color-scheme: dark) { header a:last-child { color: snow; } }
 
 hr {
   border: none;
@@ -276,6 +258,7 @@ img {
   width: calc(100% + 2rem);
 }
 
+/* TODO: Is this the correct max-width to switch to full width images? */
 @media (max-width: 46rem) {
   img {
     margin-left: -2rem;
@@ -286,21 +269,13 @@ img {
 li::marker { color: lightslategray; }
 
 main {
-  background-color: snow;
-  border: 1px dashed gainsboro;
+  background-color: light-dark(snow, #1b1d1f);
+  border: 1px dashed light-dark(gainsboro, darkslategray);
   border-width: 1px 0;
-  color: #000000CC;
+  color: light-dark(#000000CC, snow); /* TODO: default body or root color? */
   margin: auto;
   padding: 2rem 0;
   width: 100%;
-}
-
-@media (prefers-color-scheme: dark) {
-  main {
-    background-color: #1b1d1f;
-    border-color: darkslategray;
-    color: snow;
-  }
 }
 
 main h1:first-child { margin-top: 0; }
