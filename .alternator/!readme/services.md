@@ -11,7 +11,7 @@ Clear writing is clear thinking, so we like to **overcommunicate** via email and
 
 We prefer to work with startups or small-to-medium sized businesses
 who we can really get to know and grow with,
-though occassionally we do work with small teams inside bigger companies.
+though occasionally we do work with small teams inside bigger companies.
 
 **[email@weshipsoftware.com](mailto: email@weshipsoftware.com)**
 to book an intro call.
