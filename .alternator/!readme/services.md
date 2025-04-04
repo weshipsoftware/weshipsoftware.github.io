@@ -85,7 +85,7 @@ to book an intro call.
     <p>
       If your business is already up and running, we'll work with you
       on creative ways to reach more people, convert more of them to paying customers,
-      adnd segment your offerings for more profit.
+      and segment your offerings for more profit.
     </p>
     <p><strong>
       <a href="mailto: email@weshipsoftware.com">email@weshipsoftware.com</a>
