@@ -369,6 +369,7 @@ p, ol, ul {
 summary {
   font-weight: 500;
   margin-bottom: .5rem;
+  margin-left: -.8rem;
   
   &:hover { cursor: pointer; }
 }
@@ -376,7 +377,6 @@ summary {
 summary::-webkit-details-marker,
 summary::marker {
   color: cadetblue;
-  margin-left: -1.1rem;
 }
 
 .stripe-btn {
