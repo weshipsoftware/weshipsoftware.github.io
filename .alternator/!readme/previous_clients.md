@@ -22,7 +22,7 @@
 [Nashville Electric Car Service](https://www.nespower.com),
 [Paychex](https://www.paychex.com),
 [PayPal](https://www.paypal.com),
-[PrismHR](https://www.prismhr.com)
+[PrismHR](https://www.prismhr.com),
 [See Yourself Health](https://www.seeyourselfhealth.com),
 [Sefas](https://sefas.com),
 [SmartBear](https://smartbear.com),

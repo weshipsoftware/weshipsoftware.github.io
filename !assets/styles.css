@@ -1,57 +1,75 @@
 @font-face {
-  font-family: "Aleo";
+  font-display: swap;
+  font-family: Grandstander;
   font-weight: 100 900;
-  src: url("/!assets/fonts/Aleo.woff2");
+  src: url("/!assets/fonts/Grandstander.woff2");
 }
 
 @font-face {
-  font-family: "Hyperlegible";
+  font-display: swap;
+  font-family: Hyperlegible;
   font-weight: 100 900;
   src: url("/!assets/fonts/Hyperlegible.woff2");
 }
 
 @font-face {
-  font-family: "IndieFlower";
-  src: url("/!assets/fonts/IndieFlower.woff2");
+  font-display: swap;
+  font-family: Zarid;
+  font-weight: 100 900;
+  src: url("/!assets/fonts/Zarid.woff2");
 }
 
 :root {
-  --background: snow;
-  --forground: #1B1D1F;
+  --sans: Hyperlegible, sans-serif;
+  --slab: Zarid, sans-serif;
+  --script: Grandstander, sans-serif;
+  
   color-scheme: light dark;
-  font: 16px/1.45 "Hyperlegible", sans-serif;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #1B1D1F;
-    --forground: snow;
+  
+  --light: snow;
+  --dark: #1B1D1F;
+  
+  --background: var(--light);
+  --forground: var(--dark);
+  
+  @media (prefers-color-scheme: dark) {
+    --background: var(--dark);
+    --forground: var(--light);
   }
-}
 
-@media (min-width: 48rem) { :root { font-size: 17px; } }
-@media (min-width: 51rem) { :root { font-size: 18px; } }
-@media (min-width: 54rem) { :root { font-size: 19px; } }
-@media (min-width: 57rem) { :root { font-size: 20px; } }
-@media (min-width: 60rem) { :root { font-size: 21px; } }
-@media (min-width: 63rem) { :root { font-size: 22px; } }
-@media (min-width: 66rem) { :root { font-size: 23px; } }
-@media (min-width: 69rem) { :root { font-size: 24px; } }
-@media (min-width: 72rem) { :root { font-size: 25px; } }
+  font: 16px/1.33 var(--sans);
+  
+  @media (min-width: 48rem) { font-size: 17px; }
+  @media (min-width: 51rem) { font-size: 18px; }
+  @media (min-width: 54rem) { font-size: 19px; }
+  @media (min-width: 57rem) { font-size: 20px; }
+  @media (min-width: 60rem) { font-size: 21px; }
+  @media (min-width: 63rem) { font-size: 22px; }
+  @media (min-width: 66rem) { font-size: 23px; }
+  @media (min-width: 69rem) { font-size: 24px; }
+  @media (min-width: 72rem) { font-size: 25px; }
+}
 
 ::selection { background-color: greenyellow; }
 
-a {
-  border-radius: 1px;
+a {  
   box-shadow: inset 0 -2px 0 deeppink;
   color: inherit;
   text-decoration: none;
-  transition: box-shadow .2s;
+  transition: all .2s;
+  
+  &:hover {
+    box-shadow: inset 0 -1em 0 color(from deeppink srgb r g b / .2);
+  }
+  
+  &[rel="external"] {
+    box-shadow: inset 0 -2px 0 deepskyblue;
+    
+    &:hover {
+      box-shadow: inset 0 -1em 0 color(from deepskyblue srgb r g b / .2);
+    }
+  }
 }
-
-a:hover                 { box-shadow: inset 0 -1.1em 0 deeppink;    }
-a[rel="external"]       { box-shadow: inset 0 -2px   0 deepskyblue; }
-a[rel="external"]:hover { box-shadow: inset 0 -1.1em 0 deepskyblue; }
 
 article {
   margin: auto;
@@ -61,67 +79,70 @@ article {
 
 aside {
   color: lightslategray;
-  font-family: "IndieFlower", sans-serif;
-  font-size: .9rem;
+  font-family: var(--script);
+  font-size: .7rem;
+  font-weight: 300;
   float: left;
   margin-left: -11rem;
   text-align: right;
-  transform: rotate(-2deg);
+  transform: rotate(-3deg);
   width: 8rem;
+  
+  @media (max-width: 47rem) { display: none; }
+  
+  &.pointing::after {
+    content: "☞";
+    display: block;
+    float: right;
+    font-size: 1.25rem;
+    margin-right: -1.5em;
+    transform: rotate(3deg);
+    width: 1em;
+  }
+
+  &.right {
+    float: right;
+    margin-right: -11rem;
+    text-align: left;
+    transform: rotate(3deg);
+    
+    &.pointing {
+      &::before {
+        content: "☜";
+        display: block;
+        float: left;
+        font-size: 1.25rem;
+        margin-left: -1.5em;
+        transform: rotate(-3deg);
+        width: 1em;
+      }
+      
+      &::after { content: none; }
+    }    
+  }
 }
-
-@media (max-width: 47rem) { aside { display: none; } }
-
-aside.pointing::after {
-  content: "☞";
-  display: block;
-  float: right;
-  font-size: 1.25rem;
-  margin-right: -1.5em;
-  transform: rotate(-3deg);
-  width: 1em;
-}
-
-aside.right {
-  float: right;
-  margin-right: -11rem;
-  text-align: left;
-  transform: rotate(2deg);
-}
-
-aside.right.pointing::before {
-  content: "☜";
-  display: block;
-  float: left;
-  font-size: 1.25rem;
-  margin-left: -1.5em;
-  transform: rotate(-3deg);
-  width: 1em;
-}
-
-aside.right.pointing::after { content: none; }
 
 blockquote {
   border-color: cadetblue;
   border-style: solid;
   border-width: 0 0 0 3px;
-  color: color-mix(in lab, var(--forground) 90%, var(--background));
+  color: color(from var(--forground) srgb r g b / 0.9);
   margin: 0;
   padding: 0 .8rem 0 calc(.8rem - 3px);
-}
-
-blockquote::before {
-  color: darkslategray;
-  content: "“";
-  display: block;
-  font-size: 3rem;
-  position: absolute;
-  margin: -.5rem 0 0 -2.5rem;
-}
-
-blockquote p {
-  font-style: oblique;
-  font-weight: 400;
+  
+  &::before {
+    color: darkslategray;
+    content: "“";
+    display: block;
+    font-size: 3rem;
+    position: absolute;
+    margin: -.5rem 0 0 -2.5rem;
+  }
+  
+  p {
+    font-style: oblique;
+    font-weight: 400;
+  }
 }
 
 body {
@@ -131,15 +152,6 @@ body {
 }
 
 dd { margin: 0 0 1rem 0; }
-
-dl.services dt {
-  border-color: gainsboro;
-  border-color: light-dark(gainsboro, slategray);
-  border-style: solid;
-  border-width: 1px 0 0 0;
-  margin-top: 2rem;
-  padding-top: 1rem;
-}
 
 dt {
   font-weight: 500;
@@ -151,29 +163,29 @@ em { font-style: oblique; }
 footer {
   color: slategray;
   color: light-dark(slategray, darkslategray);
-  font-family: "Aleo", sans-serif;
+  font-family: var(--slab);
   min-width: 24.5rem;
   padding: 1rem;
+  
+  a {
+    box-shadow: none !important;
+    color: cadetblue;
+    font-weight: 500;
+    
+    &:hover { text-decoration: underline; }
+    
+    &[href="https://alternator.sh"] { color: firebrick; }
+  }
+  
+  span {
+    color: gainsboro;
+    color: light-dark(gainsboro, darkslategray);
+    float: right;
+  }
 }
 
-footer a {
-  box-shadow: none !important;
-  color: cadetblue;
-  font-weight: 500;
-}
-
-footer a:hover { text-decoration: underline; }
-
-footer a[href="https://alternator.sh"] { color: firebrick; }
-
-footer span {
-  color: gainsboro;
-  color: light-dark(gainsboro, darkslategray);
-  float: right;
-}
-
-h1, h2, h3 {
-  font-family: "Aleo", sans-serif;
+h1, h2 {
+  font-family: var(--slab);
   margin: 2em 0 1rem 0;
 }
 
@@ -181,11 +193,24 @@ h1 {
   color: var(--forground);
   font-size: 2rem;
   font-weight: 900;
-}
-
-h1 + p {
-  color: color-mix(in lab, var(--forground) 95%, var(--background));
-  font-size: 1.25rem;
+  
+  &::before {
+    display: inline-block;
+    padding-right: .4rem;
+    margin-left: -2.4rem;
+    text-align: right;
+    width: 2rem;
+    
+    @media (max-width: 28rem) { display: none; }
+  }
+  
+  + p {
+    color: color(from var(--forground) srgb r g b / .95);
+    font-size: 1.25rem;
+    font-weight: 300;
+    
+    strong { font-weight: 600; }
+  }
 }
 
 h2 {
@@ -193,77 +218,104 @@ h2 {
   color: light-dark(maroon, cadetblue);
   font-size: 1.5rem;
   font-weight: 700;
-}
-
-h2::before {
-  color: darkslategray;
-  content: "#";
-  display: inline-block;
-  font-weight: 400;
-  margin-left: -1.6rem;
-  margin-right: .6rem;
-  text-align: right;
-  width: 1rem;
+  
+  &::before {
+    color: darkslategray;
+    content: "#";
+    display: inline-block;
+    font-weight: 400;
+    margin-left: -1.6rem;
+    margin-right: .6rem;
+    text-align: right;
+    width: 1rem;
+  }
 }
 
 h3 {
-  color: color-mix(in lab, var(--forground) 95%, var(--background));
+  color: color(from var(--forground) srgb r g b / 0.95);
   font-size: 1rem;
   font-variant: all-small-caps;
-  font-weight: 700;
-  letter-spacing: .02em;
-  margin-top: 1rem;
+  font-weight: 600;
+  margin: 1rem 0;
+}
+
+h4 {
+  color: var(--dark);
+  margin: 2rem 0 1rem 0;
+  
+  & strong {
+    background-color: orangered;
+    color: var(--light);
+    display: inline-block;
+    font-weight: 600;
+    margin-left: -1rem;
+    padding: 0 .25rem;
+    transform: rotate(-1deg);
+  }
+  
+  & em {
+    background-color: yellow;
+    display: block;
+    float: right;
+    font-style: normal;
+    font-weight: 500;
+    font-size: .8rem;
+    margin-right: -.25rem;
+    margin-top: .3em;
+    padding: 0 .25rem;
+    /* transform: rotate(3deg); */
+  }
 }
 
 header {
-  font-family: "Aleo", sans-serif;
+  font-family: var(--slab);
   min-width: 24.5rem;
   padding: 1rem;
-}
-
-header a { box-shadow: none; }
-
-header a:hover {
-  box-shadow: none;
-  text-decoration: underline;
-}
-
-header a:first-child {
-  color: orangered;
-  font-weight: 500;
-}
-
-header a:first-child::before {
-  content: "🚀";
-  display: inline-block;
-  margin-right: .25em;
-  text-decoration: none;
-  transition: .2s ease-in-out;
-}
-
-header a:first-child:hover::before { transform: scale(1.2); }
-
-header span {
-  color: lightslategray;
-  color: light-dark(lightslategray, cadetblue);
-}
-
-@media (max-width: 35rem) { header span { display: none; } }
-
-header span::before {
-  color: gainsboro;
-  color: light-dark(gainsboro, darkslategray);
-  content: "/ ";
-}
-
-header a:last-child {
-  background-color: rebeccapurple;
-  border-radius: 1px;
-  color: snow;
-  float: right;
-  font-size: .8rem;
-  font-weight: 500;
-  padding: .1rem .3rem;
+  
+  a {
+    box-shadow: none;
+    
+    &:hover {
+      box-shadow: none;
+      text-decoration: underline;
+    }
+    
+    &:first-child {
+      color: orangered;
+      font-weight: 550;
+      
+      &::before {
+        content: "🚀";
+        display: inline-block;
+        margin-right: .25em;
+        text-decoration: none;
+        transition: .2s ease-in-out;
+      }
+      
+      &:hover::before { transform: scale(1.2); }
+    }
+    
+    &:last-child {
+      background-color: rebeccapurple;
+      border-radius: 1px;
+      color: var(--light);
+      float: right;
+      padding: 0 .3rem;
+    }
+  }
+  
+  span {
+    color: lightslategray;
+    color: light-dark(lightslategray, cadetblue);
+    
+    @media (max-width: 35rem) { display: none; }
+    
+    &::before {
+      color: gainsboro;
+      color: light-dark(gainsboro, darkslategray);
+      content: "/";
+    }
+  }
 }
 
 hr {
@@ -279,10 +331,8 @@ img {
   margin-bottom: 1rem;
   margin-left: -1.5rem;
   width: calc(100% + 3rem);
-}
-
-@media (max-width: 26.5rem) {
-  img {
+  
+  @media (max-width: 26.5rem) {
     margin-left: -2rem;
     width: calc(100% + 4rem);
   }
@@ -296,34 +346,57 @@ main {
   border-color: light-dark(gainsboro, darkslategray);
   border-style: dashed;
   border-width: 1px 0;  
-  color: color-mix(in lab, var(--forground) 90%, var(--background));
+  color: color(from var(--forground) srgb r g b / 0.9);
+  font-weight: 300;
   margin: auto;
   padding: 2rem 0;
   width: 100%;
+  
+  h1:first-child { margin-top: 0; }
 }
-
-main h1:first-child { margin-top: 0; }
 
 mark {
-  background-color: yellow;
-  border-radius: 1px;
-  color: #1B1D1F;
-  font-weight: 400;
+  background-color: yellow;  
+  color: var(--dark);
+  font-weight: 500;  
 }
 
-ol, ul { padding-inline-start: 0; }
-
-p, ol, ul { margin: 0 0 1rem 0; }
-
-strong { font-weight: 500; }
-
-.readme h1::before {
-  content: "🧑‍💻";
-  display: inline-block;
-  padding-right: .4rem;
-  margin-left: -2.4rem;
-  text-align: right;
-  width: 2rem;
+p, ol, ul {
+  padding-inline-start: 0;
+  margin: 0 0 1rem 0;
 }
 
-@media (max-width: 28rem) { .readme h1::before { display: none; } }
+summary {
+  font-weight: 500;
+  margin-bottom: .5rem;
+  
+  &:hover { cursor: pointer; }
+}
+
+summary::-webkit-details-marker,
+summary::marker {
+  color: cadetblue;
+  margin-left: -1.1rem;
+}
+
+.stripe-btn {
+  margin-left: -.8rem;
+  
+  a:nth-child(1) {
+    background: rebeccapurple;
+    background: linear-gradient(-15deg, indigo 0%, rebeccapurple 100%);
+    border: 1px solid rebeccapurple;
+    border-radius: 1rem;
+    box-shadow: none;
+    color: var(--light);
+    display: inline-block;
+    font-size: .8rem;
+    font-weight: 700;
+    line-height: 1rem;
+    padding: .4rem .8rem .3rem .8rem;
+    
+    &:hover { transform: scale(1.1); }
+  }
+  
+  a:nth-child(2) { font-weight: 600; }
+}
