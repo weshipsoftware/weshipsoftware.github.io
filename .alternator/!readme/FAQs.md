@@ -1,6 +1,6 @@
 ## Frequently Asked Questions
 
-<details>
+<details open>
   <summary>How will I make requests?</summary>
   <p>
     We use Basecamp to manage projects. You'll receive an invite to a Basecamp
