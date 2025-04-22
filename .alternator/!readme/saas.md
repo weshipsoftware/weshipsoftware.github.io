@@ -26,7 +26,7 @@ _Switch plans, pause, or cancel anytime._
 2. **Request** anything you'd like from websites and apps to design and
    copywriting to data analytics and SEO.
    
-   Each plan comes with your own Notion project to manage **unlimited**
+   Each plan comes with your own Basecamp project to manage **unlimited**
    requests.
 
 3. **Ship** updates every few days, piece by piece, for as long as you'd like.

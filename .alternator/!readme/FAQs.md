@@ -3,7 +3,7 @@
 <details>
   <summary>How will I make requests?</summary>
   <p>
-    We us Notion to manage requests. You'll receive an invite to a Notion
+    We use Basecamp to manage projects. You'll receive an invite to a Basecamp
     project where you can add requests, check on progress, and collaborate
     on any supporting materials.
   </p>
