@@ -1,8 +1,8 @@
 ## Collaborations
 
-It's fun to have friends that are passionate about their interests.
+It’s fun to have friends that are passionate about their interests.
 
-We're happy to help out where I can.
+We’re happy to help out where I can.
 
 <dl>
   
@@ -13,6 +13,6 @@ We're happy to help out where I can.
   <dd>Obessive auto enthusiast videos.</dd>
   
   <dt><a href="https://scaringwithsammy.com/">Scaring with Sammy</a></dt>
-  <dd>Bite-sized scare acting lessons.</dd>
+  <dd>Bite–sized scare acting lessons.</dd>
   
 </dl>

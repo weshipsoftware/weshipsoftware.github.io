@@ -4,7 +4,7 @@
 #### **Async Plan** _Most popular_
 
 Get experienced software know-how as you need it.
-We'll become your go-to tech partner.
+We'll become your go–to tech partner.
 
 - Request **as much software** as you'd like.
 - Ship updates **every few days**. 

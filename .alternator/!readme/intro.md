@@ -12,7 +12,7 @@ And we’ve built some great digital products and services used by
 **thousands of businesses and millions of customers**
 all over the world every day.
 
-But there's one problem we’ve yet to see solved…
+But there’s one problem we’ve yet to see solved…
 
 <p>
   <mark>Finding people who know what they’re doing is</mark>
@@ -27,7 +27,7 @@ And you never what you’re going to get.
 
 _The whole process is broken._
 
-So let's do something better. Let's do this right.
+So let’s do something better. Let’s do this right.
 
 [rjt]: http://jarrodtaylor.me/readme
 [rar]: https://richard.is
