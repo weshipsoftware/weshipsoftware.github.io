@@ -395,8 +395,31 @@ summary::marker {
     line-height: 1rem;
     padding: .4rem .8rem .3rem .8rem;
     
-    &:hover { transform: scale(1.1); }
+    &:hover { transform: scale(1.05); }
   }
   
   a:nth-child(2) { font-weight: 600; }
+}
+
+#previous-clients {
+  font-size: 0;
+  margin-left: -2rem;
+  width: calc(100% + 4rem);
+  
+  picture {
+    display: inline-block;
+    height: 3rem;
+    position: relative;
+    width: 25%;
+    
+    img {
+      inset: 0;
+      margin: auto;      
+      position: absolute;
+      
+      @media (prefers-color-scheme: dark) {
+        filter: brightness(0%) invert(80%) sepia(.1);
+      }
+    }
+  }  
 }

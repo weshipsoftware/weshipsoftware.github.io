@@ -1,5 +1,6 @@
 ---
 #layout: !layout.html
+@class: readme
 @subtitle: readme
 ---
 
@@ -10,4 +11,4 @@
 <!-- #include !readme/office_hours.md -->
 <!-- #include !readme/collaborations.md -->
 <!-- #include !readme/tools.md -->
-<!-- #include !readme/previous_clients.md -->
+<!-- #include !readme/companies.md -->
