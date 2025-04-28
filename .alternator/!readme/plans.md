@@ -6,9 +6,9 @@
 Get experienced software know-how as you need it.
 We'll become your go–to tech partner.
 
-- Request **as much software** as you'd like.
+- Request **as much software** as you’d like.
 - Ship updates **every few days**. 
-- Mostly communicate via **chat and email**.
+- Mostly communicate via **Basecamp**/**chat**/**email**.
 
 <small>
   <p>
@@ -28,12 +28,12 @@ We'll become your go–to tech partner.
 
 #### **Remote Plan** _Best value_
 
-Augment your existing team with regular sync ups and double the output.
+Augment your existing team with regular sync ups _and_ double the output.
 Easily worth the upgrade.
 
 - Everything in the **Async Plan**.
 - **Two scheduled meetings** each week.
-- Batch your requests **two at a time**.
+- Batch your tasks **two at a time**.
 
 <small>
   <p>
@@ -57,7 +57,7 @@ Launch quickly.
 More afforable than an agency and more reliable than a freelancer.
 
 - Everything in the **Async** and **Remote Plans**.
-- Jump the queue with **priority requests**.
+- Jump the queue with **priority tasks**.
 - **Dedicated time** every day. 
 
 <small>

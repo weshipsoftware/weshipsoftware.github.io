@@ -22,7 +22,7 @@ But there’s one problem we’ve yet to see solved…
 
 Agencies are expensive. Freelancers are unreliable.
 Estimates are all over the place. Hiring takes forever.
-And you never what you’re going to get.
+And you never know what you’re going to get.
 <!-- A few more of these. -->
 
 _The whole process is broken._
