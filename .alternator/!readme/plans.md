@@ -54,7 +54,7 @@ Easily worth the upgrade.
 #### **Accelerator Plan** _Limited availability_
 
 Launch quickly.
-More afforable than an agency and more reliable than a freelancer.
+More affordable than an agency and more reliable than a freelancer.
 
 - Everything in the **Async** and **Remote Plans**.
 - Jump the queue with **priority tasks**.
