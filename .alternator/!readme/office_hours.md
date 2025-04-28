@@ -4,7 +4,7 @@ Each week we set aside a few hours to meet new people.
 Not as a service or a sale pitch, just a video call.
 
 <aside>
-  In the West Palm  Beach or Nashville areas?
+  In the West Palm Beach or Nashville areas?
   <br /><br />
   Let’s grab a coffee.
 </aside>

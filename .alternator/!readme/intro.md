@@ -5,7 +5,7 @@
 
 <!-- TODO: Add testimonials. -->
 
-We’ve been lucky to work with some very talented people over the years at all
+We’ve been lucky to work with talented people over the years at all
 kinds of agencies, startups, local shops, and big tech companies. 
 
 And we’ve built some great digital products and services used by
@@ -27,7 +27,7 @@ And you never know what you’re going to get.
 
 _The whole process is broken._
 
-So let’s do something better. Let’s do this right.
+So let’s do better. Let’s do this right.
 
 [rjt]: http://jarrodtaylor.me/readme
 [rar]: https://richard.is

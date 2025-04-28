@@ -8,7 +8,7 @@ We'll become your go–to tech partner.
 
 - Request **as much software** as you’d like.
 - Ship updates **every few days**. 
-- Mostly communicate via **Basecamp**/**chat**/**email**.
+- Communicate via **Basecamp**/**chat**/**email**.
 
 <small>
   <p>
@@ -53,7 +53,7 @@ Easily worth the upgrade.
 
 #### **Accelerator Plan** _Limited availability_
 
-Launch quickly.
+Launch quick.
 More affordable than an agency and more reliable than a freelancer.
 
 - Everything in the **Async** and **Remote Plans**.
