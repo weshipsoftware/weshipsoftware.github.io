@@ -1,38 +1,36 @@
 ## What To Expect
 
-**We don’t track hours.** You don’t want us wasting time and neither do we.
-Tasks will take as much time as they take. Billing by the hour conflicts
-both our interests. Better we stay aligned.
+**Focus on value.** Ship the most valuable parts first and add the rest as we
+go. Why wait?
 
-**We work remote.** Our own workspaces are both more productive and more
-economical. Other than the occassional get–together, there’s no reason for us to
-be in anyone’s office.
+**Scope changes are fine.** If it improves the product, let’s do it. No need to
+negotiate changes.
 
-**We don’t oursource.** Experience is our greatest advantage. While we’re happy
-to collaborate with other pros we know and trust, we do everything we’re good at
-in–house. And the amount of time it takes to manage an outsourced project to our
-high standards would defeat the purpose.
+**Ship a little at a time.** However large the project, we break it down into
+small tasks to ship frequently.
 
-**We ship a little at a time.** No matter how large the project, we’ll break it
-down into small tasks we can ship frequently.
+**Work together.** You know your business better than we do. Help us find the
+best solutions.
 
-**We don’t cut corners.** If we do it right we don’t have to do it again later.
+**No outsourcing.** We collaborate with other pros we trust but we never hand
+our own work off to anyone.
 
-**Keep it simple.** The best software serves it’s purpose and nothing more. We
-don’t overcomplicate our solutions, we don’t upsell, and we don’t do vendor
-lock–ins. We do the simplest thing that works for your business.
+**Overcommunicate.** We maintain expectations to avoid surprises.
 
-**Estimates are guesses.** We give best–effort estimates on how long things will
-take, but ultimately we’re guessing based on past experience. The pace of
-shipping smaller tasks is the best reflection of how long a project will take.
+**Estimates are guesses.** Working software is the measurement of progress.
+Plan, then ship often.
 
-**Scope changes are fine.** We expect you to be in the loop as projects develop.
-If you change your mind on something, or if a better idea comes up, great. That
-just means the end result will be even better. We’re fast on our feet anyway.
+**Do it right.** We do it right the first time so we don’t have to do it again
+later. No cutting corners.
 
-**No scamware.** We don’t do cyrpto, NFTs, web3, gambling, or basically anything
-in a legal or financial gray area.
+**Keep it simple.** No overcomplicated solutions, no upselling, and no vendor
+lock–ins.
 
-**No refunds.** Due to the time consuming nature of the work, we cannot offer
-any refunds. However, the first 7 days are free so if it's not a good fit,
+**Work remote.** Software is built online, not in an office. Also, watching us
+type is incredibly boring.
+
+**We don’t do scamware.** No cyrpto, NFTs, web3, or anything else designed to
+prey on people.
+
+**No refunds.** The first 7 days are free so if it's not a good fit,
 there’s no cost to cancel early.

@@ -1,4 +1,4 @@
-## Companies We’ve Worked With
+## Who We’ve Worked With
 
 <div id="previous-clients">
   <picture>
