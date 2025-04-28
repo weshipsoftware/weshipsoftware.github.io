@@ -27,10 +27,10 @@ later. No cutting corners.
 lock–ins.
 
 **Work remote.** Software is built online, not in an office. Also, watching us
-type is incredibly boring.
+type is boring.
 
 **We don’t do scamware.** No cyrpto, NFTs, web3, or anything else designed to
 prey on people.
 
 **No refunds.** The first 7 days are free so if it's not a good fit,
-there’s no cost to cancel early.
+there’s no cost to cancel.

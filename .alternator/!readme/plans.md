@@ -8,7 +8,7 @@ We'll become your go–to tech partner.
 
 - Request **as much software** as you’d like.
 - Ship updates **every few days**. 
-- Mostly communicate via **Basecamp**/**chat**/**email**.
+- Manage tasks using **Basecamp**/**chat**/**email**.
 
 <small>
   <p>
