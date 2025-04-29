@@ -17,7 +17,7 @@
     <img src="/!assets/images/companies/bequick.svg" style="width: 70%">
   </picture>
 
-  <picture style="margin-left: 12.5%;">
+  <picture>
     <img src="/!assets/images/companies/brightfire.svg" style="width: 80%">
   </picture>
 
@@ -45,7 +45,7 @@
     <img src="/!assets/images/companies/fidelity.png" style="width: 80%">
   </picture>
 
-  <picture style="margin-left: 12.5%;">
+  <picture>
     <img src="/!assets/images/companies/frontporch.png" style="width: 80%">
   </picture>
 
@@ -73,7 +73,7 @@
     <img src="/!assets/images/companies/mirion.svg" style="width: 80%">
   </picture>
 
-  <picture style="margin-left: 12.5%;">
+  <picture>
     <img src="/!assets/images/companies/nespower.png" style="width: 45%; top: -1rem;">
   </picture>
 
@@ -101,7 +101,7 @@
     <img src="/!assets/images/companies/smartbear.png" style="width: 95%">
   </picture>
 
-  <picture style="margin-left: 12.5%;">
+  <picture>
     <img src="/!assets/images/companies/spirent.svg" style="width: 80%">
   </picture>
 

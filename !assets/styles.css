@@ -409,6 +409,8 @@ summary::marker {
     height: 3rem;
     position: relative;
     width: 25%;
+
+    &:nth-child(7n-2) { margin-left: 12.5%; }
     
     img {
       inset: 0;
@@ -419,5 +421,5 @@ summary::marker {
         filter: grayscale(1) invert(1);
       }
     }
-  }  
+  }
 }
