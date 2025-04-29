@@ -178,8 +178,6 @@ footer {
   }
   
   span {
-    color: gainsboro;
-    color: light-dark(gainsboro, darkslategray);
     float: right;
   }
 }
@@ -418,7 +416,7 @@ summary::marker {
       position: absolute;
       
       @media (prefers-color-scheme: dark) {
-        filter: brightness(0%) invert(80%) sepia(.1);
+        filter: grayscale(1) invert(1);
       }
     }
   }  
