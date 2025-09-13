@@ -14,14 +14,13 @@ Not as a service or a sale pitch, just a video call.
 The topic can be anything you want &mdash; you don’t even have to tell us ahead
 of time.
 
-So far we’ve
-given feekback on projects,
+We’ve given feekback on projects,
 shared tiki cocktail recipes,
 screened candidates for job openings,
 talked hockey,
 debugged servers,
-reviewed resumes,
+reviewed PRs,
 and even acted as sales engineers.
 
 **[email@weshipsoftware.com](mailto: email@weshipsoftware.com)**
-to schedule a call. 
+to schedule a call.

@@ -2,162 +2,162 @@
 
 <div id="previous-clients">
   <picture>
-    <img src="/!assets/images/companies/altmansolon.png"
+    <img src="/.images/companies/altmansolon.png"
       style="width: 80%">
   </picture>
 
   <picture>
-    <img src="/!assets/images/companies/arcadia.svg"
+    <img src="/.images/companies/arcadia.svg"
       style="width: 80%; top: -.3rem;">
   </picture>
 
   <picture>
-    <img src="/!assets/images/companies/baupost.png"
+    <img src="/.images/companies/baupost.png"
       style="width: 90%">
   </picture>
 
   <picture>
-    <img src="/!assets/images/companies/bequick.svg"
+    <img src="/.images/companies/bequick.svg"
       style="width: 70%">
   </picture>
 
   <picture>
-    <img src="/!assets/images/companies/brightfire.svg"
+    <img src="/.images/companies/brightfire.svg"
       style="width: 80%">
   </picture>
 
   <picture>
-    <img src="/!assets/images/companies/chewy.png"
+    <img src="/.images/companies/chewy.png"
       style="width: 80%">
   </picture>
 
   <picture>
-    <img src="/!assets/images/companies/cloudhealth.png"
+    <img src="/.images/companies/cloudhealth.png"
       style="width: 80%">
   </picture>
 
   <picture>
-    <img src="/!assets/images/companies/cumberlandfarms.png"
+    <img src="/.images/companies/cumberlandfarms.png"
       style="width: 70%; top: -.5rem;">
   </picture>
 
   <picture>
-    <img src="/!assets/images/companies/conjur.png"
+    <img src="/.images/companies/conjur.png"
       style="width: 80%">
   </picture>
 
   <picture>
-    <img src="/!assets/images/companies/dentaquest.png"
+    <img src="/.images/companies/dentaquest.png"
       style="width: 80%; top: -.3rem;">
   </picture>
 
   <picture>
-    <img src="/!assets/images/companies/fidelity.png"
+    <img src="/.images/companies/fidelity.png"
       style="width: 80%">
   </picture>
 
   <picture>
-    <img src="/!assets/images/companies/frontporch.png"
+    <img src="/.images/companies/frontporch.png"
       style="width: 80%">
   </picture>
 
   <picture>
-    <img src="/!assets/images/companies/idexx.png"
+    <img src="/.images/companies/idexx.png"
       style="width: 70%">
   </picture>
 
   <picture>
-    <img src="/!assets/images/companies/ironmountain.svg"
+    <img src="/.images/companies/ironmountain.svg"
       style="width: 80%; top: -.1rem;">
   </picture>
 
   <picture>
-    <img src="/!assets/images/companies/knotch.svg"
+    <img src="/.images/companies/knotch.svg"
       style="width: 70%">
   </picture>
 
   <picture>
-    <img src="/!assets/images/companies/landrumhr.png"
+    <img src="/.images/companies/landrumhr.png"
       style="width: 80%">
   </picture>
 
   <picture>
-    <img src="/!assets/images/companies/mariscg.webp"
+    <img src="/.images/companies/mariscg.webp"
       style="width: 80%">
   </picture>
 
   <picture>
-    <img src="/!assets/images/companies/mirion.svg"
+    <img src="/.images/companies/mirion.svg"
       style="width: 80%">
   </picture>
 
   <picture>
-    <img src="/!assets/images/companies/nespower.png"
+    <img src="/.images/companies/nespower.png"
       style="width: 45%; top: -1rem;">
   </picture>
 
   <picture>
-    <img src="/!assets/images/companies/paychex.svg"
+    <img src="/.images/companies/paychex.svg"
       style="width: 80%">
   </picture>
 
   <picture>
-    <img src="/!assets/images/companies/paypal.png"
+    <img src="/.images/companies/paypal.png"
       style="width: 65%">
   </picture>
 
   <picture>
-    <img src="/!assets/images/companies/prismhr.svg"
+    <img src="/.images/companies/prismhr.svg"
       style="width: 80%">
   </picture>
 
   <picture>
-    <img src="/!assets/images/companies/seeyourselfhealth.png"
+    <img src="/.images/companies/seeyourselfhealth.png"
       style="width: 80%">
   </picture>
 
   <picture>
-    <img src="/!assets/images/companies/sefas.png"
+    <img src="/.images/companies/sefas.png"
       style="width: 80%">
   </picture>
 
   <picture>
-    <img src="/!assets/images/companies/smartbear.png"
+    <img src="/.images/companies/smartbear.png"
       style="width: 95%">
   </picture>
 
   <picture>
-    <img src="/!assets/images/companies/spirent.svg"
+    <img src="/.images/companies/spirent.svg"
       style="width: 80%">
   </picture>
 
   <picture>
-    <img src="/!assets/images/companies/datasolv.png"
+    <img src="/.images/companies/datasolv.png"
       style="width: 50%">
   </picture>
 
   <picture>
-    <img src="/!assets/images/companies/tomorrowpictures.png"
+    <img src="/.images/companies/tomorrowpictures.png"
       style="width: 80%; top: -.5rem;">
   </picture>
 
   <picture>
-    <img src="/!assets/images/companies/tsdweb.png"
+    <img src="/.images/companies/tsdweb.png"
       style="width: 95%">
   </picture>
 
   <picture>
-    <img src="/!assets/images/companies/uplandsoftware.svg"
+    <img src="/.images/companies/uplandsoftware.svg"
       style="width: 80%">
   </picture>
 
   <picture>
-    <img src="/!assets/images/companies/verizon.png"
+    <img src="/.images/companies/verizon.png"
       style="width: 75%">
   </picture>
 
   <picture>
-    <img src="/!assets/images/companies/zipcar.png"
+    <img src="/.images/companies/zipcar.png"
       style="width: 80%">
   </picture>
 </div>

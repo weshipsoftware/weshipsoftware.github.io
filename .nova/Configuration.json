@@ -1,6 +1,9 @@
 {
-  "workspace.art_style" : 0,
-  "workspace.color" : 0,
+  "workspace.art_style" : 1,
+  "workspace.color" : 9,
   "workspace.name" : "We Ship Software",
-  "workspace.preview_server_allow_external" : false
+  "workspace.preview_append_paths" : true,
+  "workspace.preview_server_allow_external" : false,
+  "workspace.preview_type" : "custom",
+  "workspace.preview_url" : "http:\/\/localhost:8080"
 }

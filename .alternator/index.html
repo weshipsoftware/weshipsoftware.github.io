@@ -1,6 +1,3 @@
----
-@version: 20250428A
----
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -13,34 +10,36 @@
     <meta name="generator" content="alternator">
     <meta name="keywords" content="We Ship Software">
     <meta name="mobile-web-app-capable" content="yes">
-    <meta name="theme-color" content="black">
+    <meta name="theme-color" content="light-dark(white, black)">
     <meta name="viewport" content="width=424">
-    <link rel="apple-touch-icon" href="/!assets/images/touch-icon.png">
-    <link rel="icon" sizes="192x192" href="/!assets/images/touch-icon.png">
-    <link rel="icon" type="image/x-icon" href="/!assets/images/favicon.ico">
+    <link rel="apple-touch-icon" href="/.images/touch-icon.png">
+    <link rel="icon" sizes="192x192" href="/.images/touch-icon.png">
+    <link rel="icon" type="image/x-icon" href="/.images/favicon.ico">
     <link rel="preload" type="font/woff2" as="font" crossorigin
-      href="/!assets/fonts/Grandstander.woff2">
+      href="/.fonts/Grandstander.woff2">
     <link rel="preload" type="font/woff2" as="font" crossorigin
-      href="/!assets/fonts/Hyperlegible.woff2">
+      href="/.fonts/Hyperlegible.woff2">
     <link rel="preload" type="font/woff2" as="font" crossorigin
-      href="/!assets/fonts/Zarid.woff2">
-    <link rel="stylesheet" href="/!assets/styles.css?v=<!--@version-->">
-    <!-- <script async src="/!assets/async.js?v=<!--@version-->""></script> -->
-    <script async data-id="101483087" src="//static.getclicky.com/js"></script>
-    <script async src="/!assets/defer.js"></script>
-    <title>We Ship Software / <!-- @subtitle --></title>
+      href="/.fonts/Zarid.woff2">
+    <link rel="stylesheet" href="/.styles.css">
+    <script async src="/.defer.js"></script>
+    <title>We Ship Software</title>
   </head>
-  <body class="<!-- @class -->">
+  <body class="readme">
     <header>
       <a href="/">We Ship Software</a>
-      <span><!-- @subtitle --></span>
+      <span>readme</span>
       <a href="mailto:email@weshipsoftware.com" rel="author">
         email@weshipsoftware.com
       </a>
     </header>
     <main>
       <article>
-        <!-- #content -->
+        <!-- @include .sections/intro.md -->
+        <!-- @include .sections/saas.md -->
+        <!-- @include .sections/expectations.md -->
+        <!-- @include .sections/office_hours.md -->
+        <!-- @include .sections/companies.md -->
       </article>
     </main>
     <footer>
