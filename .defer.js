@@ -1,4 +1,5 @@
 function toggleTheme() {
 	document.documentElement.style.colorScheme = 
-		document.documentElement.style.colorScheme === 'dark' ? 'light' : 'dark';
+		document.documentElement.style.colorScheme === 'dark' ? 'light' : 'dark'
+	localStorage.setItem('colorScheme', document.documentElement.style.colorScheme)
 }
