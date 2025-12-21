@@ -60,7 +60,10 @@ article, header, footer {
 article {
 	position: relative;
 	*:first-child { margin-top:    0; }
-	*:last-child  { margin-bottom: 7rem; }
+	*:last-child  {
+		margin-bottom: 7rem;
+		@media (max-width: 45rem) { margin-bottom: 3rem; }
+	}
 }
 
 aside {
