@@ -1,23 +1,45 @@
-@font-face { font-family: note; src: url("/.fonts/IndieFlower.woff"); }
-@font-face { font-family: text; src: url("/.fonts/Mikado400.woff"); }
-@font-face { font-family: text; src: url("/.fonts/Mikado400i.woff");
-							font-style: italic; }
-@font-face { font-family: text; src: url("/.fonts/Mikado500.woff");
-						 font-weight: 500; }
-@font-face { font-family: text; src: url("/.fonts/Mikado700.woff");
-						 font-weight: 700; }             
-
-:root {
-	background: white;
-	color: black;
-	font: 400 16px/1.5 text, sans-serif;
-	font-size: clamp(1rem, 2vw, 1.5rem);
+@font-face {
+	font-family: note;
+	src:         url("/.fonts/note.woff");
 }
 
-::selection { background-color: cyan; }
+@font-face {
+	font-family: text;
+	src:         url("/.fonts/400.woff");
+}
+
+@font-face {
+	font-family: text;
+	src:         url("/.fonts/400i.woff");
+	font-style:  italic;
+}
+
+@font-face {
+	font-family: text;
+	font-weight: 500;
+	src:         url("/.fonts/500.woff");
+}
+
+@font-face {
+	font-family: text;
+	font-weight: 700;
+	src:         url("/.fonts/700.woff");
+}
+
+:root {
+	background:   light-dark(white, black);
+	color:        light-dark(black, white);
+	color-scheme: light dark;
+	font:         400 16px/1.5 text, sans-serif;
+	font-size:    clamp(1rem, 2vw, 1.5rem);
+}
+
+::selection {
+	background-color: light-dark(cyan, teal);
+}
 
 a {
-	color: inherit;
+	color:           inherit;
 	text-decoration: underline;
 
 	&:hover, &:hover strong {
@@ -44,32 +66,31 @@ article {
 aside {
 	@media (max-width: 45rem) { display: none; }
 
-	color:       darkslateblue;
+	color:       light-dark(darkslateblue, #B6C26E);
 	font-family: note;
 	font-size:  .75rem;
 	line-height: 1rem;
 	position:    absolute;
 	width:       7.5rem;
 
-
 	&.left {
 		margin-left: -9.5rem;
-		text-align:  right;
-		transform:   rotate(-2deg);
+		text-align:   right;
+		transform:    rotate(-2deg);
 	}
 
 	&.right {
 		margin-right: -8.5rem;
-		right:        0;
-		transform:    rotate(2deg);
+		right:         0;
+		transform:     rotate(2deg);
 	}
 }
 
-blockquote {
+/* blockquote {
 	background:  lightyellow;
 	margin:     .5rem -1rem;
 	padding:    .75rem 1rem;
-}
+} */
 
 body { margin: 0; }
 
@@ -78,17 +99,18 @@ footer, header {
 	padding:   3rem 1rem;
 
 	a {
-		color:           silver;
+		color:           light-dark(silver, #3F3F3F);
 		font-size:       1rem;
 		font-weight:     500;
 		margin-right:    1rem;
-		/* text-decoration: none; */
+		text-decoration: none;
 		text-transform:  lowercase;
+
 		&:hover { margin-right: .75rem; }
 	}
 
 	a[href="mailto:email@weshipsoftware.com"] {
-		color: mediumblue;
+		color: light-dark(mediumblue, yellow);
 	}
 }
 
@@ -98,12 +120,12 @@ h1, h2, h3 {
 }
 
 h1 {
-	margin: 2rem 0 1rem 0;
+	margin:         2rem 0 1rem 0;
 	text-transform: uppercase;
 }
 
 h2 {
-	color:  firebrick;
+	color:  light-dark(firebrick, #00D0D6);
 	margin: 2rem 0 .5rem 0;
 }
 
@@ -113,8 +135,8 @@ h3 {
 }
 
 hr {
+	background: light-dark(whitesmoke, #3F3F3F);
 	border:     none;
-	background: whitesmoke;
 	height:    .25rem;
 	margin:     2rem 0;
 }
@@ -129,7 +151,8 @@ iframe, img, video {
 }
 
 mark {
-	background:  greenyellow;
+	background:  light-dark(greenyellow, #4600AA);
+	color:       light-dark(black, white);
 	font-weight: 500;
 	padding:     0 .125rem;
 	margin:      0 -.125rem;
@@ -143,12 +166,10 @@ p {
 strong { font-weight: 500; }
 
 hr + ul, body#readme ul {
-	font-weight: 500;
+	font-weight:     500;
+	list-style-type: "-  ";
 	margin:          0 0 .5rem 0;
 	padding:         0;
-	list-style-type: "-  ";
-
-	@media (max-width: 45rem) { list-style-type: "– "; }
 
 	li {
 		margin-bottom: 0.5rem;
@@ -158,10 +179,11 @@ hr + ul, body#readme ul {
 
 body#readme {
 	h1::before {
-		content: "🧑‍💻";
-		display: inline-block;
-		margin-left: -1.5em;
-		width: 1.5em;
 		@media (max-width: 30rem) { display: none; }
+
+		content:      "🧑‍💻";
+		display:      inline-block;
+		margin-left: -1.5em;
+		width:        1.5em;
 	}
 }
