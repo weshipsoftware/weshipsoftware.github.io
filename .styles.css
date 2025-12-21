@@ -60,7 +60,7 @@ article, header, footer {
 article {
 	position: relative;
 	*:first-child { margin-top:    0; }
-	*:last-child  { margin-bottom: 0; }
+	*:last-child  { margin-bottom: 7rem; }
 }
 
 aside {
@@ -94,26 +94,6 @@ aside {
 
 body { margin: 0; }
 
-footer, header {
-	font-size: 0;
-	padding:   3rem 1rem;
-
-	a {
-		color:           light-dark(silver, #3F3F3F);
-		font-size:       1rem;
-		font-weight:     500;
-		margin-right:    1rem;
-		text-decoration: none;
-		text-transform:  lowercase;
-
-		&:hover { margin-right: .75rem; }
-	}
-
-	a[href="mailto:email@weshipsoftware.com"] {
-		color: light-dark(mediumblue, yellow);
-	}
-}
-
 h1, h2, h3 {
 	font-size:   1rem;
 	font-weight: 700;
@@ -132,6 +112,26 @@ h2 {
 h3 {
 	font-variant: all-small-caps;
 	margin:       1rem 0 .5rem 0;
+}
+
+header {
+	font-size: 0;
+	padding:   3rem 1rem;
+
+	a {
+		color:           light-dark(silver, #3F3F3F);
+		font-size:       1rem;
+		font-weight:     500;
+		margin-right:    1rem;
+		text-decoration: none;
+		text-transform:  lowercase;
+
+		&:hover { margin-right: .75rem; }
+	}
+
+	a[href="mailto:email@weshipsoftware.com"] {
+		color: light-dark(mediumblue, yellow);
+	}
 }
 
 hr {
@@ -158,6 +158,53 @@ mark {
 	margin:      0 -.125rem;
 }
 
+menu {	
+	list-style-type: none;
+	margin:          0;
+	padding:         0;
+	position:        relative;
+
+	li {
+		position: absolute;
+		right:    1rem;
+
+		a {
+			text-decoration: none;
+			&:hover { background: none; }
+		}
+
+		&:hover {
+			cursor: pointer;
+			&:before, &:after {
+				font-variant: all-small-caps;
+				font-weight:  500;
+				padding:      0 .5rem;
+			}
+		}
+	}
+
+	li:nth-child(1) {
+		top: 1rem;
+		&:hover { &:before { content: "Contact"; }}
+	}
+
+	li:nth-child(2) {
+		display: none;
+		top: 3rem;
+		&:hover { &:before { content: "Search"; }}
+	}
+
+	li:nth-child(3) {
+		top: 3rem;
+		&:hover { &:before { content: "Theme"; }}
+	}
+
+	li:nth-child(4) {
+		top: 5rem;
+		&:hover { &:before { content: "Source"; }}
+	}
+}
+
 p {
 	margin: 0 0 .5rem 0;
 	strong { font-weight: 700; }
@@ -179,11 +226,11 @@ hr + ul, body#readme ul {
 
 body#readme {
 	h1::before {
-		@media (max-width: 30rem) { display: none; }
-
 		content:      "🧑‍💻";
 		display:      inline-block;
 		margin-left: -1.5em;
 		width:        1.5em;
+		
+		@media (max-width: 30rem) { display: none; }
 	}
 }
