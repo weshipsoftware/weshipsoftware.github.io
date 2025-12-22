@@ -1,6 +1,6 @@
 ---
 @layout: .layout.html
-@pageTitle: We Ship Software: README
+@pageTitle: We Ship Software
 @pageClass: readme
 @pageID: readme
 ---
