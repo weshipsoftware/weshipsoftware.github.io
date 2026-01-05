@@ -1,46 +1,22 @@
-@font-face {
-	font-family: note;
-	src:         url("/.fonts/note.woff");
-}
-
-@font-face {
-	font-family: text;
-	src:         url("/.fonts/400.woff");
-}
-
-@font-face {
-	font-family: text;
-	src:         url("/.fonts/400i.woff");
-	font-style:  italic;
-}
-
-@font-face {
-	font-family: text;
-	font-weight: 500;
-	src:         url("/.fonts/500.woff");
-}
-
-@font-face {
-	font-family: text;
-	font-weight: 700;
-	src:         url("/.fonts/700.woff");
-}
+@font-face { font-family: note; src: url("/.fonts/note.woff");                      }
+@font-face { font-family: text; src: url("/.fonts/400.woff");                       }
+@font-face { font-family: text; src: url("/.fonts/400i.woff"); font-style:  italic; }
+@font-face { font-family: text; src: url("/.fonts/500.woff");  font-weight: 500;    }
+@font-face { font-family: text; src: url("/.fonts/700.woff");  font-weight: 700;    }
 
 :root {
-	background:   light-dark(white, black);
-	color:        light-dark(black, white);
-	color-scheme: light dark;
-	font:         400 16px/1.5 text, sans-serif;
-	font-size:    clamp(1rem, 2vw, 1.5rem);
+	background:    light-dark(white, #111);
+	color:         light-dark(black, white);
+	color-scheme:  light dark;
+	font:          400 16px/1.5 text, sans-serif;
+	font-size:     clamp(1rem, 2vw, 1.5rem);
 }
 
-::selection {
-	background-color: light-dark(cyan, teal);
-}
+::selection { background-color: light-dark(cyan, teal); }
 
 a {
-	color:           inherit;
-	text-decoration: underline;
+	color:            inherit;
+	text-decoration:  underline;
 
 	&:hover, &:hover strong {
 		background:      yellow;
@@ -69,12 +45,12 @@ article {
 aside {
 	@media (max-width: 45rem) { display: none; }
 
-	color:       light-dark(darkslateblue, #B6C26E);
-	font-family: note;
-	font-size:  .75rem;
-	line-height: 1rem;
-	position:    absolute;
-	width:       7.5rem;
+	color:        light-dark(darkslateblue, #B6C26E);
+	font-family:  note;
+	font-size:   .75rem;
+	line-height:  1rem;
+	position:     absolute;
+	width:        7.5rem;
 
 	&.left {
 		margin-left: -9.5rem;
@@ -96,6 +72,16 @@ aside {
 } */
 
 body { margin: 0; }
+
+code {
+	background: lavender;
+	font-family: "Fira Code";
+	font-size: .89rem;
+	letter-spacing: -.025rem;
+	padding: 0 .1rem;
+	margin: 0 -.1rem;
+	font-feature-settings: "ss01", "zero", "onum", "sS04", "CV18";
+}
 
 h1, h2, h3 {
 	font-size:   1rem;
@@ -174,38 +160,25 @@ menu {
 		a {
 			text-decoration: none;
 			&:hover { background: none; }
+			
 		}
 
 		&:hover {
 			cursor: pointer;
-			&:before, &:after {
+
+			&:before {
 				font-variant: all-small-caps;
 				font-weight:  500;
 				padding:      0 .5rem;
+				content: attr(data-attr);
 			}
 		}
 	}
 
-	li:nth-child(1) {
-		top: 1rem;
-		&:hover { &:before { content: "Contact"; }}
-	}
-
-	li:nth-child(2) {
-		display: none;
-		top: 3rem;
-		&:hover { &:before { content: "Search"; }}
-	}
-
-	li:nth-child(3) {
-		top: 3rem;
-		&:hover { &:before { content: "Theme"; }}
-	}
-
-	li:nth-child(4) {
-		top: 5rem;
-		&:hover { &:before { content: "Source"; }}
-	}
+	li:nth-child(1) { top: 1rem; }
+	li:nth-child(2) { display: none; }
+	li:nth-child(3) { top: 3rem; }
+	li:nth-child(4) { top: 5rem; }
 }
 
 p {
@@ -213,13 +186,41 @@ p {
 	strong { font-weight: 700; }
 }
 
+pre {
+	background-color: black;
+	color: white;
+	margin: 0 0 .5rem -1rem;
+	overflow-x: scroll;
+	padding: 1rem;
+	width: 100%;
+
+	code {
+		font-size: .75rem;
+		font-weight: 300;
+		letter-spacing: -.025rem;
+
+		&.language-shell {
+			background-color: inherit;
+			color: silver;
+			display: block;
+			margin: 0;
+			padding: 0;
+			
+			&::first-line {
+				color:       white;
+				font-weight: 500;
+			}
+		}
+	}
+}
+
 strong { font-weight: 500; }
 
 hr + ul, body#readme ul {
-	font-weight:     500;
-	list-style-type: "-  ";
-	margin:          0 0 .5rem 0;
-	padding:         0;
+	font-weight:       500;
+	list-style-type:  "-  ";
+	margin:            0 0 .5rem 0;
+	padding:           0;
 
 	li {
 		margin-bottom: 0.5rem;
@@ -230,9 +231,9 @@ hr + ul, body#readme ul {
 body#readme {
 	h1::before {
 		content:      "🧑‍💻";
-		display:      inline-block;
-		margin-left: -1.5em;
-		width:        1.5em;
+		display:       inline-block;
+		margin-left:  -1.5em;
+		width:         1.5em;
 		
 		@media (max-width: 30rem) { display: none; }
 	}

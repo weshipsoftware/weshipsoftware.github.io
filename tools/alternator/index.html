@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>We Ship Software</title>
+		<link href="/.styles.css"            rel="stylesheet">
+		<link href="/.images/touch-icon.png" rel="apple-touch-icon" >
+		<link href="/.images/touch-icon.png" rel="icon" sizes="192x192">
+		<link href="/.images/favicon.ico"    rel="icon" type="image/x-icon">
+		<meta charset="utf-8">
+		<meta name="description" content="We Ship Software">
+		<meta name="generator"   content="alternator">
+		<meta name="keywords"    content="We Ship Software">
+		<meta name="viewport"    content="width=device-width, initial-scale=1">
+		<script src="/.async.js" async></script>
+		<script src="/.defer.js" defer></script>
+	</head>
+	<body class="_" id="_">
+		<menu>
+			<li data-attr="Contact">
+				<a href="mailto:email@weshipsoftware.com">🚀</a>
+			</li>
+			<li data-attr="Search">
+				<a href="/archive">🔍</a>
+			</li>
+			<li data-attr="Theme">
+				<a onclick="toggleTheme()">💡</a>
+			</li>
+			<li data-attr="Source">
+				<a href="https://github.com/weshipsoftware">🛠️</a>
+			</li>
+		</menu>
+		<main>
+			<header>
+				<a href="mailto:email@weshipsoftware.com">email@weshipsoftware.com</a>
+				<!-- <a href="/">ReadMe</a> -->
+			</header>
+			<article>
+				<h1>Alternator</h1><aside class="right">
+	We build this site with Alternator.
+</aside><p>A CLI tool for building static websites on your Mac.<br>Layouts, includes, and variables in HTML, CSS, and JS. Markdown built-in. Localhost server optional.</p><hr><ul><li><a href="">Getting Started</a></li><li><a href="">Layouts</a></li><li><a href="">Includes</a></li><li><a href="">Variables</a></li><li><a href="">Pro Tips</a></li></ul><hr><pre><code class="language-shell">/site $ alternator --help
+USAGE: alternator &lt;source&gt; &lt;target&gt; [--watch] [--port &lt;port&gt;]
+
+ARGUMENTS:
+  &lt;source&gt;             Path to your source directory.
+  &lt;target&gt;             Path to your target directory.
+
+OPTIONS:
+  -w, --watch          Rebiuld &lt;source&gt; as you save changes.
+  -p, --port &lt;port&gt;    Serve &lt;target&gt; on localhost:&lt;port&gt;.
+  --version            Show the version.
+  -h, --help           Show help information.
+</code></pre><h2>Getting Started</h2><p>Alternator reads the files in your <code>&lt;source&gt;</code> directory, fills in the layouts, includes, and variables, then saves the rendered files to your <code>&lt;target&gt;</code> directory for publishing.</p><pre><code class="language-shell">/site $ alternator path/to/source path/to/target
+</code></pre><p>Layouts, includes, and variables are defined in <code>&lt;source&gt;</code> files using comments and metadata. More on that later.</p><h3>Watching for Changes</h3><p>Use the <code>--watch</code> flag to monitor <code>&lt;source&gt;</code> for changes and automatically render after each save.</p><pre><code class="language-shell">/site $ alternator path/to/source path/to/target --watch
+[watch] watching path/to/source for changes
+^c to stop
+</code></pre><h3>Localhost Server</h3><p>Add a <code>--port</code> to serve <code>&lt;target&gt;</code> on a localhost server.</p><pre><code class="language-shell">/site $ alternator path/to/source path/to/target --port 8080
+[serve] serving path/to/target at http://localhost:8080
+^c to stop
+</code></pre><h3>Putting It Together</h3><p>Combine <code>--watch</code> and <code>--port</code> for a simple dev setup.</p><pre><code class="language-shell">/site $ alternator path/to/source path/to/target -wp 8080
+[watch] watching path/to/source for changes
+[serve] serving path/to/target at http://localhost:8080
+^c to stop
+</code></pre><h2>Layouts</h2><p>A CLI tool for building static websites on your Mac. Layouts, includes, and variables in HTML, CSS, and JS. Markdown built-in. Localhost server optional.</p><h2>Includes</h2><p>A CLI tool for building static websites on your Mac. Layouts, includes, and variables in HTML, CSS, and JS. Markdown built-in. Localhost server optional.</p><h2>Variables</h2><p>A CLI tool for building static websites on your Mac. Layouts, includes, and variables in HTML, CSS, and JS. Markdown built-in. Localhost server optional.</p><h2>Pro Tips</h2><h3>Publishing Your Site</h3><p>Sites can be published to any host that serves static files.</p><p>This site is hosted on GitHub using <a href="">/docs</a> as the <code>&lt;target&gt;</code>.</p><p>Check your web host’s documentation for specifics.</p>
+			</article>
+		</main>
+	</body>
+</html>

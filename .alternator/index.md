@@ -5,10 +5,6 @@
 @pageID: readme
 ---
 
-
-
-
-
 # Hello, World!
 
 <p>
@@ -21,10 +17,6 @@
 We’re veterans of the tech industry now working with
 **independent, product–led businesses** to build and ship awesome software.
 
-
-
-
-
 ---
 
 - [Why Are We Doing This?](#why)
@@ -34,31 +26,17 @@ We’re veterans of the tech industry now working with
 
 ---
 
-
-
-
-
 <h2 id="why">Why Are We Doing This?</h2>
 
-We left our jobs in the enterprise tech industry after seeing how many
-independent businesses could take off with the right software yet
-_aren’t doing anything to make it happen_.
+How many businesses could take off with better software?
+Yet freelancers are unreliable, hiring platforms are a mess,
+and recruiting agencies are too expensive.
 
-Why not? After asking around, their feedback was clear. Freelancers are
-unreliable, hiring platforms are saturated, and recruiting agencies are
-expensive.
+We started _We Ship Software_ to offer something better.
 
-<aside class="right">
-	The way development should have been done in the first place.
-</aside>
-
-We can do better. Our goal is to **de–risk software development** by working
-directly with a small roster of clients to build and ship exactly
-what they need on a predictable timeline and at a reasonable price.
-
-
-
-
+Our goal is to **de–risk development** by working directly
+with a small roster of clients to build and ship exactly what
+they need on a predictable timeline for a reasonable rate.
 
 <h2 id="fit">Where Do We Fit?</h2>
 
@@ -116,16 +94,13 @@ Your connection to your fans almost guarantees a product–market fit.
 We build it, you pitch it. _And we’ll cover the development costs in exchange
 for splitting the profits._
 
-
-
-
-
 <h2 id="price">How Much Does It Cost?</h2>
 
 Our rate is a flat <mark>$4k per week</mark>.
 
 <aside class="right">
-	Our rates are not based on your budget.
+	<a href="mailto:email@weshipsoftware.com">Contact us</a> for a
+	free scope consultation.
 </aside>
 
 No worries about hours, no minimum contract lengths,
@@ -134,10 +109,6 @@ up with a great new idea.
 
 Once the project wraps up and you’re happy with our work,
 we can set up ongoing support for a reasonable rate.
-
-
-
-
 
 <h2 id="contact">We Want to Hear From You!</h2>
 
