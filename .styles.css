@@ -44,7 +44,7 @@ article {
 aside {
 	@media (max-width: 45rem) { display: none; }
 
-	color:        light-dark(#C18E00, #C398FF);
+	color:        light-dark(#6A00FF, #C398FF);
 	font-family:  note;
 	font-size: .75rem;
 	line-height:  1.25rem;
