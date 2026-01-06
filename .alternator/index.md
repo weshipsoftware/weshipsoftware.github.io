@@ -17,6 +17,10 @@
 We’re veterans of the tech industry now working with
 **independent, product–led businesses** to build and ship awesome software.
 
+
+
+
+
 ---
 
 - [Why Are We Doing This?](#why)
@@ -25,6 +29,10 @@ We’re veterans of the tech industry now working with
 - [We Want to Hear From You!](#contact)
 
 ---
+
+
+
+
 
 <h2 id="why">Why Are We Doing This?</h2>
 
@@ -37,6 +45,10 @@ We started _We Ship Software_ to offer something better.
 Our goal is to **de–risk development** by working directly
 with a small roster of clients to build and ship exactly what
 they need on a predictable timeline for a reasonable rate.
+
+
+
+
 
 <h2 id="fit">Where Do We Fit?</h2>
 
@@ -58,6 +70,8 @@ It’s our job to handle all the small details that make sure your project is
 done correctly from start to finish so you can stay focused on running the rest
 of your business.
 
+
+
 ### Hands–On Consulting
 
 If all this tech stuff _is_ your business and you could use an assist,
@@ -77,6 +91,8 @@ the hard work_. We have a clear sense of how things should work, we’re eager
 to figure out what we don’t yet know, and we’re particularly effective at
 short–circuiting bureaucracy and red tape.
 
+
+
 ### Creative Partnerships
 
 For content creators growing a niche online audience,
@@ -94,9 +110,13 @@ Your connection to your fans almost guarantees a product–market fit.
 We build it, you pitch it. _And we’ll cover the development costs in exchange
 for splitting the profits._
 
+
+
+
+
 <h2 id="price">How Much Does It Cost?</h2>
 
-Our rate is a flat <mark>$4k per week</mark>.
+Our rate is a flat <mark>$4k per week.</mark>
 
 <aside class="right">
 	<a href="mailto:email@weshipsoftware.com">Contact us</a> for a
@@ -109,6 +129,10 @@ up with a great new idea.
 
 Once the project wraps up and you’re happy with our work,
 we can set up ongoing support for a reasonable rate.
+
+
+
+
 
 <h2 id="contact">We Want to Hear From You!</h2>
 
