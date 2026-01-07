@@ -5,35 +5,51 @@
 @font-face { font-family: text; src: url("/.fonts/700.woff");  font-weight: 700;    }
 
 :root {
-	--background: light-dark(#FEFFFF, #1B1D1E);
-	--foreground: light-dark(#262626, #CBDAE6);
-	--selection:  light-dark(#B1D7FE, #3E628A);
-	--link:       light-dark(#0089C4, #A0E77D);
-	--aside:      light-dark(#2D8180, #30E8AA);
-	--header:     light-dark(#CF2D00, #47D5E8);
-	--logo:       light-dark(#0060B7, #6AC1FF);
-	--nav:        light-dark(#ADADAD, #729ABA);
-	--h-rule:     light-dark(#F8F8F8, #272830);
-	--mark:       light-dark(#D82969, #EFD282);
-	--li-marker:  light-dark(#84888C, #729ABA);
-}
-
-:root {
-	background:    var(--background);
-	color:         var(--foreground);
+	font: 400 16px/1.5 text, sans-serif;
+	
 	color-scheme:  light dark;
-	font:          400 16px/1.5 text, sans-serif;
+	
+	--red-crimson:       color(display-p3 0.894 0 0.149);     --red:        color(display-p3 0.867 0 0);         --red-vermillion:    color(display-p3 0.906 0.169 0);
+	--vermillion-red:    color(display-p3 0.941 0.263 0);     --vermillion: color(display-p3 0.969 0.345 0);     --vermillion-orange: color(display-p3 0.996 0.42 0);
+	--orange-vermillion: color(display-p3 1 0.498 0);         --orange:     color(display-p3 1 0.573 0);         --orange-amber:      color(display-p3 1 0.643 0);
+	--amber-orange:      color(display-p3 1 0.718 0);         --amber:      color(display-p3 1 0.788 0);         --amber-yellow:      color(display-p3 1 0.863 0);
+	--yellow-amber:      color(display-p3 1 0.929 0);         --yellow:     color(display-p3 1 1 0);             --yellow-lemon:      color(display-p3 0.925 0.961 0);
+	--lemon-yellow:      color(display-p3 0.855 0.921 0);     --lemon:      color(display-p3 0.78 0.882 0);      --lemon-chartreuse:  color(display-p3 0.706 0.847 0);
+	--chartreuse-lemon:  color(display-p3 0.635 0.804 0);     --chartreuse: color(display-p3 0.565 0.765 0);     --chartreuse-lime:   color(display-p3 0.49 0.726 0);
+	--lime-chartreuse:   color(display-p3 0.416 0.686 0);     --lime:       color(display-p3 0.341 0.647 0);     --lime-green:        color(display-p3 0.263 0.608 0);
+	--green-lime:        color(display-p3 0.169 0.565 0);     --green:      color(display-p3 0 0.526 0);         --green-mint:        color(display-p3 0 0.569 0.157);
+	--mint-green:        color(display-p3 0 0.612 0.251);     --mint:       color(display-p3 0 0.651 0.329);     --mint-spring:       color(display-p3 0 0.694 0.408);
+	--spring-mint:       color(display-p3 0 0.733 0.482);     --spring:     color(display-p3 0 0.772 0.557);     --spring-aquamarine: color(display-p3 0 0.812 0.631);
+	--aquamarine-spring: color(display-p3 0 0.851 0.706);     --aquamarine: color(display-p3 0 0.89 0.78);       --aquamarine-cyan:   color(display-p3 0 0.925 0.855);
+	--cyan-aquamarine:   color(display-p3 0 0.965 0.925);     --cyan:       color(display-p3 0 1 1);             --cyan-sky:          color(display-p3 0 0.933 0.988);
+	--sky-cyan:          color(display-p3 0 0.863 0.977);     --sky:        color(display-p3 0 0.792 0.961);     --sky-azure:         color(display-p3 0 0.722 0.941);
+	--azure-sky:         color(display-p3 0 0.647 0.917);     --azure:      color(display-p3 0 0.573 0.89);      --azure-cerulean:    color(display-p3 0 0.498 0.863);
+	--cerulean-azure:    color(display-p3 0 0.42 0.828);      --cerulean:   color(display-p3 0 0.341 0.788);     --cerulean-blue:     color(display-p3 0 0.255 0.745);
+	--blue-cerulean:     color(display-p3 0 0.161 0.698);     --blue:       color(display-p3 0 0 0.645);         --blue-indigo:       color(display-p3 0.11 0 0.706);
+	--indigo-blue:       color(display-p3 0.188 0 0.765);     --indigo:     color(display-p3 0.259 0 0.82);      --indigo-purple:     color(display-p3 0.333 0 0.871);
+	--purple-indigo:     color(display-p3 0.408 0.004 0.91);  --purple:     color(display-p3 0.486 0.008 0.949); --purple-violet:     color(display-p3 0.569 0.016 0.977);
+	--violet-purple:     color(display-p3 0.651 0.024 0.996); --violet:     color(display-p3 0.733 0.027 1);     --violet-magenta:    color(display-p3 0.82 0.027 1);
+	--magenta-violet:    color(display-p3 0.91 0.02 1);       --magenta:    color(display-p3 1 0 1);             --magenta-pink:      color(display-p3 1 0 0.917);
+	--pink-magenta:      color(display-p3 1 0 0.835);         --pink:       color(display-p3 1 0 0.757);         --pink-rose:         color(display-p3 1 0 0.678);
+	--rose-pink:         color(display-p3 0.996 0 0.6);       --rose:       color(display-p3 0.984 0 0.525);     --rose-crimson:      color(display-p3 0.973 0 0.455);
+	--crimson-rose:      color(display-p3 0.957 0 0.38);      --crimson:    color(display-p3 0.937 0 0.31);      --crimson-red:       color(display-p3 0.917 0 0.235);
+	
+	background: light-dark(white, black);
+	color:      light-dark(black, white);
 }
 
-::selection { background-color: var(--selection); }
+::selection {
+	background: light-dark(var(--aquamarine-cyan), white);
+	color:      light-dark(black, black);
+}
 
 a {
-	color:            inherit;
-	text-decoration:  underline;
+	color:           inherit;
+	text-decoration: underline;
 
 	&:hover, &:hover strong {
-		background:      var(--link);
-		color:           var(--background) !important;
+		background:      light-dark(var(--yellow-amber), white);
+		color:           light-dark(black, black) !important;
 		padding:         0  0.25rem;
 		margin:          0 -0.25rem;
 		text-decoration: none;
@@ -58,10 +74,10 @@ article {
 aside {
 	@media (max-width: 45rem) { display: none; }
 
-	color:        var(--aside);
+	color:        light-dark(var(--blue-indigo), white);
 	font-family:  note;
-	font-size:   .75rem;
-	line-height:  1.25rem;
+	font-size:   .875rem;
+	line-height:  1.5rem;
 	position:     absolute;
 	width:        7.5rem;
 
@@ -107,8 +123,18 @@ h1 {
 }
 
 h2 {
-	color:  var(--header);
+	color:  light-dark(var(--red-crimson), white);
 	margin: 2rem 0 .5rem 0;
+	
+	&::before {
+		color:        light-dark(hsl(from black h s 42%), white);
+		content:      "☞"; /* ☞ 🧑‍💻 */
+		display:       inline-block;
+		margin-left:  -1.5em;
+		width:         1.5em;
+		@media (max-width: 30rem) { display: none; }
+	}
+
 }
 
 h3 {
@@ -121,23 +147,21 @@ header {
 	padding:   3rem 1rem;
 
 	a {
-		color:           var(--nav);
+		color:           light-dark(hsl(from black h s 75%), white);
 		font-size:       1rem;
 		font-weight:     500;
 		margin-right:    1rem;
-		text-decoration: none;
 		text-transform:  lowercase;
-
 		&:hover { margin-right: .75rem; }
 	}
 
 	a[href="mailto:email@weshipsoftware.com"] {
-		color: var(--logo);
+		color: light-dark(var(--cerulean-azure), white);
 	}
 }
 
 hr {
-	background: var(--h-rule);
+	background: light-dark(hsl(from black h s 97%), white);
 	border:     none;
 	height:    .25rem;
 	margin:     2rem 0;
@@ -146,15 +170,15 @@ hr {
 iframe, img, video {
 	aspect-ratio: 16 / 9;
 	border:       none;
-	box-shadow:   0 0 .25rem var(--foreground);
+	box-shadow:   0 0 .25rem light-dark(black, white);
 	margin:       0 0 .5rem -1rem;
 	object-fit:   cover;
 	width:        calc(100% + 2rem);
 }
 
 mark {
-	background:  var(--mark);
-	color:       var(--background);
+	background:  light-dark(var(--cyan-sky), white);
+	color:       light-dark(black, black);
 	font-weight: 500;
 	padding:     0 .125rem;
 	margin:      0 -.125rem;
@@ -237,17 +261,6 @@ hr + ul, body#readme ul {
 
 	li {
 		margin-bottom: 0.5rem;
-		&::marker { color: var(--li-marker); }
-	}
-}
-
-body#readme {
-	h1::before {
-		content:      "🧑‍💻";
-		display:       inline-block;
-		margin-left:  -1.5em;
-		width:         1.5em;
-		
-		@media (max-width: 30rem) { display: none; }
+		&::marker { color: light-dark(hsl(from black h s 42%), white); }
 	}
 }

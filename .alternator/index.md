@@ -42,6 +42,10 @@ and recruiting agencies are too expensive.
 
 We started _We Ship Software_ to offer something better.
 
+<aside class="right">
+	How it should have been done all along.
+</aside>
+
 Our goal is to **de–risk development** by working directly
 with a small roster of clients to build and ship exactly what
 they need on a predictable timeline for a reasonable rate.
@@ -101,7 +105,7 @@ merch sales and ad spots are the go–to revenue streams.
 Why not step it up and create a stable business?
 
 <aside class="left">
-	This is by far the best model we’ve seen to grow a business.
+	This is by far the best model for growing a business.
 </aside>
 
 Partner with us to build a **productized service tailored to your audience**.
@@ -119,7 +123,7 @@ for splitting the profits._
 Our rate is a flat <mark>$4k per week.</mark>
 
 <aside class="right">
-	<a href="mailto:email@weshipsoftware.com">Contact us</a> for a
+	<a href="mailto:email@weshipsoftware.com">Email us</a> for a
 	free scope consultation.
 </aside>
 
@@ -137,7 +141,7 @@ we can set up ongoing support for a reasonable rate.
 <h2 id="contact">We Want to Hear From You!</h2>
 
 <aside class="left">
-	Are you near Nashville or West Palm Beach?
+	Close to Nashville or West Palm Beach?
 	<br /><br />
 	Let’s grab a coffee.
 </aside>
