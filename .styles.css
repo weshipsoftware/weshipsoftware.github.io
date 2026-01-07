@@ -5,21 +5,35 @@
 @font-face { font-family: text; src: url("/.fonts/700.woff");  font-weight: 700;    }
 
 :root {
-	background:    light-dark(#F2F1ED, #26251F);
-	color:         light-dark(#302E27, #CBC9C1);
+	--background: light-dark(#FEFFFF, #1B1D1E);
+	--foreground: light-dark(#262626, #CBDAE6);
+	--selection:  light-dark(#B1D7FE, #3E628A);
+	--link:       light-dark(#0089C4, #A0E77D);
+	--aside:      light-dark(#2D8180, #30E8AA);
+	--header:     light-dark(#CF2D00, #47D5E8);
+	--logo:       light-dark(#0060B7, #6AC1FF);
+	--nav:        light-dark(#ADADAD, #729ABA);
+	--h-rule:     light-dark(#F8F8F8, #272830);
+	--mark:       light-dark(#D82969, #EFD282);
+	--li-marker:  light-dark(#84888C, #729ABA);
+}
+
+:root {
+	background:    var(--background);
+	color:         var(--foreground);
 	color-scheme:  light dark;
 	font:          400 16px/1.5 text, sans-serif;
 }
 
-::selection { background-color: light-dark(#F8DD98, #3E1B6E); }
+::selection { background-color: var(--selection); }
 
 a {
 	color:            inherit;
 	text-decoration:  underline;
 
 	&:hover, &:hover strong {
-		background:      light-dark(#6500F4, #C398FF);
-		color:           light-dark(#F2F1ED, #26251F) !important;
+		background:      var(--link);
+		color:           var(--background) !important;
 		padding:         0  0.25rem;
 		margin:          0 -0.25rem;
 		text-decoration: none;
@@ -44,9 +58,9 @@ article {
 aside {
 	@media (max-width: 45rem) { display: none; }
 
-	color:        light-dark(#6A00FF, #C398FF);
+	color:        var(--aside);
 	font-family:  note;
-	font-size: .75rem;
+	font-size:   .75rem;
 	line-height:  1.25rem;
 	position:     absolute;
 	width:        7.5rem;
@@ -93,7 +107,7 @@ h1 {
 }
 
 h2 {
-	color:  light-dark(#E54C22, #61BF83);
+	color:  var(--header);
 	margin: 2rem 0 .5rem 0;
 }
 
@@ -107,7 +121,7 @@ header {
 	padding:   3rem 1rem;
 
 	a {
-		color:           light-dark(#918F8A, #CBC9C1);
+		color:           var(--nav);
 		font-size:       1rem;
 		font-weight:     500;
 		margin-right:    1rem;
@@ -118,12 +132,12 @@ header {
 	}
 
 	a[href="mailto:email@weshipsoftware.com"] {
-		color: light-dark(#3385CE, #5D99D1);
+		color: var(--logo);
 	}
 }
 
 hr {
-	background: light-dark(#ECEAE6, #34322C);
+	background: var(--h-rule);
 	border:     none;
 	height:    .25rem;
 	margin:     2rem 0;
@@ -132,15 +146,15 @@ hr {
 iframe, img, video {
 	aspect-ratio: 16 / 9;
 	border:       none;
-	box-shadow:   0 0 .25rem #CBC9C1;
+	box-shadow:   0 0 .25rem var(--foreground);
 	margin:       0 0 .5rem -1rem;
 	object-fit:   cover;
 	width:        calc(100% + 2rem);
 }
 
 mark {
-	background:  light-dark(#FFC834, #FFC832);
-	color:       light-dark(#302E27, #26251F);
+	background:  var(--mark);
+	color:       var(--background);
 	font-weight: 500;
 	padding:     0 .125rem;
 	margin:      0 -.125rem;
@@ -223,7 +237,7 @@ hr + ul, body#readme ul {
 
 	li {
 		margin-bottom: 0.5rem;
-		&::marker { color: light-dark(#918F8A, #7F7E79); }
+		&::marker { color: var(--li-marker); }
 	}
 }
 
