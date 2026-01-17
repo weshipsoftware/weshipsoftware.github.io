@@ -1,6 +1,3 @@
-@import "/.priv/stylesheets/colors.css";
-@import "/.priv/stylesheets/fonts.css";
-
 :root {	
 	background:   light-dark(white, #111);
 	color:        light-dark(black, #DDD);

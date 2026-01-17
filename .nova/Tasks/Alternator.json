@@ -2,11 +2,15 @@
   "actions" : {
     "build" : {
       "enabled" : true,
-      "script" : "alternator .lib ."
+      "script" : "alternator sources docs"
+    },
+    "clean" : {
+      "enabled" : true,
+      "script" : "rm -r docs\/*"
     },
     "run" : {
       "enabled" : true,
-      "script" : "alternator .lib . -wp 8080"
+      "script" : "alternator sources docs -wp 8080"
     }
   },
   "openLogOnRun" : "fail"
