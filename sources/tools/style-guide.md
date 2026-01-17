@@ -1,5 +1,6 @@
 ---
 @layout: .layout.html
+@pageTitle: Style Guide
 ---
 
 # Style Guide
@@ -38,9 +39,9 @@ _Italicized_ text stands out when reading.
 Encode pages as UTF–8 to use these characters directly;
 no need for HTML decimals.
 
-| `’`     | Apostrophe | `Option + Shift + ]`              |
-| `–`     | En-dash    | `Option + -`                      |
-| `—`     | Em-dash    | `Option + Shift + -`              |
-| `…`     | Ellipsis   | `Option + ;`                      |
-| `‘` `’` | Quotations | `Option + ]` `Option + Shift + ]` |
-| `“` `”` |            | `Option + [` `Option + Shift + [` |
+| ’   | Apostrophe | `⌥ ⌘ ]`       |
+| –   | En-dash    | `⌥ -`         |
+| —   | Em-dash    | `⌥ ⌘ -`       |
+| …   | Ellipsis   | `⌥ ;`         |
+| ‘ ’ | Quotations | `⌥ ]` `⌥ ⌘ ]` |
+| “ ” |            | `⌥ [` `⌥ ⌘ [` |

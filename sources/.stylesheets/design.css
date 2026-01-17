@@ -68,10 +68,12 @@ aside {
 body { margin: 0; }
 
 code {
-	background: lavender;
+	background: light-dark(
+		hsl(from var(--green\+) h s l / .1),
+		hsl(from var(--green\+) h s l / .2));
 	font-family: code, monospace;
 	line-height: 1rem;
-	padding:     .25rem .125rem 0 .125rem;
+	padding:    .25rem .125rem 0 .125rem;
 }
 
 h1, h2, h3 { font-size: 1rem; }
@@ -224,6 +226,6 @@ hr + ul, body#readme ul {
 
 	li {
 		margin-bottom: 0.5rem;
-		&::marker { color: light-dark(#DDD, #222); }
+		&::marker { color: #DDD; }
 	}
 }
