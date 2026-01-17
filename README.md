@@ -5,7 +5,7 @@ and hosted on [Github Pages].
 
 ## Development
 
-The `alternator` command will build from `sources/` into `docs/`.
+The `alternator` command will build `sources/` into `docs/`.
 
 `-w` watches `sources/` for changes.
 
@@ -32,20 +32,20 @@ pushed to Github.
 
 `docs/.nojekyll` tells Github Pages not to remove dotfiles when deploying.
 
-The `CNAME` file in `sources/` and `docs/` tells Github Pages to accept requests
-from the weshipsoftware.com domain.
+The `CNAME` file in `sources/` and `docs/` tells Github Pages to use the
+weshipsoftware.com domain.
 
 ## Dotfiles
 
 Dotfiles in `sources/` and `docs/` are ignored when building.
 
-Dotfiles in `docs/`, such as `docs/.fonts/` and `docs/.images`),
+Dotfiles in `sources/`, such as `sources/.layout.html` and `sources/.scripts`,
+are resource files used for building
+but do not need to be publicly accessible.
+
+Dotfiles in `docs/`, such as `docs/.fonts/` and `docs/.images`,
 are static assets that do not require building
 but do need to be publicly accessible.
-
-Dotfiles in `sources/`, such as `sources/.layout.html` and `sources/.scripts`,
-are used for building
-but do not need to be publicly accessible.
 
 [Alternator]: https://alternator.sh
 [Github Pages]: https://docs.github.com/en/pages
