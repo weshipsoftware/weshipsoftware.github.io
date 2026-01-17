@@ -1,0 +1,228 @@
+@import "/.priv/stylesheets/colors.css";
+@import "/.priv/stylesheets/fonts.css";
+
+:root {	
+	background:   light-dark(white, #111);
+	color:        light-dark(black, #DDD);
+	color-scheme: light dark;
+	font:         400 16px/1.5 text, sans-serif;	
+}
+
+::selection {
+	background: light-dark(
+		hsl(from var(--apple) h s 33%),
+		hsl(from var(--apple) h s 17%));
+}
+
+a {
+	color:           inherit;
+	font-weight:     500;
+	text-decoration: underline;
+
+	&:hover, &:hover strong {
+		background: light-dark(black, #DDD);
+		color:      light-dark(white, #111) !important;
+		padding: 0  0.25rem;
+		margin:  0 -0.25rem;
+		text-decoration: none;
+	}
+}
+
+article, header, footer {
+	margin:    0 auto;
+	max-width: 26rem;
+	padding:   0 1rem;
+}
+
+article {
+	position: relative;
+	*:first-child { margin-top: 0; }
+	*:last-child  {
+		margin-bottom: 7rem;
+		@media (max-width: 45rem) { margin-bottom: 3rem; }
+	}
+}
+
+aside {
+	@media (max-width: 45rem) { display: none; }
+
+	color: light-dark(
+		var(--blue\+),
+		color-mix(in oklch, var(--purple), white 67%));
+	font-family:  note;
+	font-size:   .875rem;
+	line-height:  1.5rem;
+	position:     absolute;
+	width:        7.5rem;
+
+	&.left {
+		margin-left: -9.5rem;
+		text-align:   right;
+		transform:    rotate(-2deg);
+	}
+
+	&.right {
+		margin-right: -8.5rem;
+		right:         0;
+		transform:     rotate(2deg);
+	}
+}
+
+body { margin: 0; }
+
+/* code {
+	background: lavender;
+	font-family: "Fira Code";
+	font-size: .89rem;
+	letter-spacing: -.025rem;
+	padding: 0 .1rem;
+	margin: 0 -.1rem;
+	font-feature-settings: "ss01", "zero", "onum", "sS04", "CV18";
+} */
+
+h1, h2, h3 { font-size: 1rem; }
+
+h1 {
+	color:       light-dark(black, white);
+	font-weight: 800;
+	margin:      2rem 0 1rem 0;
+	text-transform: uppercase;
+}
+
+h2 {
+	color: light-dark(
+		color-mix(in oklch, var(--red), black 10%),
+		white);
+	font-weight: 700;
+	margin:      2rem 0 .5rem 0;
+}
+
+h3 {
+	font-weight:  700;
+	font-variant: all-small-caps;
+	margin:       1rem 0 .5rem 0;
+}
+
+header {
+	font-size: 0;
+	padding:   3rem 1rem;
+
+	a {
+		color: light-dark(
+			hsl(from black h s 75%),
+			hsl(from #DDD  h s 25%));
+		font-size:      1rem;
+		font-weight:    500;
+		margin-right:   1rem;
+		text-transform: lowercase;
+
+		&:hover { margin-right: .75rem; }
+	}
+
+	a[href="mailto:email@weshipsoftware.com"] {
+		color: light-dark(var(--cerulean), var(--sky));
+	}
+}
+
+hr {
+	background: light-dark(#EEE, #222);
+	border:     none;
+	height:    .25rem;
+	margin:     2rem 0;
+}
+
+iframe, img, video {
+	aspect-ratio: 16 / 9;
+	border:       none;
+	box-shadow:   0 0 .25rem light-dark(black, #111);
+	margin:       0 0 .5rem -1rem;
+	object-fit:   cover;
+	width:        calc(100% + 2rem);
+}
+
+mark {
+	background:  light-dark(var(--yellow\-), var(--amber\+));
+	font-weight: 500;
+	padding:     0 .125rem;
+	margin:      0 -.125rem;
+}
+
+menu {	
+	list-style-type: none;
+	margin:          0;
+	padding:         0;
+	position:        relative;
+
+	li {
+		position: absolute;
+		right:    1rem;
+
+		a {
+			text-decoration: none;
+			&:hover { background: none; }
+			
+		}
+
+		&:hover {
+			cursor: pointer;
+
+			&:before {
+				font-variant: all-small-caps;
+				font-weight:  500;
+				padding:      0 .5rem;
+				content: attr(data-attr);
+			}
+		}
+	}
+
+	li:nth-child(1) { top: 1rem; }
+	li:nth-child(2) { display: none; }
+	li:nth-child(3) { top: 3rem; }
+	li:nth-child(4) { top: 5rem; }
+}
+
+p {
+	margin: 0 0 .5rem 0;
+	strong { font-weight: 700; }
+}
+
+pre {
+	/* background-color: black; */
+	/* color: white; */
+	margin: 0 0 .5rem -1rem;
+	overflow-x: scroll;
+	padding: 1rem;
+	width: 100%;
+
+	code {
+		font-size: .75rem;
+		font-weight: 300;
+		letter-spacing: -.025rem;
+
+		&.language-shell {
+			background-color: inherit;
+			/* color: silver; */
+			display: block;
+			margin: 0;
+			padding: 0;
+			
+			&::first-line {
+				/* color:       white; */
+				font-weight: 500;
+			}
+		}
+	}
+}
+
+strong { font-weight: 500; }
+
+hr + ul, body#readme ul {
+	font-weight: 500;
+	margin:      0 0 .5rem 0;
+	padding:     0;
+
+	li {
+		margin-bottom: 0.5rem;
+		&::marker { color: light-dark(#DDD, #222); }
+	}
+}

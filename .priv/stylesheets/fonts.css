@@ -1,0 +1,54 @@
+@font-face {
+	font-family: text;
+	font-weight: 300;
+	src: url("/.priv/fonts/300.woff2");
+}
+
+@font-face {
+	font-family: text;
+	font-weight: 400;
+	src: url("/.priv/fonts/400.woff2");
+}
+
+@font-face {
+	font-family: text;
+	font-style: italic;
+	font-weight: 400;
+	src: url("/.priv/fonts/400i.woff2");
+}
+
+@font-face {
+	font-family: text;
+	font-weight: 500;
+	src: url("/.priv/fonts/500.woff2");
+}
+
+@font-face {
+	font-family: text;
+	font-style: italic;
+	font-weight: 500;
+	src: url("/.priv/fonts/500i.woff2");
+}
+
+@font-face {
+	font-family: text;
+	font-weight: 700;
+	src: url("/.priv/fonts/700.woff2");
+}
+
+@font-face {
+	font-family: text;
+	font-weight: 800;
+	src: url("/.priv/fonts/800.woff2");
+}
+
+@font-face {
+	font-family: text;
+	font-weight: 900;
+	src: url("/.priv/fonts/900.woff2");
+}
+
+@font-face {
+	font-family: note;
+	src: url("/.priv/fonts/note.woff2");
+}

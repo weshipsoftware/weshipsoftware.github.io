@@ -2,11 +2,11 @@
   "actions" : {
     "build" : {
       "enabled" : true,
-      "script" : "alternator .alternator ."
+      "script" : "alternator .lib ."
     },
     "run" : {
       "enabled" : true,
-      "script" : "alternator .alternator . -wp 8080"
+      "script" : "alternator .lib . -wp 8080"
     }
   },
   "openLogOnRun" : "fail"
