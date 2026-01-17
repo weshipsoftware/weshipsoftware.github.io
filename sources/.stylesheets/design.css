@@ -67,15 +67,12 @@ aside {
 
 body { margin: 0; }
 
-/* code {
+code {
 	background: lavender;
-	font-family: "Fira Code";
-	font-size: .89rem;
-	letter-spacing: -.025rem;
-	padding: 0 .1rem;
-	margin: 0 -.1rem;
-	font-feature-settings: "ss01", "zero", "onum", "sS04", "CV18";
-} */
+	font-family: code, monospace;
+	line-height: 1rem;
+	padding:     .25rem .125rem 0 .125rem;
+}
 
 h1, h2, h3 { font-size: 1rem; }
 
@@ -180,6 +177,9 @@ menu {
 
 p {
 	margin: 0 0 .5rem 0;
+	
+	code { margin: 0 -.125rem; }
+	
 	strong { font-weight: 700; }
 }
 
@@ -212,6 +212,10 @@ pre {
 }
 
 strong { font-weight: 500; }
+
+table {
+	width: 100%;
+}
 
 hr + ul, body#readme ul {
 	font-weight: 500;

@@ -75,6 +75,10 @@
 	--crimson\+:  color-mix(in oklch, var(--magenta), var(--red) calc(100%/12*10));
 }
 
+@font-face { font-family: code; src: url("/.fonts/code.woff2"); }
+
+@font-face { font-family: note; src: url("/.fonts/note.woff2"); }
+
 @font-face { font-family: text; font-style: normal; font-weight: 300; src: url("/.fonts/300.woff2");  }
 @font-face { font-family: text; font-style: normal; font-weight: 400; src: url("/.fonts/400.woff2");  }
 @font-face { font-family: text; font-style: italic; font-weight: 400; src: url("/.fonts/400i.woff2"); }
@@ -83,8 +87,6 @@
 @font-face { font-family: text; font-style: normal; font-weight: 700; src: url("/.fonts/700.woff2");  }
 @font-face { font-family: text; font-style: normal; font-weight: 800; src: url("/.fonts/800.woff2");  }
 @font-face { font-family: text; font-style: normal; font-weight: 900; src: url("/.fonts/900.woff2");  }
-
-@font-face { font-family: note; src: url("/.fonts/note.woff2"); }
 
 :root {	
 	background:   light-dark(white, #111);
@@ -155,15 +157,12 @@ aside {
 
 body { margin: 0; }
 
-/* code {
+code {
 	background: lavender;
-	font-family: "Fira Code";
-	font-size: .89rem;
-	letter-spacing: -.025rem;
-	padding: 0 .1rem;
-	margin: 0 -.1rem;
-	font-feature-settings: "ss01", "zero", "onum", "sS04", "CV18";
-} */
+	font-family: code, monospace;
+	line-height: 1rem;
+	padding:     .25rem .125rem 0 .125rem;
+}
 
 h1, h2, h3 { font-size: 1rem; }
 
@@ -268,6 +267,9 @@ menu {
 
 p {
 	margin: 0 0 .5rem 0;
+	
+	code { margin: 0 -.125rem; }
+	
 	strong { font-weight: 700; }
 }
 
@@ -300,6 +302,10 @@ pre {
 }
 
 strong { font-weight: 500; }
+
+table {
+	width: 100%;
+}
 
 hr + ul, body#readme ul {
 	font-weight: 500;
