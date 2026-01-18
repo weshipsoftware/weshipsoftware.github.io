@@ -39,9 +39,9 @@ _Italicized_ text stands out when reading.
 Encode pages as UTF–8 to use these characters directly;
 no need for HTML decimals.
 
-| ’   | Apostrophe | `⌥ ⌘ ]`       |
-| –   | En-dash    | `⌥ -`         |
-| —   | Em-dash    | `⌥ ⌘ -`       |
-| …   | Ellipsis   | `⌥ ;`         |
-| ‘ ’ | Quotations | `⌥ ]` `⌥ ⌘ ]` |
-| “ ” |            | `⌥ [` `⌥ ⌘ [` |
+| ’   | Apostrophe          | `⌥ ⌘ ]`       |
+| –   | En-dash             | `⌥ -`         |
+| —   | Em-dash             | `⌥ ⌘ -`       |
+| …   | Ellipsis            | `⌥ ;`         |
+| ‘ ’ | Quotations (single) | `⌥ ]` `⌥ ⌘ ]` |
+| “ ” | Quotations (double) | `⌥ [` `⌥ ⌘ [` |

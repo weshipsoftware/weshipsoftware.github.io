@@ -123,7 +123,7 @@ for splitting the profits._
 Our rate is a flat <mark>$4k per week.</mark>
 
 <aside class="right">
-	<a href="mailto:email@weshipsoftware.com">Email us</a> for a
+	<a href="mailto:email@weshipsoftware.com">Email</a> for a
 	free scope consultation.
 </aside>
 
@@ -141,9 +141,9 @@ we can set up ongoing support for a reasonable rate.
 <h2 id="contact">We Want to Hear From You!</h2>
 
 <aside class="left">
-	Close to Nashville or West Palm Beach?
+	Near Nashville or West Palm Beach?
 	<br /><br />
-	Let’s grab a coffee.
+	Let’s get a coffee.
 </aside>
 
 If you’re interested, get in touch.

@@ -48,21 +48,24 @@ aside {
 		color-mix(in oklch, var(--purple), white 67%));
 	font-family:  note;
 	font-size:   .875rem;
-	line-height:  1.5rem;
+	font-weight:  bold;
+	line-height:  1rem;
 	position:     absolute;
 	width:        7.5rem;
 
 	&.left {
 		margin-left: -9.5rem;
 		text-align:   right;
-		transform:    rotate(-2deg);
+		transform:    rotate(-1deg);
 	}
 
 	&.right {
 		margin-right: -8.5rem;
 		right:         0;
-		transform:     rotate(2deg);
+		transform:     rotate(1deg);
 	}
+	
+	a { font-weight: bold; }
 }
 
 body { margin: 0; }
