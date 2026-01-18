@@ -92,7 +92,8 @@
 	background:   light-dark(white, #111);
 	color:        light-dark(black, #DDD);
 	color-scheme: light dark;
-	font:         400 16px/1.5 text, sans-serif;	
+	font:         400 16px/1.5 text, sans-serif;
+	font-size:    clamp(1rem, 2vw, 1.5rem);
 }
 
 ::selection {
@@ -131,7 +132,7 @@ article {
 }
 
 aside {
-	@media (max-width: 45rem) { display: none; }
+	@media (max-width: 46rem) { display: none; }
 
 	color: light-dark(
 		var(--blue\+),
