@@ -63,9 +63,3 @@
   font-weight: 900;
   src: url("/.media/fonts/heavy.woff2"); 
 }
-
-
-:root {
-  font: 400 16px/1.5 text, sans-serif;
-  font-size: clamp(1rem, 2vw, 1.5rem);
-}
