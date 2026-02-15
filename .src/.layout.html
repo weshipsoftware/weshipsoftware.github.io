@@ -22,9 +22,9 @@
     <meta name="viewport"    content="width=device-width, initial-scale=1">
     <script src="/async.js" async></script>
     <script src="/defer.js" defer></script>
-    <title>We Ship Software: Not Found</title>
+    <title><!-- @pageTitle ?? We Ship Software --></title>
   </head>
-  <body class="error" id="notFound">
+  <body class="<!-- @pageClass ?? _ -->" id="<!-- @pageID ?? _ -->">
     <menu>
       <!-- TODO -->
     </menu>
@@ -33,7 +33,7 @@
         <a href="mailto:email@weshipsoftware.com">email@weshipsoftware.com</a>
         <a href="/">ReadMe</a>
       </header>
-      <article><meta http-equiv="refresh" content="0;/" /><h1>Not Found</h1><p>What you’re looking for is probably in our <a href="/">readme</a>.</p></article>
+      <article><!-- @content --></article>
     </main>
   </body>
 </html>
