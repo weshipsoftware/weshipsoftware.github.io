@@ -66,6 +66,175 @@
 
 
 :root {
+  background: light-dark(white, #1C1B1C);
+  color: light-dark(black, #FCFCFC);
+  color-scheme: light dark;
   font: 400 16px/1.5 text, sans-serif;
-  font-size: clamp(1rem, 2vw, 1.5rem);
+  font-size: clamp(1rem, 2vw, 1.25rem);
+}
+
+::selection { background: light-dark(cyan, #757574); }
+
+a {
+  color: inherit;
+  font-weight: 500;
+  text-decoration: underline;
+  
+  &:hover, &:hover strong {
+    background: light-dark(black, #FCFCFC);
+    color: light-dark(white, #1C1B1C) !important;
+    padding: 0 .25rem;
+    margin: 0 -.25rem;
+    text-decoration: none;
+  }
+}
+
+article, header, footer {
+  margin: 0 auto;
+  max-width: 26rem;
+  padding: 0 1rem;
+}
+
+article {
+  position: relative;
+  *:first-child { margin-top: 0; }
+  *:last-child {
+    margin-bottom: 7rem;
+    @media (max-width: 45rem) { margin-bottom: 3rem; }
+  }
+}
+
+aside {
+  @media (max-width: 46rem) { display: none; }
+  
+  color: light-dark(darkslateblue, #AEA3E6);
+  font-family: note;
+  font-size: .875rem;
+  font-weight: bold;
+  line-height: 1rem;
+  position: absolute;
+  width: 7.5rem;
+  
+  &.left {
+    margin-left: -9.5rem;
+    text-align: right;
+    transform: rotate(-1deg);
+  }
+  
+  &.right {
+    margin-right: -8.5rem;
+    right: 0;
+    transform: rotate(1deg);
+  }
+  
+  a { font-weight: bold; }
+}
+
+body { margin: 0; }
+
+h1, h2, h3 { font-size: 1rem; }
+
+h1 {
+  font-weight: 800;
+  margin: 2rem 0 1rem 0;
+  text-transform: uppercase;
+}
+
+h2 {
+  color: light-dark(firebrick, #C6E472);
+  font-weight: 700;
+  margin: 2rem 0 .5rem 0;
+}
+
+h3 {
+  font-weight: 700;
+  font-variant: all-small-caps;
+  margin: 1rem 0 .5rem 0;
+}
+
+header {
+  font-size: 0;
+  padding: 3rem 1rem;
+  
+  a {
+    color: light-dark(silver, #757075);
+    font-size: 1rem;
+    font-weight: 500;
+    margin-right: 1rem;
+    text-transform: lowercase;
+    
+    &:hover { margin-right: .75rem; }
+  }
+  
+  a[href="mailto:email@weshipsoftware.com"] {
+    color: light-dark(mediumblue, #64D3E8);
+  }
+}
+
+hr {
+  background: light-dark(whitesmoke, #323032);
+  border: none;
+  height: .25rem;
+  margin: 2rem 0;
+}
+
+mark {
+  background-color: light-dark(gold, #FFD272);
+  font-weight: 500;
+  padding: 0 .125rem;
+  margin: 0 -.125rem;
+}
+
+menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  
+  li {
+    position: absolute;
+    right: 1rem;
+    
+    a {
+      text-decoration: none;
+      &:hover { background: none; }
+    }
+    
+    &:hover {
+      cursor: pointer;
+      
+      &:before {
+        font-variant: all-small-caps;
+        font-weight: 500;
+        padding: 0 .5rem;
+        content: attr(data-label);
+      }
+    }
+  }
+  
+  li:nth-child(1) { top: 1rem; }
+  li:nth-child(2) { display: none; }
+  li:nth-child(3) { top: 3rem; }
+  li:nth-child(4) { top: 5rem; }
+}
+
+p {
+  margin: 0 0 .5rem 0;
+  /* code { margin: 0 -.125rem; } => #AEE8F4 */
+  strong { font-weight: 700; }
+}
+
+strong { font-weight: 500; }
+
+table { width: 100%; }
+
+hr + ul, body#readme ul {
+  font-weight: 500;
+  margin: 0 0 .5rem 0;
+  padding: 0;
+  
+  li {
+    margin-bottom: .5rem;
+    &::marker { color: light-dark(gainsboro, #A6A6A5); }
+  }
 }
