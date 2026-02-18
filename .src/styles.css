@@ -1,4 +1,5 @@
-/* @include ../.media/fonts/_manifest.css */
+/* @include ../.media/vendor/hybrid.min.css */
+/* @include ../.media/fonts/_manifest.css   */
 
 :root {
   background: light-dark(white, #1C1B1C);
@@ -33,7 +34,7 @@ article, header, footer {
 article {
   position: relative;
   *:first-child { margin-top: 0; }
-  *:last-child {
+  > *:last-child {
     margin-bottom: 7rem;
     @media (max-width: 45rem) { margin-bottom: 3rem; }
   }
@@ -66,6 +67,16 @@ aside {
 }
 
 body { margin: 0; }
+
+code {
+  font-family: code;
+  font-feature-settings:
+    "cv06", "cv18", "cv25",
+    "cv26", "cv27", "cv28",
+    "cv32", "ss01", "ss04",
+    "ss07", "ss09", "ss10",
+    "onum", "zero";
+}
 
 h1, h2, h3 { font-size: 1rem; }
 
@@ -155,8 +166,51 @@ menu {
 
 p {
   margin: 0 0 .5rem 0;
-  /* code { margin: 0 -.125rem; } => #AEE8F4 */
+
+  code {
+    background: light-dark(lightcyan, #353035);
+    font-size: .875rem;
+  }
+
   strong { font-weight: 700; }
+}
+
+pre {
+  background: black;
+  font-size: .75rem;
+  margin: 0 0 .5rem -1rem;
+  overflow-x: scroll;
+  padding: 0;
+  width: calc(100% + 2rem);
+  
+  code {
+    background: black !important;
+    padding: 1rem !important;
+  }
+}
+
+pre + samp {
+  border-top: 1px dashed light-dark(dimgray, #323032);
+  margin-top: -.5rem;
+}
+
+samp {
+  background: black;
+  color: light-dark(white, #FCFCFC);
+  display: block;
+  font-family: text;
+  font-size: .875rem;
+  margin: 0 0 0 -1rem;
+  padding: .5rem 1rem;
+  width: 100%;
+}
+
+samp ~ pre {
+  border-top: 1px dashed light-dark(dimgray, #323032);
+  
+  code {
+    padding-top: .5rem !important;
+  }
 }
 
 strong { font-weight: 500; }

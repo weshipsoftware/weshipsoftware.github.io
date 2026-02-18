@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="We Ship Software">
+    <meta name="generator"   content="alternator">
+    <meta name="keywords"    content="We Ship Software">
+    <meta name="viewport"    content="width=device-width, initial-scale=1">
+    <link rel="stylesheet"               href="/styles.css">
+    <link rel="apple-touch-icon"         href="/.media/images/touch-icon.png">
+    <link rel="icon" sizes="192x192"     href="/.media/images/touch-icon.png">
+    <link rel="icon" type="image/x-icon" href="/.media/images/favicon.ico">
+    <link rel="preload" as="font" type="font/woff2" crossorigin
+      href="/.media/fonts/light.woff2">
+    <link rel="preload" as="font" type="font/woff2" crossorigin
+      href="/.media/fonts/regular.woff2">
+    <link rel="preload" as="font" type="font/woff2" crossorigin
+      href="/.media/fonts/regular-i.woff2">
+    <link rel="preload" as="font" type="font/woff2" crossorigin
+      href="/.media/fonts/medium.woff2">
+    <link rel="preload" as="font" type="font/woff2" crossorigin
+      href="/.media/fonts/medium-i.woff2">
+    <link rel="preload" as="font" type="font/woff2" crossorigin
+      href="/.media/fonts/bold.woff2">
+    <link rel="preload" as="font" type="font/woff2" crossorigin
+      href="/.media/fonts/ultra.woff2">
+    <link rel="preload" as="font" type="font/woff2" crossorigin
+      href="/.media/fonts/heavy.woff2">
+    <link rel="preload" as="font" type="font/woff2" crossorigin
+      href="/.media/fonts/code.woff2">
+    <link rel="preload" as="font" type="font/woff2" crossorigin
+      href="/.media/fonts/note.woff2">
+    <script src="/async.js" async></script>
+    <script src="/defer.js" defer></script>
+    <title>Alternator</title>
+  </head>
+  <body class="bin" id="alternator">
+    <menu>
+      <li data-label="Get Started">
+        <a href="mailto:email@weshipsoftware.com">🚀</a>
+      </li>
+      <li data-label="Search">
+        <a href="/archive">🔍</a>
+      </li>
+      <li data-label="Theme">
+        <a onclick="toggleTheme()">☀️</a>
+      </li>
+      <li data-label="Source">
+        <a href="https://github.com/weshipsoftware">🛠️</a>
+      </li>
+    </menu>
+    <main>
+      <header>
+        <a href="mailto:email@weshipsoftware.com">email@weshipsoftware.com</a>
+        <a href="/">ReadMe</a>
+      </header>
+      <article><h1>Alternator</h1><p>A CLI tool for building static websites on your Mac.<br>Layouts, includes, and variables in HTML, CSS, and JS.<br>Markdown built-in. Localhost server optional.</p><pre><code class="language-plaintext">/website % alternator --help
+USAGE: alternator &lt;source&gt; &lt;target&gt; [--watch] [--port &lt;port&gt;]
+
+ARGUMENTS:
+  &lt;source&gt;             Path to your source directory.
+  &lt;target&gt;             Path to your target directory.
+
+OPTIONS:
+  -w, --watch          Rebiuld &lt;source&gt; as you save changes.
+  -p, --port &lt;port&gt;    Serve &lt;target&gt; on localhost:&lt;port&gt;.
+  --version            Show the version.
+  -h, --help           Show help information.
+</code></pre><hr><ul><li><a href="#installation">Installation</a></li><li><a href="#getting-started">Getting Started</a></li><li><a href="#layouts">Layouts</a></li><li><a href="#includes">Includes</a></li><li><a href="#variables">Variables</a></li><li><a href="#pro-tips">Pro Tips</a></li></ul><hr><h2 id="installation">
+  Installation
+</h2><p>Download the latest version and add it to your path.</p><aside class="right">
+  Check out the source code on the
+  <a href="https://github.com/weshipsoftware/alternator">
+    GitHub repo</a>.
+</aside><pre><code class="language-shell">curl -O https://weshipsoftware.com/.share/alternator
+sudo mv alternator /usr/local/bin/alternator
+</code></pre><h2 id="getting-started">
+  Getting Started
+</h2><p>Alternator reads the files in your <code>&lt;source&gt;</code> directory, fills in the layouts, includes, and variables, then saves the rendered files to your <code>&lt;target&gt;</code> directory for publishing.</p><pre><code class="language-shell">/website % alternator path/to/source path/to/target
+</code></pre><p>Layouts, includes, and variables are defined in <code>&lt;source&gt;</code> files using comments and metadata. More on that later.</p><h3>Watching for Changes</h3><p>Use the <code>--watch</code> flag to monitor <code>&lt;source&gt;</code> for changes and automatically render after each save.</p><pre><code class="language-shell">/website % alternator path/to/source path/to/target --watch
+[watch] watching path/to/source for changes
+^c to stop
+</code></pre><h3>Localhost Server</h3><p>Add a <code>--port</code> to serve <code>&lt;target&gt;</code> on a localhost server.</p><pre><code class="language-shell">/website % alternator path/to/source path/to/target --port 8080
+[serve] serving path/to/target at http://localhost:8080
+^c to stop
+</code></pre><h3>Putting It Together</h3><p>Combine <code>--watch</code> and <code>--port</code> for a simple dev setup.</p><pre><code class="language-shell">/website % alternator path/to/source path/to/target -wp 8080
+[watch] watching path/to/source for changes
+[serve] serving path/to/target at http://localhost:8080
+^c to stop
+</code></pre><h2 id="layouts">
+  Layouts
+</h2><p>Any file can be used as a <em>layout</em> by adding a <code>@content</code> comment to specify where its contents should be rendered.</p><samp>path/to/source/.layouts/main.html</samp><pre><code class="language-html">&lt;!doctype html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Alternator&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;!-- @content --&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre><p>The <code>@layout</code> metadata key defines which layout a file should use. The layout file path is relative to <code>&lt;source&gt;</code>.</p><samp>path/to/source/index.html</samp><pre><code class="language-html">---
+@layout: .layouts/main.html
+---
+&lt;h1&gt;Welcome&lt;/h1&gt;
+&lt;p&gt;Hello, world!&lt;/p&gt;
+</code></pre><p>Alternator will render a file inside its layout.</p><samp>path/to/target/index.html</samp><pre><code class="language-html">&lt;!doctype html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Alternator&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Welcome&lt;/h1&gt;
+    &lt;p&gt;Hello, world!&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre><h2 id="includes">
+  Includes
+</h2><p>Files can include other files using an <code>@include</code> comment. The included file path is relative to <code>&lt;source&gt;</code>.</p><samp>path/to/source/app.js</samp><pre><code class="language-js">// @include .scripts/foo.js
+// @include .scripts/bar.js
+</code></pre><samp>path/to/source/.scripts/foo.js</samp><pre><code class="language-js">function foo() {
+  console.log("hello")
+}
+</code></pre><samp>path/to/source/.scripts/bar.js</samp><pre><code class="language-js">function bar() {
+  console.log("world")
+}
+</code></pre><p>Alternator will render included files in place.</p><samp>path/to/target/app.js</samp><pre><code class="language-js">function foo() {
+  console.log("hello")
+}
+function bar() {
+  console.log("world")
+}
+</code></pre><h2 id="variables">
+  Variables
+</h2><p>Variables are defined with <code>@</code> arguments on includes.</p><samp>path/to/source/design.css</samp><pre><code class="language-css">/* @include .styles/fontFace.css @fontName: Helvetica */
+</code></pre><p>And referenced in comments.</p><samp>path/to/source/.styles/fontFace.css</samp><pre><code class="language-css">@font-face {
+  font-family: /* @fontName */;
+  src: url("/fonts//* @fontName */.woff2");
+}
+</code></pre><p>Alternator will render variables in place.</p><samp>path/to/target/design.css</samp><pre><code class="language-css">@font-face {
+  font-family: Helvetica;
+  src: url("/fonts/Helvetica.woff2");
+}
+</code></pre><h2 id="pro-tips">
+  Pro Tips
+</h2><h3>Structuring Your Site</h3><p>Alternator has no directory structure requirements so you can organize <code>&lt;source&gt;</code> however you like.</p><p>The structure of <code>&lt;source&gt;</code> will be copied to <code>&lt;target&gt;</code>.</p><p>The structure of <code>&lt;target&gt;</code> becomes published URLs.</p><h3>Keeping <code>&lt;target&gt;</code> Clean</h3><p>Removing a <code>&lt;source&gt;</code> file also deletes its <code>&lt;target&gt;</code>.</p><h3>Ignoring Dotfiles</h3><p>Use a <code>.</code> at the beginning of a file or directory name to tell Alternator to ignore it, both in <code>&lt;source&gt;</code> and <code>&lt;target&gt;</code>.</p><p><code>&lt;source&gt;</code> dotfiles won’t be moved to <code>&lt;target&gt;</code>.</p><p><code>&lt;target&gt;</code> dotfiles won’t be cleaned and will be published.</p><p>This leaves config files such as <code>.env</code> and <code>.git/</code> untouched.</p><p>Use this feature to keep <code>&lt;source&gt;</code> layouts and includes from being moved to <code>&lt;target&gt;</code> and prevent assets in <code>&lt;target&gt;</code> from being cleaned up.</p><h3>Using Markdown</h3><p>Markdown files (<code>.md</code>) are automatically converted to HTML and copied to <code>&lt;target&gt;</code> as <code>.html</code> files.</p><h3>Multiple Include Arguments</h3><p><code>@include</code> statements can have multiple arguments, formatted as <code>@key: value</code> and separated by spaces:</p><p><code>// @include sample.js @foo: true @bar: false</code></p><h3>Fallback Variable Values</h3><p>Define fallback values for variables with the <code>??</code> operator:</p><p><code>&lt;!-- @foo ?? bar --&gt;</code></p><h3>Layout Your Includes</h3><p>Included files can have their own layouts, either defined in their metadata or as an argument passed with the <code>@include</code> statement:</p><p><code>&lt;!-- @include .posts/post.md @layout: .postLayout.html --&gt;</code></p><p>Bypass an included file’s layout with <code>@layout: false</code>.</p><h3>Managing Static Assets</h3><p>Files that can’t be rendered, such as images, are considered static assets and copied as-is from <code>&lt;source&gt;</code> to <code>&lt;target&gt;</code>.</p><p>Put static assets directly in <code>&lt;target&gt;</code> under a <code>.</code> directory like <code>.assets/</code> or <code>.images/</code> to avoid excess copies.</p><h3>Clean URLs</h3><p>The localhost server supports clean urls.</p><p>For example, <code>&lt;target&gt;/foo.html</code> is available at <code>localhost:8080/foo</code> so you don’t have to clutter your project with extra directories and index files.</p><p><em>Not all production servers support this.</em></p><h3>Displaying a 404 Not Found Page</h3><p>If the localhost server cannot find a requested file, it will return the <em>404 Not Found</em> HTTP response status code.</p><p>If <code>&lt;target&gt;/404.html</code> exists, it will be returned for any not found HTML requests.</p><p>No response body will be returned for non-HTML requests.</p><p><em>Not all production servers support this.</em></p><h3>Publishing Your Site</h3><p>Sites can be published to any host that serves static files.</p><p>This site is hosted on GitHub using <code>/docs</code> as the <code>&lt;target&gt;</code>.</p><p>Check your web host’s documentation for specifics.</p></article>
+    </main>
+  </body>
+</html>

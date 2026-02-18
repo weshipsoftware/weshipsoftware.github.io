@@ -1,6 +1,10 @@
+pre code.hljs{display:block;overflow-x:auto;padding:1em}code.hljs{padding:3px 5px}.hljs{background:#1d1f21;color:#c5c8c6}.hljs span::selection,.hljs::selection{background:#373b41}.hljs span::-moz-selection,.hljs::-moz-selection{background:#373b41}.hljs-name,.hljs-title{color:#f0c674}.hljs-comment,.hljs-meta,.hljs-meta .hljs-keyword{color:#707880}.hljs-deletion,.hljs-link,.hljs-literal,.hljs-number,.hljs-symbol{color:#c66}.hljs-addition,.hljs-doctag,.hljs-regexp,.hljs-selector-attr,.hljs-selector-pseudo,.hljs-string{color:#b5bd68}.hljs-attribute,.hljs-code,.hljs-selector-id{color:#b294bb}.hljs-bullet,.hljs-keyword,.hljs-selector-tag,.hljs-tag{color:#81a2be}.hljs-subst,.hljs-template-tag,.hljs-template-variable,.hljs-variable{color:#8abeb7}.hljs-built_in,.hljs-quote,.hljs-section,.hljs-selector-class,.hljs-type{color:#de935f}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:700}
 @font-face {
   font-family: code;
-  src: url("/.media/fonts/code.woff2");
+  src: url("/.media/fonts/code.woff2") format("woff2-variations"),
+       url("/.media/fonts/code.woff2") format("woff-variations");
+  font-weight: 300 700;
+  font-style: normal;
 }
 
 @font-face {
@@ -98,7 +102,7 @@ article, header, footer {
 article {
   position: relative;
   *:first-child { margin-top: 0; }
-  *:last-child {
+  > *:last-child {
     margin-bottom: 7rem;
     @media (max-width: 45rem) { margin-bottom: 3rem; }
   }
@@ -131,6 +135,16 @@ aside {
 }
 
 body { margin: 0; }
+
+code {
+  font-family: code;
+  font-feature-settings:
+    "cv06", "cv18", "cv25",
+    "cv26", "cv27", "cv28",
+    "cv32", "ss01", "ss04",
+    "ss07", "ss09", "ss10",
+    "onum", "zero";
+}
 
 h1, h2, h3 { font-size: 1rem; }
 
@@ -220,8 +234,51 @@ menu {
 
 p {
   margin: 0 0 .5rem 0;
-  /* code { margin: 0 -.125rem; } => #AEE8F4 */
+
+  code {
+    background: light-dark(lightcyan, #353035);
+    font-size: .875rem;
+  }
+
   strong { font-weight: 700; }
+}
+
+pre {
+  background: black;
+  font-size: .75rem;
+  margin: 0 0 .5rem -1rem;
+  overflow-x: scroll;
+  padding: 0;
+  width: calc(100% + 2rem);
+  
+  code {
+    background: black !important;
+    padding: 1rem !important;
+  }
+}
+
+pre + samp {
+  border-top: 1px dashed light-dark(dimgray, #323032);
+  margin-top: -.5rem;
+}
+
+samp {
+  background: black;
+  color: light-dark(white, #FCFCFC);
+  display: block;
+  font-family: text;
+  font-size: .875rem;
+  margin: 0 0 0 -1rem;
+  padding: .5rem 1rem;
+  width: 100%;
+}
+
+samp ~ pre {
+  border-top: 1px dashed light-dark(dimgray, #323032);
+  
+  code {
+    padding-top: .5rem !important;
+  }
 }
 
 strong { font-weight: 500; }

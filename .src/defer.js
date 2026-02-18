@@ -1,6 +1,8 @@
+// @include ../.media/vendor/highlight.min.js
+hljs.highlightAll();
+
 function storeColorScheme() {
-  localStorage.setItem(
-    'colorScheme',
+  localStorage.setItem('colorScheme',
     document.documentElement.style.colorScheme)
 }
 
