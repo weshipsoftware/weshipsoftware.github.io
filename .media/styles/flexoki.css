@@ -1,0 +1,163 @@
+:root {
+  --paper:    rgb(255, 252, 240);
+  --base-50:  rgb(242, 240, 229);
+  --base-100: rgb(230, 228, 217);
+  --base-150: rgb(218, 216, 206);
+  --base-200: rgb(206, 205, 195);
+  --base-300: rgb(183, 181, 172);
+  --base-500: rgb(135, 133, 128);
+  --base-600: rgb(111, 110, 105);
+  --base-700: rgb(87, 86, 83);
+  --base-800: rgb(64, 62, 60);
+  --base-850: rgb(52, 51, 49);
+  --base-900: rgb(40, 39, 38);
+  --base-950: rgb(28, 27, 26);
+  --black:    rgb(16, 15, 15);
+  
+  --red-50:  rgb(255, 225, 213);
+  --red-100: rgb(255, 202, 187);
+  --red-150: rgb(253, 178, 162);
+  --red-200: rgb(248, 154, 138);
+  --red-300: rgb(232, 112, 95);
+  --red-400: rgb(209, 77, 65);
+  --red-500: rgb(192, 62, 53);
+  --red-600: rgb(175, 48, 41);
+  --red-700: rgb(148, 40, 34);
+  --red-800: rgb(108, 32, 28);
+  --red-850: rgb(85, 27, 24);
+  --red-900: rgb(62, 23, 21);
+  --red-950: rgb(38, 19, 18);
+
+  --orange-50:  rgb(255, 231, 206);
+  --orange-100: rgb(254, 211, 175);
+  --orange-150: rgb(252, 193, 146);
+  --orange-200: rgb(249, 174, 119);
+  --orange-300: rgb(236, 139, 73);
+  --orange-400: rgb(218, 112, 44);
+  --orange-500: rgb(203, 97, 32);
+  --orange-600: rgb(188, 82, 21);
+  --orange-700: rgb(157, 67, 16);
+  --orange-800: rgb(113, 50, 13);
+  --orange-850: rgb(89, 41, 13);
+  --orange-900: rgb(64, 32, 13);
+  --orange-950: rgb(39, 24, 14);
+
+  --yellow-50:  rgb(250, 238, 198);
+  --yellow-100: rgb(246, 226, 160);
+  --yellow-150: rgb(241, 214, 126);
+  --yellow-200: rgb(236, 203, 96);
+  --yellow-300: rgb(223, 180, 49);
+  --yellow-400: rgb(208, 162, 21);
+  --yellow-500: rgb(190, 146, 7);
+  --yellow-600: rgb(173, 131, 1);
+  --yellow-700: rgb(142, 107, 1);
+  --yellow-800: rgb(102, 77, 1);
+  --yellow-850: rgb(80, 61, 2);
+  --yellow-900: rgb(58, 45, 4);
+  --yellow-950: rgb(36, 30, 8);
+
+  --green-50:  rgb(237, 238, 207);
+  --green-100: rgb(221, 226, 178);
+  --green-150: rgb(205, 213, 151);
+  --green-200: rgb(190, 201, 126);
+  --green-300: rgb(160, 175, 84);
+  --green-400: rgb(135, 154, 57);
+  --green-500: rgb(118, 141, 33);
+  --green-600: rgb(102, 128, 11);
+  --green-700: rgb(83, 105, 7);
+  --green-800: rgb(61, 76, 7);
+  --green-850: rgb(49, 61, 7);
+  --green-900: rgb(37, 45, 9);
+  --green-950: rgb(26, 30, 12);
+
+  --cyan-50:  rgb(221, 241, 228);
+  --cyan-100: rgb(191, 232, 217);
+  --cyan-150: rgb(162, 222, 206);
+  --cyan-200: rgb(135, 211, 195);
+  --cyan-300: rgb(90, 189, 172);
+  --cyan-400: rgb(58, 169, 159);
+  --cyan-500: rgb(47, 150, 141);
+  --cyan-600: rgb(36, 131, 123);
+  --cyan-700: rgb(28, 108, 102);
+  --cyan-800: rgb(22, 79, 74);
+  --cyan-850: rgb(20, 63, 60);
+  --cyan-900: rgb(18, 47, 44);
+  --cyan-950: rgb(16, 31, 29);
+
+  --blue-50:  rgb(225, 236, 235);
+  --blue-100: rgb(198, 221, 232);
+  --blue-150: rgb(171, 207, 226);
+  --blue-200: rgb(146, 191, 219);
+  --blue-300: rgb(102, 160, 200);
+  --blue-400: rgb(67, 133, 190);
+  --blue-500: rgb(49, 113, 178);
+  --blue-600: rgb(32, 94, 166);
+  --blue-700: rgb(26, 79, 140);
+  --blue-800: rgb(22, 59, 102);
+  --blue-850: rgb(19, 48, 81);
+  --blue-900: rgb(18, 37, 59);
+  --blue-950: rgb(16, 26, 36);
+
+  --purple-50:  rgb(240, 234, 236);
+  --purple-100: rgb(226, 217, 233);
+  --purple-150: rgb(211, 202, 230);
+  --purple-200: rgb(196, 185, 224);
+  --purple-300: rgb(166, 153, 208);
+  --purple-400: rgb(139, 126, 200);
+  --purple-500: rgb(115, 94, 181);
+  --purple-600: rgb(94, 64, 157);
+  --purple-700: rgb(79, 54, 133);
+  --purple-800: rgb(60, 42, 98);
+  --purple-850: rgb(49, 35, 78);
+  --purple-900: rgb(38, 28, 57);
+  --purple-950: rgb(26, 22, 35);
+
+  --magenta-50:  rgb(254, 228, 229);
+  --magenta-100: rgb(252, 207, 218);
+  --magenta-150: rgb(249, 185, 207);
+  --magenta-200: rgb(244, 164, 194);
+  --magenta-300: rgb(228, 125, 168);
+  --magenta-400: rgb(206, 93, 151);
+  --magenta-500: rgb(183, 69, 131);
+  --magenta-600: rgb(160, 47, 111);
+  --magenta-700: rgb(135, 40, 94);
+  --magenta-800: rgb(100, 31, 70);
+  --magenta-850: rgb(79, 27, 57);
+  --magenta-900: rgb(57, 23, 43);
+  --magenta-950: rgb(36, 19, 29);
+  
+  --tx:   light-dark(var(--black),    var(--base-200)); /* Primary text                      */
+  --tx-2: light-dark(var(--base-600), var(--base-500)); /* Muted text, Puncuation, Operators */
+  --tx-3: light-dark(var(--base-300), var(--base-700)); /* Faint text, Comments              */
+  
+  --ui:   light-dark(var(--base-100), var(--base-900)); /* Borders         */
+  --ui-2: light-dark(var(--base-150), var(--base-850)); /* Hovered borders */
+  --ui-3: light-dark(var(--base-200), var(--base-800)); /* Active borders  */
+  
+  --bg:   light-dark(var(--paper),   var(--black));    /* Main background      */
+  --bg-2: light-dark(var(--base-50), var(--base-950)); /* Secondary background */
+  
+  --re:   light-dark(var(--red-600), var(--red-400)); /* Error text, Invalid, Imports */
+  --re-2: light-dark(var(--red-400), var(--red-600));
+
+  --or:   light-dark(var(--orange-600), var(--orange-400)); /* Warning text, Functions */
+  --or-2: light-dark(var(--orange-400), var(--orange-600));
+
+  --ye:   light-dark(var(--yellow-600), var(--yellow-400)); /* Constants */
+  --ye-2: light-dark(var(--yellow-400), var(--yellow-600));
+
+  --gr:   light-dark(var(--green-600), var(--green-400)); /* Success text, Keywords */
+  --gr-2: light-dark(var(--green-400), var(--green-600));
+
+  --cy:   light-dark(var(--cyan-600), var(--cyan-400)); /* Links, Active states, Strings */
+  --cy-2: light-dark(var(--cyan-400), var(--cyan-600));
+
+  --bl:   light-dark(var(--blue-600), var(--blue-400)); /* Variables, Attributes */
+  --bl-2: light-dark(var(--blue-400), var(--blue-600));
+
+  --pu:   light-dark(var(--purple-600), var(--purple-400)); /* Numbers */
+  --pu-2: light-dark(var(--purple-400), var(--purple-600));
+
+  --ma:   light-dark(var(--magenta-600), var(--magenta-400)); /* Language features */
+  --ma-2: light-dark(var(--magenta-400), var(--magenta-600));
+}

@@ -17,4 +17,8 @@ window.matchMedia('(prefers-color-scheme: dark)')
 {
   document.documentElement.style.colorScheme = e.matches ? 'dark' : 'light'
   storeColorScheme()
+  })
+
+addEventListener("keyup", (e) => {
+  if (e.key == "d") toggleTheme()
 })
