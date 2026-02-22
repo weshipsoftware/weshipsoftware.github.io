@@ -19,7 +19,7 @@ a {
   text-decoration: underline;
   
   &:hover, &:hover strong {
-    background: light-dark(black, gainsboro);
+    background: light-dark(black, whitesmoke);
     color: light-dark(white, #111) !important;
     padding: 0 .125rem;
     margin: 0 -.125rem;
@@ -79,6 +79,7 @@ code {
 }
 
 h1 {
+  color: light-dark(black, white);
   font-size: 1.25rem;
   font-weight: 800;
   margin: 2rem 0 1rem 0;
@@ -86,13 +87,14 @@ h1 {
 }
 
 h2 {
-  color: light-dark(firebrick, cadetblue);
+  color: light-dark(firebrick, white);
   font-size: 1.125rem;
   font-weight: 700;
   margin: 3rem 0 .5rem 0;
 }
 
 h3 {
+  color: light-dark(black, ghostwhite);
   font-size: 1rem;
   font-weight: 700;
   font-variant: all-small-caps;
@@ -140,7 +142,7 @@ hr {
 
 mark {
   background-color: light-dark(gold, darkslateblue);
-  color: light-dark(black, gainsboro);
+  color: light-dark(black, whitesmoke);
   font-weight: 500;
   padding: 0 .125rem;
   margin: 0 -.125rem;
@@ -197,6 +199,7 @@ strong { font-weight: 500; }
 table { width: 100%; }
 
 hr + ul, body#readme ul {
+  color: light-dark(black, gainsboro);
   font-weight: 500;
   margin: 0 0 .5rem 0;
   padding: 0;
