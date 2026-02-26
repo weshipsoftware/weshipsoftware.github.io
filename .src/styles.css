@@ -7,11 +7,11 @@
   color: light-dark(black, silver);
   color-scheme: light dark;
   font: 400 16px/1.5 text, sans-serif;
-  font-size: clamp(1rem, 2vw, 1.25rem);
-  line-height: 1.25em;
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  line-height: 1.5em;
 }
 
-::selection { background: light-dark(aquamarine, teal); }
+::selection { background: light-dark(cyan, teal); }
 
 a {
   color: inherit;
@@ -141,7 +141,7 @@ hr {
 }
 
 mark {
-  background-color: light-dark(gold, darkslateblue);
+  background-color: light-dark(yellow, darkslateblue);
   color: light-dark(black, whitesmoke);
   font-weight: 500;
   padding: 0 .125rem;
@@ -198,11 +198,22 @@ strong { font-weight: 500; }
 
 table { width: 100%; }
 
-hr + ul, body#readme ul {
+ul {
+  list-style-type: "👉  ";
+  margin: 0 0 .5rem 0;
+  padding: 0;
+  li {
+    margin-bottom: .5rem; }
+}
+
+/*hr + ul, body#readme ul {
   color: light-dark(black, gainsboro);
   font-weight: 500;
   margin: 0 0 .5rem 0;
   padding: 0;
   
   li { margin-bottom: .5rem; }
-}
+}*/
+
+
+#readme header a:last-child { display: none; }

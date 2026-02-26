@@ -5,150 +5,77 @@
 @pageID: readme
 ---
 
-
-
-
-
 # Hello, World!
 
 <p>
-  <mark>We Ship Software</mark> is a small software development agency
-  by <a href="https://jarrodtaylor.me/">Jarrod Taylor</a>
+  <mark>We Ship Software</mark> is a small development agency
+  run by <a href="https://jarrodtaylor.me/">Jarrod Taylor</a>
   & <a href="https://richard.is/">Richard Rissanen</a>
   focused on one thing: <strong>shipping software</strong>.
 </p>
 
-We’re veterans of the tech industry now working with
-**independent, product–led businesses** to build and ship awesome software.
+We’re veterans of the tech industry, hands–on engineers,
+helping to build **independent, product–led businesses**.
 
+_And we’re really f\*cking good at it._
 
-
-
-
----
-
-- [Why Are We Doing This?](#why)
-- [Where Do We Fit?](#fit)
-- [How Much Does It Cost?](#price)
-- [We Want to Hear From You!](#contact)
-
----
-
-
-
-
-
-<h2 id="why">
-  Why Are We Doing This?
-</h2>
-
-How many businesses could take off with better software?
-Yet freelancers are unreliable, hiring platforms are a mess,
-and recruiting agencies are too expensive.
-
-We started _We Ship Software_ to offer something better.
+Hiring platforms are a mess,
+freelancers are unreliable,
+recruiting agencies are too expensive.
 
 <aside class="right">
   How it should have been done all along.
 </aside>
 
-Our goal is to **de–risk development** by working directly
+We started _We Ship Software_ to offer something better,
+to **de–risk software development** by working directly
 with a small roster of clients to build and ship exactly what
 they need on a predictable timeline for a reasonable rate.
 
+<form onkeyup="updateEmail()">
+  <p><strong>What are you working on?</strong></p>
+  <input id="name">
+  <label for="name">Name</label>
+  <p>
+    <a href="mailto:email@weshipsoftware.com" id="sendBtn">📬 Send</a>
+  </p>
+</form>
 
+<style>
+  form {
+    background: aliceblue;
+    background: linear-gradient(0deg, aliceblue 0%, azure 100%);
+    border-radius: .75rem;
+    box-shadow: 0 0 2px silver;
+    margin: 1.5rem 0 1rem -1rem;
+    padding: 1rem 1rem .5rem 1rem;
+    width: 100%;
+    
+    p:last-child { text-align: right; }
+    #sendBtn { background: white; }
+  }
+</style>
 
+<script>
+  function updateEmail() {
+    let name = document.getElementById("name").value
 
+    let link = document.getElementById("sendBtn")
+    link.href = "mailto:email@weshipsoftware.com?subject=" + name
+  }
+</script>
 
-<h2 id="fit">
-  Where Do We Fit?
-</h2>
+## What We Do
 
-
-
-### Bespoke Development
-
-If all this tech stuff is not the core of your business, hiring full–time
-project managers and engineers is too much.
-
-We’ll work with you to turn your ideas into shipping software that will
-**amplify your business**. This could be a website that generates better leads,
-a mobile app to connect with your customers, a process automation that scales
-your service, or even a completely new product that expands your market.
-
-<aside class="left">
-  You won’t want to go anywhere else.
-</aside>
-
-It’s our job to handle all the small details that make sure your project is
-done correctly from start to finish so you can stay focused on running the rest
-of your business.
-
-
-
-### Hands–On Consulting
-
-If all this tech stuff _is_ your business and you could use an assist,
-**tap into our years of industry experience** building and shipping software
-used by thousands of businesses and millions of customers all around the world.
-
-This is perfect if you’re starting a new venture, want to overhaul an in–flight
-project, or need to scale up faster than you can hire. **We’ll improve
-every step of the process**.
-
-<aside class="right">
-  We work best with people who are willing to try new approaches.
-</aside>
-
-And we’re not just strategy advisors, _we like to roll up our sleeves and do
-the hard work_. We have a clear sense of how things should work, we’re eager
-to figure out what we don’t yet know, and we’re particularly effective at
-short–circuiting bureaucracy and red tape.
-
-
-
-### Creative Partnerships
-
-For content creators growing a niche online audience,
-merch sales and ad spots are the go–to revenue streams.
-
-Why not step it up and create a stable business?
-
-<aside class="left">
-  This is by far the best model for growing a business.
-</aside>
-
-Partner with us to build a **productized service tailored to your audience**.
-Your connection to your fans almost guarantees a product–market fit.
-
-We build it, you pitch it. _And we’ll cover the development costs in exchange
-for splitting the profits._
-
-
-
-
-
-<h2 id="price">
-  How Much Does It Cost?
-</h2>
-
-Our rate is a flat <mark>$4k per week.</mark>
-
-<aside class="right">
-  <a href="mailto:email@weshipsoftware.com">Email</a> for a
-  free scope consultation.
-</aside>
-
-No worries about hours, no minimum contract lengths,
-and no need to negotiate scope changes when you come
-up with a great new idea.
-
-Once the project wraps up and you’re happy with our work,
-we can set up ongoing support for a reasonable rate.
-
-
-
-
+- [Hands–On Startup Consulting]()<br />
+  For founders with traction,
+  we will level up your organization to help keep you sane.
+- [In–House, Bespoke Development]()<br />
+  For independent business owners with fresh ideas,
+  we will turn them into features, products, and services.
+- [Creative Partnerships]() <mark>Coming Soon</mark><br />
+  For creators with a growing audience,
+  we will work with you to build something that resonates with your fans.
 
 <h2 id="contact">
   We Want to Hear From You!
@@ -160,8 +87,7 @@ we can set up ongoing support for a reasonable rate.
   Let’s get a coffee.
 </aside>
 
-If you’re interested, get in touch.
-We’ll answer any questions, see if we’re a good fit, and kick things off.
+Let us know what you’re working on.
+We’ll answer any questions, see if we’re a good fit, then kick things off.
 
-Let us know what you’re working on at:
 **[email@weshipsoftware.com](mailto:email@weshipsoftware.com)**
