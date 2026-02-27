@@ -715,24 +715,6 @@ scope:"char.escape",relevance:0}]},s],g=[...r]
 aliases:["yml"],contains:r}}})();hljs.registerLanguage("yaml",e)})();
 hljs.highlightAll();
 
-function storeColorScheme() {
-  localStorage.setItem('colorScheme',
-    document.documentElement.style.colorScheme)
-}
-
-function toggleTheme() {
-  document.documentElement.style.colorScheme = 
-    document.documentElement.style.colorScheme === 'dark' ? 'light' : 'dark'
-	storeColorScheme()
-}
-
-window.matchMedia('(prefers-color-scheme: dark)')
-  .addEventListener('change', function(e)
-{
-  document.documentElement.style.colorScheme = e.matches ? 'dark' : 'light'
-  storeColorScheme()
-  })
-
 addEventListener("keyup", (e) => {
-  if (e.key == "d") toggleTheme()
+  // if (e.key == "d") toggleTheme()
 })

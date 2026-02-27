@@ -3,15 +3,14 @@
 /* @include ../.media/fonts/_manifest.css   */
 
 :root {
-  background: light-dark(white, #111);
-  color: light-dark(black, silver);
-  color-scheme: light dark;
+  background: white;
+  color: black;
   font: 400 16px/1.5 text, sans-serif;
   font-size: clamp(1rem, 2vw, 1.5rem);
   line-height: 1.5em;
 }
 
-::selection { background: light-dark(cyan, teal); }
+::selection { background: cyan; }
 
 a {
   color: inherit;
@@ -19,8 +18,8 @@ a {
   text-decoration: underline;
   
   &:hover, &:hover strong {
-    background: light-dark(black, whitesmoke);
-    color: light-dark(white, #111) !important;
+    background: black;
+    color: white !important;
     padding: 0 .125rem;
     margin: 0 -.125rem;
     text-decoration: none;
@@ -35,18 +34,16 @@ article, header, footer {
 }
 
 article {
+  padding-bottom: 7rem;
   position: relative;
   *:first-child { margin-top: 0; }
-  > *:last-child {
-    margin-bottom: 7rem;
-    @media (max-width: 45rem) { margin-bottom: 3rem; }
-  }
+  @media (max-width: 45rem) { padding-bottom: 3rem; }
 }
 
 aside {
   @media (max-width: 46rem) { display: none; }
   
-  color: light-dark(indigo, slategray);
+  color: indigo;
   font-family: note;
   font-size: .875rem;
   line-height: 1rem;
@@ -79,7 +76,6 @@ code {
 }
 
 h1 {
-  color: light-dark(black, white);
   font-size: 1.25rem;
   font-weight: 800;
   margin: 2rem 0 1rem 0;
@@ -87,14 +83,13 @@ h1 {
 }
 
 h2 {
-  color: light-dark(firebrick, white);
+  color: firebrick;
   font-size: 1.125rem;
   font-weight: 700;
   margin: 3rem 0 .5rem 0;
 }
 
 h3 {
-  color: light-dark(black, ghostwhite);
   font-size: 1rem;
   font-weight: 700;
   font-variant: all-small-caps;
@@ -108,7 +103,7 @@ header {
   padding: 3rem 1rem;
   
   a {
-    color: light-dark(silver, dimgray);
+    color: silver;
     font-size: 1rem;
     font-weight: 400;
     margin-right: 1rem;
@@ -119,7 +114,7 @@ header {
   }
   
   a[href="mailto:email@weshipsoftware.com"] {
-    color: light-dark(mediumblue, greenyellow);
+    color: mediumblue;
     font-weight: 500;
     
     &:before {
@@ -134,15 +129,15 @@ header {
 }
 
 hr {
-  background: light-dark(whitesmoke, #222);
+  background: whitesmoke;
   border: none;
   height: .25rem;
   margin: 2rem 0;
 }
 
 mark {
-  background-color: light-dark(yellow, darkslateblue);
-  color: light-dark(black, whitesmoke);
+  background-color: yellow;
+  color: black;
   font-weight: 500;
   padding: 0 .125rem;
   margin: 0 -.125rem;
@@ -174,13 +169,13 @@ pre {
 }
 
 pre + samp {
-  border-top: 1px dashed light-dark(dimgray, #323032);
+  border-top: 1px dashed dimgray;
   margin-top: -.5rem;
 }
 
 samp {
   background: black;
-  color: light-dark(white, #FCFCFC);
+  color: white;
   display: block;
   font-family: text;
   font-size: .875rem;
@@ -190,7 +185,7 @@ samp {
 }
 
 samp ~ pre {
-  border-top: 1px dashed light-dark(dimgray, #323032);
+  border-top: 1px dashed dimgray;
   code { padding-top: .5rem !important; }
 }
 
@@ -199,21 +194,8 @@ strong { font-weight: 500; }
 table { width: 100%; }
 
 ul {
-  list-style-type: "👉  ";
+  list-style-type: "-  ";
   margin: 0 0 .5rem 0;
   padding: 0;
-  li {
-    margin-bottom: .5rem; }
-}
-
-/*hr + ul, body#readme ul {
-  color: light-dark(black, gainsboro);
-  font-weight: 500;
-  margin: 0 0 .5rem 0;
-  padding: 0;
-  
   li { margin-bottom: .5rem; }
-}*/
-
-
-#readme header a:last-child { display: none; }
+}

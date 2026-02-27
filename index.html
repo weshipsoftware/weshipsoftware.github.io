@@ -35,42 +35,59 @@
   run by <a href="https://jarrodtaylor.me/">Jarrod Taylor</a>
   & <a href="https://richard.is/">Richard Rissanen</a>
   focused on one thing: <strong>shipping software</strong>.
-</p><p>We’re veterans of the tech industry, hands–on engineers, helping to build <strong>independent, product–led businesses</strong>.</p><p><em>And we’re really f*cking good at it.</em></p><p>Hiring platforms are a mess, freelancers are unreliable, recruiting agencies are too expensive.</p><aside class="right">
+</p><p>We’re veterans of the tech industry, <em>hands–on engineers</em>, helping to build <strong>independent, product–led businesses</strong>.</p><p><em>And we’re really fucking good at it.</em></p><p>Hiring platforms are a mess, freelancers are unreliable, recruiting agencies are too expensive.</p><aside class="right">
   How it should have been done all along.
-</aside><p>We started <em>We Ship Software</em> to offer something better, to <strong>de–risk software development</strong> by working directly with a small roster of clients to build and ship exactly what they need on a predictable timeline for a reasonable rate.</p><form onkeyup="updateEmail()">
-  <p><strong>What are you working on?</strong></p>
-  <input id="name">
-  <label for="name">Name</label>
+</aside><p>We started <em>We Ship Software</em> to offer something better, to <strong>de–risk software development</strong> by working directly with a small roster of clients, <em>understanding their business</em>, and <strong>delivering reliable solutions</strong> for <strong>predictable prices</strong>.</p><form onkeyup="updateEmail()">
+  <p><strong>How can we help?</strong></p>
+  <textarea></textarea>
   <p>
-    <a href="mailto:email@weshipsoftware.com" id="sendBtn">📬 Send</a>
+    <small>Big Red Button that solves problems →</small>
+    <a href="mailto:email@weshipsoftware.com" id="sendBtn">📬 Solve My Problem</a>
   </p>
-</form><style>
-  form {
-    background: aliceblue;
-    background: linear-gradient(0deg, aliceblue 0%, azure 100%);
-    border-radius: .75rem;
-    box-shadow: 0 0 2px silver;
-    margin: 1.5rem 0 1rem -1rem;
-    padding: 1rem 1rem .5rem 1rem;
-    width: 100%;
-    
-    p:last-child { text-align: right; }
-    #sendBtn { background: white; }
+</form><h2>What We Do</h2><ul><li><a href="/services/startup-consulting">Hands–On Startup Consulting</a><br /> For founders with traction, we will level up your organization to help keep you sane.</li><li><a href="/services/bespoke-development">In–House, Bespoke Development</a><br /> For independent business owners with fresh ideas, we will turn them into features, products, and services.</li><li><a href="">Creative Partnerships</a> <mark>Coming Soon</mark><br /> For creators with a growing audience, we will work with you to build something that resonates with your fans.</li></ul><h2>We Want to Hear From You!</h2><aside class="left">
+  Near Nashville or West Palm Beach?
+  <br /><br />
+  Let’s get a coffee.
+</aside><p>Let us know what you’re working on. We’ll answer any questions, see if we’re a good fit, then kick things off.</p><p><strong><a href="mailto:email@weshipsoftware.com">email@weshipsoftware.com</a></strong></p><style>
+  #readme {
+    form {
+      background: aliceblue;
+      box-shadow: 0 0 2px silver;
+      margin: 1.5rem 0 1rem -1rem;
+      padding: 1rem;
+      width: 100%;
+      
+      textarea {
+        width: calc(100% - .5rem);
+        height: 3rem;
+        margin-bottom: 1rem;
+      }
+      
+      p:last-child { text-align: right; }
+      
+      small { font-family: note; }
+      
+      #sendBtn {
+        background: crimson;
+        border-radius: .25rem;
+        color: white;
+        font-variant: all-small-caps;
+        padding: .5rem;
+        text-decoration: none;
+      }
+    }
+
+    header a:last-child { display: none; }
+
+    ul { list-style-type: "👉  "; }
   }
 </style><script>
   function updateEmail() {
     let name = document.getElementById("name").value
-
     let link = document.getElementById("sendBtn")
     link.href = "mailto:email@weshipsoftware.com?subject=" + name
   }
-</script><h2>What We Do</h2><ul><li><a href="">Hands–On Startup Consulting</a><br /> For founders with traction, we will level up your organization to help keep you sane.</li><li><a href="">In–House, Bespoke Development</a><br /> For independent business owners with fresh ideas, we will turn them into features, products, and services.</li><li><a href="">Creative Partnerships</a> <mark>Coming Soon</mark><br /> For creators with a growing audience, we will work with you to build something that resonates with your fans.</li></ul><h2 id="contact">
-  We Want to Hear From You!
-</h2><aside class="left">
-  Near Nashville or West Palm Beach?
-  <br /><br />
-  Let’s get a coffee.
-</aside><p>Let us know what you’re working on. We’ll answer any questions, see if we’re a good fit, then kick things off.</p><p><strong><a href="mailto:email@weshipsoftware.com">email@weshipsoftware.com</a></strong></p></article>
+</script></article>
     </main>
   </body>
 </html>
