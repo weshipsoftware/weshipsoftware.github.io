@@ -71,11 +71,10 @@ pre code.hljs{display:block;overflow-x:auto;padding:1em}code.hljs{padding:3px 5p
 
 
 :root {
-  background: white;
+  background: snow;
   color: black;
   font: 400 16px/1.5 text, sans-serif;
   font-size: clamp(1rem, 2vw, 1.5rem);
-  line-height: 1.5em;
 }
 
 ::selection { background: cyan; }
@@ -197,15 +196,17 @@ header {
 }
 
 hr {
-  background: whitesmoke;
+  background: black;
   border: none;
   height: .25rem;
   margin: 2rem 0;
+  opacity: .03;
 }
 
-mark {
-  background-color: yellow;
+mark, strong em {
+  background-color: gold;
   color: black;
+  font-style: normal;
   font-weight: 500;
   padding: 0 .125rem;
   margin: 0 -.125rem;

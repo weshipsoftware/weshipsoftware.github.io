@@ -7,43 +7,47 @@
 
 # Hello, World!
 
-<p>
-  <mark>We Ship Software</mark> is a small development agency
-  run by <a href="https://jarrodtaylor.me/">Jarrod Taylor</a>
-  & <a href="https://richard.is/">Richard Rissanen</a>
-  focused on one thing: <strong>shipping software</strong>.
-</p>
+**_We Ship Software_** is a small development agency
+run by [Jarrod Taylor][jt.me] & [Richard Rissanen][rr.is]
+focused on one thing: <strong>shipping software</strong>.
 
-We’re veterans of the tech industry, _hands–on engineers_,
-helping to build **independent, product–led businesses**.
+We’re veterans of the tech industry, hands–on engineers,
+working to build **independent, product–led businesses**.
 
 _And we’re really fucking good at it._
 
-Hiring platforms are a mess,
-freelancers are unreliable,
-recruiting agencies are too expensive.
+## How It Should Have Been Done All Along.
 
-<aside class="right">
-  How it should have been done all along.
-</aside>
+Hiring platforms are a mess. Freelancers are unreliable.
 
-We started _We Ship Software_ to offer something better,
-to **de–risk software development** by working directly
-with a small roster of clients, _understanding their business_,
-and **delivering reliable solutions** for **predictable prices**.
+By only working with a limited roster of motivated clients
+_and really putting in the effort to get to know their business_,
+we manage to deliver **reliable results** for **predictable prices**
+— effectively **de–risking software development**.
 
-<form onkeyup="updateEmail()">
-  <p><strong>How can we help?</strong></p>
-  <textarea></textarea>
-  <p>
-    <small>Big Red Button that solves problems →</small>
-    <a href="mailto:email@weshipsoftware.com" id="sendBtn">📬 Solve My Problem</a>
-  </p>
+---
+
+<form>
+  <textarea id="prompt" placeholder="What can we do for you?"></textarea>
+  <a
+    href="mailto:email@weshipsoftware.com?subject=🚀 Not Spam"
+    onclick="solve(this)">
+    Solve My Problem
+  </a>
+  <small>Big red solution generating button.</small>
 </form>
 
-## What We Do
+---
 
-- [Hands–On Startup Consulting](/services/startup-consulting)<br />
+## Let’s Do This Right!
+
+Hiring platforms are a mess, freelancers are unreliable, and recruiting agencies are too expensive.
+
+<aside class="left">
+  Read this before hiring more programmers.
+</aside>
+
+- [Shape Up Your Startup](/services/startup-consulting)<br />
   For founders with traction,
   we will level up your organization to help keep you sane.
 - [In–House, Bespoke Development](/services/bespoke-development)<br />
@@ -53,7 +57,7 @@ and **delivering reliable solutions** for **predictable prices**.
   For creators with a growing audience,
   we will work with you to build something that resonates with your fans.
 
-## We Want to Hear From You!
+## Where Do We Go From Here?
 
 <aside class="left">
   Near Nashville or West Palm Beach?
@@ -64,34 +68,54 @@ and **delivering reliable solutions** for **predictable prices**.
 Let us know what you’re working on.
 We’ll answer any questions, see if we’re a good fit, then kick things off.
 
-**[email@weshipsoftware.com](mailto:email@weshipsoftware.com)**
+**[email@weshipsoftware.com][mailto]**
 
 <style>
   #readme {
     form {
-      background: aliceblue;
-      box-shadow: 0 0 2px silver;
-      margin: 1.5rem 0 1rem -1rem;
-      padding: 1rem;
       width: 100%;
       
       textarea {
-        width: calc(100% - .5rem);
-        height: 3rem;
-        margin-bottom: 1rem;
+        font-family: text;
+        font-size: .75rem;
+        width: calc(100% - 1rem);
+        height: 4rem;
+        border-radius: .25rem;
+        padding: .5rem;
+        border: 1px dashed silver;
+        margin-bottom: .25rem;
+        outline: none;
+        
+        &:focus {
+          border: 1px solid silver;
+        }
       }
       
       p:last-child { text-align: right; }
       
-      small { font-family: note; }
+      small {
+        color: indigo;
+        font-family: note;
+        margin-left: .5rem;
+      }
       
-      #sendBtn {
+      a {
         background: crimson;
+        background: linear-gradient(0deg, firebrick 0%, crimson 100%);
         border-radius: .25rem;
+        box-shadow: 0 0 1px black;
         color: white;
-        font-variant: all-small-caps;
-        padding: .5rem;
+        display: inline-block;
+        font-weight: 500;
+        font-size: .875rem;
+        padding: .125rem .5rem;
         text-decoration: none;
+        
+        &:hover {
+          box-shadow: 0 0 3px silver;
+          margin: 0;
+          transform: scale(1.03);
+        }
       }
     }
 
@@ -102,9 +126,13 @@ We’ll answer any questions, see if we’re a good fit, then kick things off.
 </style>
 
 <script>
-  function updateEmail() {
-    let name = document.getElementById("name").value
-    let link = document.getElementById("sendBtn")
-    link.href = "mailto:email@weshipsoftware.com?subject=" + name
+  function solve(el) {
+    let body = document.getElementById("prompt").value
+    el.href = "mailto:email@weshipsoftware.com?subject=🚀 Not Spam&body="
+      + encodeURIComponent(body)
   }
 </script>
+
+[jt.me]: https://jarrodtaylor.me
+[rr.is]: https://richard.is
+[mailto]: mailto:email@weshipsoftware.com

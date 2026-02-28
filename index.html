@@ -30,50 +30,66 @@
         <a href="mailto:email@weshipsoftware.com">email@weshipsoftware.com</a>
         <a href="/">ReadMe</a>
       </header>
-      <article><h1>Hello, World!</h1><p>
-  <mark>We Ship Software</mark> is a small development agency
-  run by <a href="https://jarrodtaylor.me/">Jarrod Taylor</a>
-  & <a href="https://richard.is/">Richard Rissanen</a>
-  focused on one thing: <strong>shipping software</strong>.
-</p><p>We’re veterans of the tech industry, <em>hands–on engineers</em>, helping to build <strong>independent, product–led businesses</strong>.</p><p><em>And we’re really fucking good at it.</em></p><p>Hiring platforms are a mess, freelancers are unreliable, recruiting agencies are too expensive.</p><aside class="right">
-  How it should have been done all along.
-</aside><p>We started <em>We Ship Software</em> to offer something better, to <strong>de–risk software development</strong> by working directly with a small roster of clients, <em>understanding their business</em>, and <strong>delivering reliable solutions</strong> for <strong>predictable prices</strong>.</p><form onkeyup="updateEmail()">
-  <p><strong>How can we help?</strong></p>
-  <textarea></textarea>
-  <p>
-    <small>Big Red Button that solves problems →</small>
-    <a href="mailto:email@weshipsoftware.com" id="sendBtn">📬 Solve My Problem</a>
-  </p>
-</form><h2>What We Do</h2><ul><li><a href="/services/startup-consulting">Hands–On Startup Consulting</a><br /> For founders with traction, we will level up your organization to help keep you sane.</li><li><a href="/services/bespoke-development">In–House, Bespoke Development</a><br /> For independent business owners with fresh ideas, we will turn them into features, products, and services.</li><li><a href="">Creative Partnerships</a> <mark>Coming Soon</mark><br /> For creators with a growing audience, we will work with you to build something that resonates with your fans.</li></ul><h2>We Want to Hear From You!</h2><aside class="left">
+      <article><h1>Hello, World!</h1><p><strong><em>We Ship Software</em></strong> is a small development agency run by <a href="https://jarrodtaylor.me">Jarrod Taylor</a> &amp; <a href="https://richard.is">Richard Rissanen</a> focused on one thing: <strong>shipping software</strong>.</p><p>We’re veterans of the tech industry, hands–on engineers, working to build <strong>independent, product–led businesses</strong>.</p><p><em>And we’re really fucking good at it.</em></p><h2>How It Should Have Been Done All Along.</h2><p>Hiring platforms are a mess. Freelancers are unreliable.</p><p>By only working with a limited roster of motivated clients <em>and really putting in the effort to get to know their business</em>, we manage to deliver <strong>reliable results</strong> for <strong>predictable prices</strong> — effectively <strong>de–risking software development</strong>.</p><hr><form>
+  <textarea id="prompt" placeholder="What can we do for you?"></textarea>
+  <a
+    href="mailto:email@weshipsoftware.com?subject=🚀 Not Spam"
+    onclick="solve(this)">
+    Solve My Problem
+  </a>
+  <small>Big red solution generating button.</small>
+</form><hr><h2>Let’s Do This Right!</h2><p>Hiring platforms are a mess, freelancers are unreliable, and recruiting agencies are too expensive.</p><aside class="left">
+  Read this before hiring more programmers.
+</aside><ul><li><a href="/services/startup-consulting">Shape Up Your Startup</a><br /> For founders with traction, we will level up your organization to help keep you sane.</li><li><a href="/services/bespoke-development">In–House, Bespoke Development</a><br /> For independent business owners with fresh ideas, we will turn them into features, products, and services.</li><li><a href="">Creative Partnerships</a> <mark>Coming Soon</mark><br /> For creators with a growing audience, we will work with you to build something that resonates with your fans.</li></ul><h2>Where Do We Go From Here?</h2><aside class="left">
   Near Nashville or West Palm Beach?
   <br /><br />
   Let’s get a coffee.
 </aside><p>Let us know what you’re working on. We’ll answer any questions, see if we’re a good fit, then kick things off.</p><p><strong><a href="mailto:email@weshipsoftware.com">email@weshipsoftware.com</a></strong></p><style>
   #readme {
     form {
-      background: aliceblue;
-      box-shadow: 0 0 2px silver;
-      margin: 1.5rem 0 1rem -1rem;
-      padding: 1rem;
       width: 100%;
       
       textarea {
-        width: calc(100% - .5rem);
-        height: 3rem;
-        margin-bottom: 1rem;
+        font-family: text;
+        font-size: .75rem;
+        width: calc(100% - 1rem);
+        height: 4rem;
+        border-radius: .25rem;
+        padding: .5rem;
+        border: 1px dashed silver;
+        margin-bottom: .25rem;
+        outline: none;
+        
+        &:focus {
+          border: 1px solid silver;
+        }
       }
       
       p:last-child { text-align: right; }
       
-      small { font-family: note; }
+      small {
+        color: indigo;
+        font-family: note;
+        margin-left: .5rem;
+      }
       
-      #sendBtn {
+      a {
         background: crimson;
+        background: linear-gradient(0deg, firebrick 0%, crimson 100%);
         border-radius: .25rem;
+        box-shadow: 0 0 1px black;
         color: white;
-        font-variant: all-small-caps;
-        padding: .5rem;
+        display: inline-block;
+        font-weight: 500;
+        font-size: .875rem;
+        padding: .125rem .5rem;
         text-decoration: none;
+        
+        &:hover {
+          box-shadow: 0 0 3px silver;
+          margin: 0;
+          transform: scale(1.03);
+        }
       }
     }
 
@@ -82,10 +98,10 @@
     ul { list-style-type: "👉  "; }
   }
 </style><script>
-  function updateEmail() {
-    let name = document.getElementById("name").value
-    let link = document.getElementById("sendBtn")
-    link.href = "mailto:email@weshipsoftware.com?subject=" + name
+  function solve(el) {
+    let body = document.getElementById("prompt").value
+    el.href = "mailto:email@weshipsoftware.com?subject=🚀 Not Spam&body="
+      + encodeURIComponent(body)
   }
 </script></article>
     </main>
