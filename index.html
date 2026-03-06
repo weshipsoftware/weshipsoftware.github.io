@@ -10,14 +10,13 @@
     <link rel="apple-touch-icon"         href="/.media/images/touch-icon.png">
     <link rel="icon" sizes="192x192"     href="/.media/images/touch-icon.png">
     <link rel="icon" type="image/x-icon" href="/.media/images/favicon.ico">
-    <link rel="preload" as="font" type="font/woff2" crossorigin href="/.media/fonts/light.woff2">
-    <link rel="preload" as="font" type="font/woff2" crossorigin href="/.media/fonts/regular.woff2">
-    <link rel="preload" as="font" type="font/woff2" crossorigin href="/.media/fonts/regular-i.woff2">
-    <link rel="preload" as="font" type="font/woff2" crossorigin href="/.media/fonts/medium.woff2">
-    <link rel="preload" as="font" type="font/woff2" crossorigin href="/.media/fonts/medium-i.woff2">
-    <link rel="preload" as="font" type="font/woff2" crossorigin href="/.media/fonts/bold.woff2">
-    <link rel="preload" as="font" type="font/woff2" crossorigin href="/.media/fonts/ultra.woff2">
-    <link rel="preload" as="font" type="font/woff2" crossorigin href="/.media/fonts/heavy.woff2">
+    <link rel="preload" as="font" type="font/woff2" crossorigin href="/.media/fonts/400.woff2">
+    <link rel="preload" as="font" type="font/woff2" crossorigin href="/.media/fonts/400i.woff2">
+    <link rel="preload" as="font" type="font/woff2" crossorigin href="/.media/fonts/500.woff2">
+    <link rel="preload" as="font" type="font/woff2" crossorigin href="/.media/fonts/500i.woff2">
+    <link rel="preload" as="font" type="font/woff2" crossorigin href="/.media/fonts/700.woff2">
+    <link rel="preload" as="font" type="font/woff2" crossorigin href="/.media/fonts/800.woff2">
+    <link rel="preload" as="font" type="font/woff2" crossorigin href="/.media/fonts/900.woff2">
     <link rel="preload" as="font" type="font/woff2" crossorigin href="/.media/fonts/code.woff2">
     <link rel="preload" as="font" type="font/woff2" crossorigin href="/.media/fonts/note.woff2">
     <script src="/async.js" async></script>
@@ -28,9 +27,12 @@
     <main>
       <header>
         <a href="mailto:email@weshipsoftware.com">email@weshipsoftware.com</a>
-        <a href="/">ReadMe</a>
+        <a href="/">readme</a>
+        <a href="/">sitemap ▾</a>
       </header>
-      <article><h1>Hello, World!</h1><p><strong><em>We Ship Software</em></strong> is a small development agency run by <a href="https://jarrodtaylor.me">Jarrod Taylor</a> &amp; <a href="https://richard.is">Richard Rissanen</a> focused on one thing: <strong>shipping software</strong>.</p><p>We’re veterans of the tech industry, hands–on engineers, working to build <strong>independent, product–led businesses</strong>.</p><p><em>And we’re really fucking good at it.</em></p><h2>How It Should Have Been Done All Along.</h2><p>Hiring platforms are a mess. Freelancers are unreliable.</p><p>By only working with a limited roster of motivated clients <em>and really putting in the effort to get to know their business</em>, we manage to deliver <strong>reliable results</strong> for <strong>predictable prices</strong> — effectively <strong>de–risking software development</strong>.</p><hr><form>
+      <article><h1>Hello, World!</h1><p><strong><em>We Ship Software</em></strong> is a small development agency run by <a href="https://jarrodtaylor.me">Jarrod Taylor</a> &amp; <a href="https://richard.is">Richard Rissanen</a> focused on one thing: <strong>shipping software</strong>.</p><p>We’re veterans of the tech industry, hands–on engineers, working to build <strong>independent, product–led businesses</strong>.</p><p><em>And we’re really fucking good at it.</em></p><h2>How It Should Have Been Done All Along.</h2><p>Hiring platforms are a mess. Freelancers are unreliable.</p><aside class="right">
+  We like to roll up our sleeves and do the hard work.
+</aside><p>By only working with a limited roster of motivated clients <em>and putting in the extra effort to get to know their business</em>, we manage to deliver <strong>reliable results</strong> for <strong>predictable prices</strong> — effectively <strong>de–risking software development</strong>.</p><hr><form>
   <textarea id="prompt" placeholder="What can we do for you?"></textarea>
   <a
     href="mailto:email@weshipsoftware.com?subject=🚀 Not Spam"
@@ -38,64 +40,68 @@
     Solve My Problem
   </a>
   <small>Big red solution generating button.</small>
-</form><hr><h2>Let’s Do This Right!</h2><p>Hiring platforms are a mess, freelancers are unreliable, and recruiting agencies are too expensive.</p><aside class="left">
-  Read this before hiring more programmers.
-</aside><ul><li><a href="/services/startup-consulting">Shape Up Your Startup</a><br /> For founders with traction, we will level up your organization to help keep you sane.</li><li><a href="/services/bespoke-development">In–House, Bespoke Development</a><br /> For independent business owners with fresh ideas, we will turn them into features, products, and services.</li><li><a href="">Creative Partnerships</a> <mark>Coming Soon</mark><br /> For creators with a growing audience, we will work with you to build something that resonates with your fans.</li></ul><h2>Where Do We Go From Here?</h2><aside class="left">
-  Near Nashville or West Palm Beach?
-  <br /><br />
-  Let’s get a coffee.
-</aside><p>Let us know what you’re working on. We’ll answer any questions, see if we’re a good fit, then kick things off.</p><p><strong><a href="mailto:email@weshipsoftware.com">email@weshipsoftware.com</a></strong></p><style>
-  #readme {
-    form {
-      width: 100%;
-      
-      textarea {
-        font-family: text;
-        font-size: .75rem;
-        width: calc(100% - 1rem);
-        height: 4rem;
-        border-radius: .25rem;
-        padding: .5rem;
-        border: 1px dashed silver;
-        margin-bottom: .25rem;
-        outline: none;
-        
-        &:focus {
-          border: 1px solid silver;
-        }
-      }
-      
-      p:last-child { text-align: right; }
-      
-      small {
-        color: indigo;
-        font-family: note;
-        margin-left: .5rem;
-      }
-      
-      a {
-        background: crimson;
-        background: linear-gradient(0deg, firebrick 0%, crimson 100%);
-        border-radius: .25rem;
-        box-shadow: 0 0 1px black;
-        color: white;
-        display: inline-block;
-        font-weight: 500;
-        font-size: .875rem;
-        padding: .125rem .5rem;
-        text-decoration: none;
-        
-        &:hover {
-          box-shadow: 0 0 3px silver;
-          margin: 0;
-          transform: scale(1.03);
-        }
+</form><hr><h2>Let’s Do This Right!</h2><p>Tap into our years of industry experience shipping software used by <a href="/case-studies">thousands of companies and millions of customers</a> all around the world every day.</p><aside class="left">
+  Read this one before hiring more programmers.
+</aside><ul><li><a href="/srv/startup-consulting">Shape Up Your Startup</a><br /> <em>For founders with traction:</em> We will refactor your technical and social systems to <strong>grow your company with confidence</strong>.</li></ul><ul><li><a href="/srv/bespoke-development">Launch Something New</a><br /> <em>For execs with fresh ideas:</em> We will translate your business plan into production code and <strong>get it out to your customers</strong>.</li></ul><aside class="right">Our favorite new business model.</aside><ul><li><strong>Connect With Your Audience</strong> <strong><em>Coming Soon</em></strong><br /> <em>For creators with a growing reach:</em> We will partner with you to build products that <strong>resonate with your fans</strong>.</li></ul><h2>Where Do We Go From Here?</h2><aside class="left">
+  Near Nashville or West Palm Beach?<br /><br />Let’s get a coffee.
+</aside><p>Let us know what you’re working on. We’ll have plenty of questions to know each other and confirm a good fit.</p><p>When you like what you hear, we’ll kick things off.</p><!-- Roadmapping session? --><p><strong><a href="mailto:email@weshipsoftware.com">email@weshipsoftware.com</a></strong></p><style>
+  form {
+    width: 100%;
+
+    a {
+      background: crimson;
+      background: linear-gradient(0deg, firebrick 0%, crimson 100%);
+      border-radius: .25rem;
+      box-shadow: 0 0 1px black;
+      color: white;
+      display: inline-block;
+      font-size: .875rem;
+      font-weight: 500;
+      padding: .125rem .5rem;
+      text-decoration: none;
+
+      &:hover {
+        background: linear-gradient(0deg,
+          firebrick 0%, crimson 100%) !important;
+        border-radius: .25rem !important;
+        box-shadow: 0 0 3px silver;
+        margin: 0;
+        padding: .125rem .5rem !important;
+        transform: scale(1.03);
       }
     }
 
-    header a:last-child { display: none; }
+    small {
+      color: indigo;
+      font-family: note;
+      margin-left: .5rem;
+    }
 
-    ul { list-style-type: "👉  "; }
+    textarea {
+      background: #F0FFFF55;
+      border: 1px dashed silver;
+      border-radius: .25rem;
+      font-family: text;
+      font-size: .75rem;
+      height: 4rem;
+      margin-bottom: .25rem;
+      margin-left: -1px;
+      outline: none;
+      padding: .5rem;
+      width: calc(100% - 1rem);
+      &:focus { border: 1px solid silver; }
+    }
+  }
+
+  header a:last-child { display: none; }
+  
+  ul {
+    list-style-type: "☞  ";
+
+    li strong em {
+      font-variant: all-small-caps;
+      margin-left: .25rem;
+    }
   }
 </style><script>
   function solve(el) {

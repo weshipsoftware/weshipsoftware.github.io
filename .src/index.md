@@ -20,8 +20,12 @@ _And we’re really fucking good at it._
 
 Hiring platforms are a mess. Freelancers are unreliable.
 
+<aside class="right">
+  We like to roll up our sleeves and do the hard work.
+</aside>
+
 By only working with a limited roster of motivated clients
-_and really putting in the effort to get to know their business_,
+_and putting in the extra effort to get to know their business_,
 we manage to deliver **reliable results** for **predictable prices**
 — effectively **de–risking software development**.
 
@@ -41,87 +45,104 @@ we manage to deliver **reliable results** for **predictable prices**
 
 ## Let’s Do This Right!
 
-Hiring platforms are a mess, freelancers are unreliable, and recruiting agencies are too expensive.
+Tap into our years of industry experience shipping software
+used by [thousands of companies and millions of customers](/case-studies)
+all around the world every day.
 
 <aside class="left">
-  Read this before hiring more programmers.
+  Read this one before hiring more programmers.
 </aside>
 
-- [Shape Up Your Startup](/services/startup-consulting)<br />
-  For founders with traction,
-  we will level up your organization to help keep you sane.
-- [In–House, Bespoke Development](/services/bespoke-development)<br />
-  For independent business owners with fresh ideas,
-  we will turn them into features, products, and services.
-- [Creative Partnerships]() <mark>Coming Soon</mark><br />
-  For creators with a growing audience,
-  we will work with you to build something that resonates with your fans.
+- [Shape Up Your Startup](/srv/startup-consulting)<br />
+  _For founders with traction:_
+  We will refactor your technical and social systems
+  to **grow your company with confidence**.
+
+- [Launch Something New](/srv/bespoke-development)<br />
+  _For execs with fresh ideas:_
+  We will translate your business plan into production code
+  and **get it out to your customers**.
+
+<aside class="right">Our favorite new business model.</aside>
+
+- **Connect With Your Audience** **_Coming Soon_**<br />
+  _For creators with a growing reach:_
+  We will partner with you
+  to build products that **resonate with your fans**.
 
 ## Where Do We Go From Here?
 
 <aside class="left">
-  Near Nashville or West Palm Beach?
-  <br /><br />
-  Let’s get a coffee.
+  Near Nashville or West Palm Beach?<br /><br />Let’s get a coffee.
 </aside>
 
-Let us know what you’re working on.
-We’ll answer any questions, see if we’re a good fit, then kick things off.
+Let us know what you’re working on. We’ll have plenty of questions
+to know each other and confirm a good fit.
+
+When you like what you hear, we’ll kick things off.
+
+<!-- Roadmapping session? -->
 
 **[email@weshipsoftware.com][mailto]**
 
 <style>
-  #readme {
-    form {
-      width: 100%;
-      
-      textarea {
-        font-family: text;
-        font-size: .75rem;
-        width: calc(100% - 1rem);
-        height: 4rem;
-        border-radius: .25rem;
-        padding: .5rem;
-        border: 1px dashed silver;
-        margin-bottom: .25rem;
-        outline: none;
-        
-        &:focus {
-          border: 1px solid silver;
-        }
-      }
-      
-      p:last-child { text-align: right; }
-      
-      small {
-        color: indigo;
-        font-family: note;
-        margin-left: .5rem;
-      }
-      
-      a {
-        background: crimson;
-        background: linear-gradient(0deg, firebrick 0%, crimson 100%);
-        border-radius: .25rem;
-        box-shadow: 0 0 1px black;
-        color: white;
-        display: inline-block;
-        font-weight: 500;
-        font-size: .875rem;
-        padding: .125rem .5rem;
-        text-decoration: none;
-        
-        &:hover {
-          box-shadow: 0 0 3px silver;
-          margin: 0;
-          transform: scale(1.03);
-        }
+  form {
+    width: 100%;
+
+    a {
+      background: crimson;
+      background: linear-gradient(0deg, firebrick 0%, crimson 100%);
+      border-radius: .25rem;
+      box-shadow: 0 0 1px black;
+      color: white;
+      display: inline-block;
+      font-size: .875rem;
+      font-weight: 500;
+      padding: .125rem .5rem;
+      text-decoration: none;
+
+      &:hover {
+        background: linear-gradient(0deg,
+          firebrick 0%, crimson 100%) !important;
+        border-radius: .25rem !important;
+        box-shadow: 0 0 3px silver;
+        margin: 0;
+        padding: .125rem .5rem !important;
+        transform: scale(1.03);
       }
     }
 
-    header a:last-child { display: none; }
+    small {
+      color: indigo;
+      font-family: note;
+      margin-left: .5rem;
+    }
 
-    ul { list-style-type: "👉  "; }
+    textarea {
+      background: #F0FFFF55;
+      border: 1px dashed silver;
+      border-radius: .25rem;
+      font-family: text;
+      font-size: .75rem;
+      height: 4rem;
+      margin-bottom: .25rem;
+      margin-left: -1px;
+      outline: none;
+      padding: .5rem;
+      width: calc(100% - 1rem);
+      &:focus { border: 1px solid silver; }
+    }
+  }
+
+  header a:last-child { display: none; }
+  
+  ul {
+    list-style-type: "☞  ";
+
+    li strong em {
+      font-variant: all-small-caps;
+      margin-left: .25rem;
+    }
   }
 </style>
 

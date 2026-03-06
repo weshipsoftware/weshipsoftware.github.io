@@ -1,9 +1,8 @@
-/* Media query for dark mode around highlight themes? */
 /* @include ../.media/vendor/hybrid.min.css */
-/* @include ../.media/fonts/_manifest.css   */
+/* @include ../.media/fonts/.manifest.css   */
 
 :root {
-  background: snow;
+  background: white;
   color: black;
   font: 400 16px/1.5 text, sans-serif;
   font-size: clamp(1rem, 2vw, 1.5rem);
@@ -67,10 +66,8 @@ body { margin: 0; }
 code {
   font-family: code;
   font-feature-settings:
-    "cv06", "cv18", "cv25",
-    "cv26", "cv27", "cv28",
-    "cv32", "ss01", "ss04",
-    "ss07", "ss09", "ss10",
+    "cv06", "cv18", "cv25", "cv26", "cv27", "cv28", "cv32",
+    "ss01", "ss04", "ss07", "ss09", "ss10",
     "onum", "zero";
 }
 
@@ -102,12 +99,11 @@ header {
   padding: 3rem 1rem;
   
   a {
-    color: silver;
+    color: darkslategray;
     font-size: 1rem;
     font-weight: 400;
     margin-right: 1rem;
     text-decoration: none;
-    text-transform: lowercase;
     
     &:hover { margin-right: .875rem; }
   }
@@ -128,15 +124,14 @@ header {
 }
 
 hr {
-  background: black;
+  background: whitesmoke;
   border: none;
   height: .25rem;
   margin: 2rem 0;
-  opacity: .03;
 }
 
 mark, strong em {
-  background-color: gold;
+  background-color: yellow;
   color: black;
   font-style: normal;
   font-weight: 500;
@@ -195,8 +190,18 @@ strong { font-weight: 500; }
 table { width: 100%; }
 
 ul {
-  list-style-type: "-  ";
+  /*list-style-type: "-  ";*/
   margin: 0 0 .5rem 0;
   padding: 0;
   li { margin-bottom: .5rem; }
 }
+
+hr + ul {
+  list-style-type: "☞  ";
+  li::marker { color: silver; }
+}
+
+/*ul:nth-child(1) {
+  list-style-type: none;
+  margin-top: -1rem;
+}*/
