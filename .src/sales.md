@@ -55,7 +55,7 @@ out loud.
 By the time you realize what happened, you’ve spent more than half your runway
 and you’re left with something that sort of works, kind of.
 
-_It doesn't have to go that way._
+_It doesn't have to be that way._
 
 ## Why Most Software Projects Fail
 
@@ -63,10 +63,10 @@ It's not a technology problem. The tools to build almost anything
 have never been better or cheaper. It’s not even a talent problem.
 There are excellent engineers everywhere.
 
-Here’s why most software projects actually fail:
+Here’s why most software projects fail:
 
 - The people writing the code don’t
-  **understand the problem they’re actually trying to solve**.
+  **understand the problem they’re trying to solve**.
 - The outsourcing shop has too many clients,
   deprioritizing your project whenever **something bigger comes along**.
 - Nobody takes ownership of outcomes – developers write code,
@@ -84,7 +84,7 @@ _The incentives are broken from the start._
 
 ## Why You’ll Hire Us
 
-We understand something absolutely vital to your business:
+We understand something vital to your business:
 **short–term decisions made under pressure create long–term structural risk.**
 
 Small teams optimize for survival — shipping fast to stay funded —
