@@ -1,28 +1,16 @@
 pre code.hljs{display:block;overflow-x:auto;padding:1em}code.hljs{padding:3px 5px}.hljs{background:#1d1f21;color:#c5c8c6}.hljs span::selection,.hljs::selection{background:#373b41}.hljs span::-moz-selection,.hljs::-moz-selection{background:#373b41}.hljs-name,.hljs-title{color:#f0c674}.hljs-comment,.hljs-meta,.hljs-meta .hljs-keyword{color:#707880}.hljs-deletion,.hljs-link,.hljs-literal,.hljs-number,.hljs-symbol{color:#c66}.hljs-addition,.hljs-doctag,.hljs-regexp,.hljs-selector-attr,.hljs-selector-pseudo,.hljs-string{color:#b5bd68}.hljs-attribute,.hljs-code,.hljs-selector-id{color:#b294bb}.hljs-bullet,.hljs-keyword,.hljs-selector-tag,.hljs-tag{color:#81a2be}.hljs-subst,.hljs-template-tag,.hljs-template-variable,.hljs-variable{color:#8abeb7}.hljs-built_in,.hljs-quote,.hljs-section,.hljs-selector-class,.hljs-type{color:#de935f}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:700}
-@font-face {
-  font-family: code;
-  src: url("/.media/fonts/code.woff2") format("woff2-variations"),
-       url("/.media/fonts/code.woff2") format("woff-variations");
-  font-weight: 300 700;
-  font-style: normal;
-}
 
-@font-face { font-family: note; src: url("/.media/fonts/note.woff2"); }
-
-@font-face { font-family: text; font-style: normal; font-weight: 400; src: url("/.media/fonts/400.woff2");  }
-@font-face { font-family: text; font-style: italic; font-weight: 400; src: url("/.media/fonts/400i.woff2"); }
-@font-face { font-family: text; font-style: normal; font-weight: 500; src: url("/.media/fonts/500.woff2");  }
-@font-face { font-family: text; font-style: italic; font-weight: 500; src: url("/.media/fonts/500i.woff2"); }
-@font-face { font-family: text; font-style: normal; font-weight: 700; src: url("/.media/fonts/700.woff2");  }
-@font-face { font-family: text; font-style: normal; font-weight: 800; src: url("/.media/fonts/800.woff2");  }
-@font-face { font-family: text; font-style: normal; font-weight: 900; src: url("/.media/fonts/900.woff2");  }
-
+@font-face { font-family: CodePro;  src: url("/.media/fonts/code.woff2");   font-weight: 200 900; }
+@font-face { font-family: SansPro;  src: url("/.media/fonts/sans.woff2");   font-weight: 200 900; }
+@font-face { font-family: SerifPro; src: url("/.media/fonts/serif.woff2");  font-weight: 200 900; font-style: normal; }
+@font-face { font-family: SerifPro; src: url("/.media/fonts/italic.woff2"); font-weight: 200 900; font-style: italic; }
+@font-face { font-family: note;     src: url("/.media/fonts/note.woff2"); }
 
 :root {
   background: white;
   color: black;
-  font: 400 16px/1.5 text, sans-serif;
-  font-size: clamp(1rem, 2vw, 1.5rem);
+  font: 400 16px/1.5 SerifPro, serif;
+  font-size: clamp(1rem, 2vw, 1.25rem);
 }
 
 ::selection { background: cyan; }
@@ -38,7 +26,6 @@ a {
     padding: 0 .125rem;
     margin: 0 -.125rem;
     text-decoration: none;
-    border-radius: 3px;
   }
 }
 
@@ -59,7 +46,7 @@ aside {
   @media (max-width: 46rem) { display: none; }
   
   color: indigo;
-  font-family: note;
+  font-family: note, sans-serif;
   font-size: .875rem;
   line-height: 1rem;
   position: absolute;
@@ -80,25 +67,24 @@ aside {
 
 body { margin: 0; }
 
-code {
-  font-family: code;
-  font-feature-settings:
-    "cv06", "cv18", "cv25", "cv26", "cv27", "cv28", "cv32",
-    "ss01", "ss04", "ss07", "ss09", "ss10",
-    "onum", "zero";
+code { font-family: code; }
+
+h1, h2, h3 {
+  font-family: SansPro, sans-serif;
+  letter-spacing: -.0125rem;
 }
 
 h1 {
-  font-size: 1.25rem;
-  font-weight: 800;
+  font-size: 1rem;
+  font-weight: 900;
   margin: 2rem 0 1rem 0;
   text-transform: uppercase;
 }
 
 h2 {
   color: firebrick;
-  font-size: 1.125rem;
-  font-weight: 700;
+  font-size: 1rem;
+  font-weight: 800;
   margin: 3rem 0 .5rem 0;
 }
 
@@ -106,12 +92,11 @@ h3 {
   font-size: 1rem;
   font-weight: 700;
   font-variant: all-small-caps;
-  margin: 2.25rem 0 .5rem 0;
+  margin: 1.5rem 0 .5rem 0;
 }
 
-h2 + h3 { margin-top: .5rem; }
-
 header {
+  font-family: SansPro, sans-serif;
   font-size: 0;
   padding: 3rem 1rem;
   
@@ -119,15 +104,23 @@ header {
     color: darkslategray;
     font-size: 1rem;
     font-weight: 400;
-    margin-right: 1rem;
     text-decoration: none;
     
-    &:hover { margin-right: .875rem; }
+    padding: 0 .25rem;
+    margin: 0 -.25rem;
+    margin-right: 1rem;
+
+    
+    &:hover {
+      padding: 0 .25rem;
+      margin: 0 -.25rem;
+      margin-right: 1rem;
+    }
   }
   
   a[href="mailto:email@weshipsoftware.com"] {
     color: mediumblue;
-    font-weight: 500;
+    font-weight: 600;
     
     &:before {
       content: "🚀";
@@ -151,74 +144,20 @@ mark, strong em {
   background-color: yellow;
   color: black;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   padding: 0 .125rem;
   margin: 0 -.125rem;
 }
 
-p {
-  margin: 0 0 .5rem 0;
+p { margin: 0 0 .5rem 0; }
 
-  code {
-    background: lightyellow;
-    font-size: .875rem;
-  }
-
-  strong { font-weight: 700; }
-}
-
-pre {
-  background: black;
-  font-size: .75rem;
-  margin: 0 0 .5rem -1rem;
-  overflow-x: scroll;
-  padding: 0;
-  width: calc(100% + 2rem);
-  
-  code {
-    background: black !important;
-    padding: 1rem !important;
-  }
-}
-
-pre + samp {
-  border-top: 1px dashed dimgray;
-  margin-top: -.5rem;
-}
-
-samp {
-  background: black;
-  color: white;
-  display: block;
-  font-family: text;
-  font-size: .875rem;
-  margin: 0 0 0 -1rem;
-  padding: .5rem 1rem;
-  width: 100%;
-}
-
-samp ~ pre {
-  border-top: 1px dashed dimgray;
-  code { padding-top: .5rem !important; }
-}
-
-strong { font-weight: 500; }
+strong { font-weight: 700; }
 
 table { width: 100%; }
 
 ul {
-  /*list-style-type: "-  ";*/
   margin: 0 0 .5rem 0;
   padding: 0;
   li { margin-bottom: .5rem; }
+  li::marker { color: #333; }
 }
-
-hr + ul {
-  list-style-type: "☞  ";
-  li::marker { color: silver; }
-}
-
-/*ul:nth-child(1) {
-  list-style-type: none;
-  margin-top: -1rem;
-}*/
