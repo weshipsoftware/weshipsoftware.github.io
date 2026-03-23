@@ -5,7 +5,6 @@
 @pageID: development
 ---
 
-# Hello, World!
 
 **_We Ship Software_** is a small development agency run by
 [Jarrod Taylor][jt.me] & [Richard Rissanen][rr.is] focused on one thing:
@@ -14,25 +13,28 @@
 We’re veterans of the tech industry, hands–on engineers, working to build
 **independent, product–led businesses**.
 
-We **de–risk development** by only working directly with a small roster of clients to build and ship exactly what they need on a predictable timeline
+We **de–risk development** by only working directly with a small roster of
+clients to build and ship exactly what they need on a predictable timeline
 for a reasonable rate.
 
 _And we’re really fucking good at it._
 
 ---
 
-- [The Next Big Thing]()
-- [Why Most Software Projects Fail]()
-- [The Thing About Small Agencies]()
-- [Why You’ll Hire Us]()
-- [What We’ll Do For You]()
-- [The Honest Part]()
-- [Get In Touch](mailto:email@weshipsoftware.com)
-- [Frequently Asked Questions]()
+- [The Next Big Thing](#the-next-big-thing)
+- [Why Most Software Projects Fail](#why-most-software-projects-fail)
+- [The Thing About Small Agencies](#the-thing-about-small-agencies)
+- [Why You Will Hire Us](#why-you-will-hire-us)
+- [What We Will Do For You](#what-we-will-do-for-you)
+- [The Honest Part](#the-honest-part)
+- [**_Get In Touch_**](mailto:email@weshipsoftware.com)
+- [Frequently Asked Questions](#faqs)
 
 ---
 
-## The Next Big Thing™
+<h2 id="the-next-big-thing">
+  The Next Big Thing
+</h2>
 
 Your new company just launched the next big thing.
 Investors are on board, customers are signing up, demand is rolling in.
@@ -64,7 +66,9 @@ and you’re left with something that sort of works, kind of.
 
 _It doesn't have to go that way._
 
-## Why Most Software Projects Fail
+<h2 id="why-most-software-projects-fail">
+  Why Most Software Projects Fail
+</h2>
 
 It's not a technology problem. The tools to build almost anything
 have never been better or cheaper. It’s not even a talent problem.
@@ -89,7 +93,9 @@ relationship ends. Scope creep means it continues.
 
 _The incentives are broken from the start._
 
-## The Thing About Small Agencies
+<h2 id="the-thing-about-small-agencies">
+  The Thing About Small Agencies
+</h2>
 
 When you hire a fifty–person shop, you’re paying for the account manager, the
 solutions architect, the QA team, the business development rep who closed the
@@ -103,7 +109,8 @@ working about your product**.
 That cuts both ways, to be clear. We won’t have twelve engineers available to
 throw at your emergency. If you have a hard deadline and genuinely need an
 army, we’re not the right call. But if you want **a small team that’s deeply
-invested in getting it right** — _not just getting it done_ — that’s what we are.
+invested in getting it right** — _not just getting it done_ — that’s what we
+are.
 
 We are not a good fit if you need a hundred–person team, a staff augmentation
 arrangement, or someone to maintain a decade–old Rails monolith you inherited
@@ -113,7 +120,9 @@ We are a good fit if you have a specific problem, a realistic budget, and
 **you’d rather talk to the person writing code** than a project manager
 relaying messages to someone you’ll never meet.
 
-## Why You’ll Hire Us
+<h2 id="why-you-will-hire-us">
+  Why You Will Hire Us
+</h2>
 
 While we are a small agency, just two people, we have years of experience
 shipping software used every day by **thousands of companies and millions of
@@ -130,7 +139,9 @@ our real strength is **understanding what you’re building**.
 
 Talk us through your idea. _We’ll figure out how to make it._
 
-## What We’ll Do For You
+<h2 id="what-we-will-do-for-you">
+  What We Will Do For You
+</h2>
 
 ### Assessment & Roadmap **_$12,000_**
 
@@ -184,20 +195,21 @@ architectural oversight for your tech organization so you can **provide
 strategic leadership**.
 
 The core tension most growing companies face is the tradeoff between
-**speed** — _ship fast, win customers_ — and **quality** — _build it right, scale
-later_. Getting that balance wrong in either direction is usually what causes
-the most serious problems.
+**speed** — _ship fast, win customers_ — and **quality** — _build it right,
+scale later_. Getting that balance wrong in either direction is usually what
+causes the most serious problems.
 
 We’ll be on the lookout for the common issues companies run into, cutting them
 off before they turn into major problems.
 
 building features customers didn’t ask for, scope creep killing roadmaps and
 timelines, difficulty saying no to custom one-off requests, no clear product
-strategy, losing a key engineer to a larger company, founders wearing too many hats for
-too long, hiring too fast, culture degrading as headcount grows
+strategy, losing a key engineer to a larger company, founders wearing too many
+hats for too long, hiring too fast, culture degrading as headcount grows
 
-
-## The Honest Part
+<h2 id="the-honest-part">
+  The Honest Part
+</h2>
 
 We turn down more work than we take on. Not because we’re precious about it,
 but because we’ve learned that a bad fit costs everybody. **We’d rather
@@ -210,9 +222,9 @@ you there instead.
 
 What we ask in return is that you're straight with us. Tell us the real
 timeline pressure and what’s driving it. Tell us when something isn’t working.
-**We’ve found that the best client relationships are the ones that feel more like
-a working partnership than a vendor arrangement.** That only happens when both
-sides are honest about what’s going on.
+**We’ve found that the best client relationships are the ones that feel more
+like a working partnership than a vendor arrangement.** That only happens when
+both sides are honest about what’s going on.
 
 <div id="cta">
   <p>
@@ -228,8 +240,9 @@ sides are honest about what’s going on.
 > Get in touch →
 </div>
 
-
-## Frequently Asked Questions
+<h2 id="faqs">
+  Frequently Asked Questions
+</h2>
 
 ### Where are you located?
 
@@ -264,9 +277,9 @@ to do. We’ll tell you which situation you’re in.
 ### What if the project goes over scope?
 
 One of the reasons we use a flat weekly rate is so no one has to worry about
-scope changes. **We encourage changing your mind mid–project.** If there’s a better
-idea, let’s run with it. We’ll always give our best effort when estimating and
-keep you up to speed as we go.
+scope changes. **We encourage changing your mind mid–project.** If there’s a
+better idea, let’s run with it. We’ll always give our best effort when
+estimating and keep you up to speed as we go.
 
 _There will never be any surprises on our invoices._
 
@@ -275,12 +288,10 @@ _There will never be any surprises on our invoices._
 Thanks for reading this far. It means you’re probably the kind of person we’d
 work well with.
 
-<p style="font-family: note; text-align: right;">— Jarrod & Richard</p>
+<p id="signature">— Jarrod & Richard</p>
 
 <style>
-  h3 strong {
-    float: right;
-  }
+  h3 strong { float: right; }
 
   #cta {
     background: azure;
@@ -291,6 +302,14 @@ work well with.
     margin: 3rem 0 0 -1rem;
     padding: 1rem;
     width: 100%;
+  }
+  
+  #signature {
+    color: firebrick;
+    font-family: note, sans-serif;
+    font-weight: bold;
+    margin-top: 1.5rem;
+    text-align: right;
   }
 </style>
 
