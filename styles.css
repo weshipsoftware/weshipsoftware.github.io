@@ -1,0 +1,192 @@
+pre code.hljs{display:block;overflow-x:auto;padding:1em}code.hljs{padding:3px 5px}.hljs{background:#1d1f21;color:#c5c8c6}.hljs span::selection,.hljs::selection{background:#373b41}.hljs span::-moz-selection,.hljs::-moz-selection{background:#373b41}.hljs-name,.hljs-title{color:#f0c674}.hljs-comment,.hljs-meta,.hljs-meta .hljs-keyword{color:#707880}.hljs-deletion,.hljs-link,.hljs-literal,.hljs-number,.hljs-symbol{color:#c66}.hljs-addition,.hljs-doctag,.hljs-regexp,.hljs-selector-attr,.hljs-selector-pseudo,.hljs-string{color:#b5bd68}.hljs-attribute,.hljs-code,.hljs-selector-id{color:#b294bb}.hljs-bullet,.hljs-keyword,.hljs-selector-tag,.hljs-tag{color:#81a2be}.hljs-subst,.hljs-template-tag,.hljs-template-variable,.hljs-variable{color:#8abeb7}.hljs-built_in,.hljs-quote,.hljs-section,.hljs-selector-class,.hljs-type{color:#de935f}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:700}
+
+@font-face {
+  font-family: CodePro;
+  src: url("/.media/fonts/code.woff2");
+  font-weight: 200 900;
+}
+
+@font-face {
+  font-family: SansPro;
+  src: url("/.media/fonts/sans.woff2");
+  font-weight: 200 900;
+}
+
+@font-face {
+  font-family: SerifPro;
+  src: url("/.media/fonts/serif.woff2");
+  font-weight: 200 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: SerifPro;
+  src: url("/.media/fonts/italic.woff2");
+  font-weight: 200 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: note;
+  src: url("/.media/fonts/note.woff2");
+}
+
+:root {
+  background: white;
+  color: black;
+  font: 400 16px/1.5 SerifPro, serif;
+  font-size: clamp(1rem, 2vw, 1.25rem);
+}
+
+::selection { background: cyan; }
+
+a {
+  color: inherit;
+  font-weight: 500;
+  text-decoration: underline;
+  
+  &:hover, &:hover strong {
+    background: black;
+    color: white !important;
+    padding: 0 .125rem;
+    margin: 0 -.125rem;
+    text-decoration: none;
+  }
+}
+
+article, header, footer {
+  margin: 0 auto;
+  max-width: 26rem;
+  padding: 0 1rem;
+}
+
+article {
+  padding-bottom: 7rem;
+  position: relative;
+  *:first-child { margin-top: 0; }
+  @media (max-width: 45rem) { padding-bottom: 3rem; }
+}
+
+aside {
+  @media (max-width: 46rem) { display: none; }
+  
+  color: indigo;
+  font-family: note, sans-serif;
+  font-size: .875rem;
+  line-height: 1rem;
+  position: absolute;
+  width: 7.5rem;
+  
+  &.left {
+    margin-left: -9.5rem;
+    text-align: right;
+    transform: rotate(-1deg);
+  }
+  
+  &.right {
+    margin-right: -8.5rem;
+    right: 0;
+    transform: rotate(1deg);
+  }  
+}
+
+body { margin: 0; }
+
+code { font-family: code; }
+
+h1, h2, h3 {
+  font-family: SansPro, sans-serif;
+  letter-spacing: -.0125rem;
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: 900;
+  margin: 2rem 0 1rem 0;
+  text-transform: uppercase;
+}
+
+h2 {
+  color: firebrick;
+  font-size: 1rem;
+  font-weight: 800;
+  margin: 3rem 0 .5rem 0;  
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  font-variant: all-small-caps;
+  margin: 1.5rem 0 .5rem 0;
+}
+
+header {
+  font-family: SansPro, sans-serif;
+  font-size: 0;
+  padding: 3rem 1rem;
+  
+  a {
+    color: darkslategray;
+    font-size: 1rem;
+    font-weight: 400;
+    text-decoration: none;
+    
+    padding: 0 .25rem;
+    margin: 0 -.25rem;
+    margin-right: 1rem;
+
+    
+    &:hover {
+      padding: 0 .25rem;
+      margin: 0 -.25rem;
+      margin-right: 1rem;
+    }
+  }
+  
+  a[href="mailto:email@weshipsoftware.com"] {
+    color: mediumblue;
+    font-weight: 600;
+    
+    &:before {
+      content: "🚀";
+      display: inline-block;
+      margin-left: -2rem;
+      margin-right: .5rem;
+      text-align: right;
+      width: 1.5rem;
+      
+      @media (max-width: 32rem) { display: none; }
+    }
+  }
+}
+
+hr {
+  background: whitesmoke;
+  border: none;
+  height: .25rem;
+  margin: 2rem 0;
+}
+
+mark, strong em {
+  background-color: yellow;
+  color: black;
+  font-style: normal;
+  font-weight: 600;
+  padding: 0 .125rem;
+  margin: 0 -.125rem;
+}
+
+p { margin: 0 0 .5rem 0; }
+
+strong { font-weight: 700; }
+
+table { width: 100%; }
+
+ul {
+  list-style-type: "-  ";
+  margin: 0 0 .5rem 0;
+  padding: 0;
+  @media (max-width: 32rem) { padding-left: 1rem; }
+  li { margin-bottom: .5rem; }
+  li::marker { color: silver; }
+}
