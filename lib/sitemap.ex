@@ -12,7 +12,8 @@ defmodule Sitemap do
     |> then(& if changed?(&1), do: save(&1))
 	end
 
-	defp valid?(path), do: Path.extname(path) == ".html"
+	defp valid?(path),
+	  do: Path.extname(path) == ".html" && Path.basename(path) != "404.html"
 
 	defp cast(path) do
   	path
@@ -26,7 +27,7 @@ defmodule Sitemap do
 	  """
     <?xml version="1.0" encoding="UTF-8"?>
     <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-      #{Enum.join(urls, "\n ")}
+      #{Enum.join(urls, "\n  ")}
     </urlset>
     """
 	end
