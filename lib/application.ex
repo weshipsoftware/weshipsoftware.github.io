@@ -7,6 +7,12 @@ defmodule WSS do
       name: Supervisor)
 	end
 
+	def build do
+    Assets.build()
+    Markdown.build()
+    Sitemap.build()
+	end
+
 	def tree(directory) do
     directory
     |> File.ls!()
