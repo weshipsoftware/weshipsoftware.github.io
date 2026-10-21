@@ -2,7 +2,7 @@ defmodule WSS do
 	use Application
 
 	def start(_type, _args) do
-    Supervisor.start_link([],
+    Supervisor.start_link([{Bandit, plug: Server}],
       strategy: :one_for_one,
       name: Supervisor)
 	end
