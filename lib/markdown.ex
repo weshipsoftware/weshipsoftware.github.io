@@ -6,7 +6,7 @@ defmodule Markdown do
 	def build do
     "priv/live"
     |> WSS.tree()
-    |> Enum.filter(&filter/1)
+    |> Enum.filter(&valid?/1)
     |> Enum.each(fn path ->
       path
       |> cast()
@@ -16,7 +16,7 @@ defmodule Markdown do
 
 	def include(source, context \\ []), do: render("priv/live/#{source}", context)
 
-	defp filter(path) do
+	defp valid?(path) do
 	  Path.extname(path) == ".md"
 		&& !(Path.basename(path) |> String.starts_with?("_"))
 	end
