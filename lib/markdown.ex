@@ -3,9 +3,8 @@ defmodule Markdown do
 
 	defstruct [:source, :target, :html, :changed?]
 
-	def build do
-    "priv/live"
-    |> WSS.tree()
+	def build(paths) do
+    paths
     |> Enum.filter(&valid?/1)
     |> Enum.each(fn path ->
       path
@@ -87,7 +86,7 @@ defmodule Markdown do
 	end
 
 	defp save(%__MODULE__{} = file) do
-    Logger.info("#{file.source} -> #{file.target}")
+    Logger.info("Building #{file.source} -> #{file.target}")
     file.target
     |> Path.dirname()
     |> File.mkdir_p!()

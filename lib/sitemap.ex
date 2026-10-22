@@ -3,10 +3,9 @@ defmodule Sitemap do
 
 	@sitemap "docs/sitemap.xml"
 
-	def build do
-    "docs"
-    |> WSS.tree()
-    |> Enum.filter(&valid?/1)
+	def build(paths) do
+	  paths
+	  |> Enum.filter(&valid?/1)
     |> Enum.map(&cast/1)
     |> render()
     |> then(& if changed?(&1), do: save(&1))

@@ -4,29 +4,31 @@ defmodule Watcher do
 
 	defstruct [:path, :directory, :inode, :time, :valid?]
 
-	def start_link(_), do: GenServer.start_link(__MODULE__, [])
+	def start_link(args), do: GenServer.start_link(__MODULE__, args)
 
-	def init(_) do
-    {:ok, pid} = FileSystem.start_link(dirs: ["docs", "priv/live"])
+	def init(dirs) do
+    {:ok, pid} = FileSystem.start_link(dirs: dirs)
     FileSystem.subscribe(pid)
     Logger.info("Watching for changes")
-    WSS.build()
+    Mix.Task.rerun("build")
     {:ok, %__MODULE__{}}
 	end
 
 	def handle_info({:file_event, _pid, {path, _e}}, state) do
 	  event = state
-		|> cast(path)
-		|> cast(:directory)
-		|> cast(:inode)
-		|> cast(:time)
-		|> cast({:valid, state})
+		|> cast({path, state})
 		|> tap(&build/1)
 		{:noreply, event}
 	end
 
-	defp cast(event = %__MODULE__{}, path) when is_binary(path),
-	  do: %__MODULE__{event | path: path}
+	defp cast(event = %__MODULE__{}, {path, previous_event})
+	when is_binary(path) do
+	  %__MODULE__{event | path: path}
+		|> cast(:directory)
+		|> cast(:inode)
+		|> cast(:time)
+		|> cast({:valid, previous_event})
+	end
 
 	defp cast(event = %__MODULE__{}, :directory) do
 	  %__MODULE__{event | directory: event.path
@@ -38,8 +40,9 @@ defmodule Watcher do
 
 	defp cast(event = %__MODULE__{}, :inode) do
 	  %__MODULE__{event | inode: if(File.exists?(event.path),
-	    do: File.stat!(event.path) |> then(& &1.inode), else: -0)
-		}
+			do: File.stat!(event.path) |> then(& &1.inode),
+			else: -0
+		)}
 	end
 
 	defp cast(event = %__MODULE__{}, :time),
@@ -54,10 +57,10 @@ defmodule Watcher do
 
 	defp build(event) do
 	  case {event.directory, Path.extname(event.path), event.valid?} do
-			{"docs", _, _}         -> Sitemap.build()
-			{"priv", ".css", true} -> Assets.build()
-			{"priv", ".js",  true} -> Assets.build()
-			{"priv", ".md",  true} -> Markdown.build()
+			{"docs", _,      _}    -> Mix.Task.rerun("build", ["sitemap"])
+			{"priv", ".css", true} -> Mix.Task.rerun("build", ["assets"])
+			{"priv", ".js",  true} -> Mix.Task.rerun("build", ["assets"])
+			{"priv", ".md",  true} -> Mix.Task.rerun("build", ["markdown"])
 			_                      -> :ok
 		end
 	end
