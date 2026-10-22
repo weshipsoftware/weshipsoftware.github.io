@@ -7,12 +7,12 @@ pageId: readme
 > [Jarrod Taylor][jt] & [Richard Rissanen][rr] focused on one thing:
 > **shipping software**.
 
-## We Are Looking for Interesting Projects
+## We Are Looking for Hard Projects
 
 As veterans of the tech industry, hands–on engineers, we’re working to **de–risk
 software development** for our small roster of **independent, product–led
 clients** by building and shipping exactly what they need on a _predictable
-timeline_ for a _reasonable rate_.
+timeline_ for a _fair rate_.
 
 ### FAQ: _Have you done this before?_
 
@@ -33,7 +33,7 @@ Yes! Check out some of our **_biggest wins_**:
 
 ## We Are Easy to Work With
 
-While we are a small agency, just two people, we have decades of experience
+Being a small agency is a strategic advantage, we have decades of experience
 shipping software used every day by **thousands of companies and millions of
 customers**.
 
@@ -62,24 +62,23 @@ Between **_$5,000 and $15,000 per week_**, depending on the pace of the project,
 **paid up–front each Monday**.
 
 We roadmap the project, set milestones at **a pace we know we can sustain**,
-then never stress about overtime hours or minimum contract lengths.
+so you never have to stress about overtime hours or minimum contract lengths.
 
 ### FAQ: _Who owns the product?_
 
 <aside class="left">We Ship (Your) Software.</aside>
 
-**_You do_**. Once you pay for it, it belongs to you. We **don’t do lock–ins**
+**_You do_**. You’ve payed for it, it belongs to you. We **don’t do lock–ins**
 and we **never claim any code or data** we produce for your project.
 
 ## We Look Forward to Meeting You
 
-If this sounds like what you’re looking for, **let us know what you’re up to**.
+Are you looking to de-risk your software project? Are you looking a high-impact software solution for a hard problem? Are you looking for angency that can manage your software project from ideation to delivery?.
+
+**_[Let us know what you’re up to.](mailto:email@weshipsoftware.com?subject=I%20have%20a%20hard%20problem%20I$20need%20someone%20to%20solve&body=%3CWhat%20would%20you%20like%20help%20with%3F%3E)_**
+
 No pitch deck, no salesperson, just a conversation about what you're working on
 to figure out how we can help.
-
-**_[Click here to send us an email.](mailto:email@weshipsoftware.com)_**
-
-We’ll answer questions, see if we’re a fit, and kick things off.
 
 — Jarrod & Richard
 
