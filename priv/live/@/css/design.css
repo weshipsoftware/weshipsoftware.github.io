@@ -1,0 +1,149 @@
+::selection {
+  background-color: aqua;
+  color: light-dark(black, #0F172A);
+}
+
+* {line-height: calc(1em + .5rem)}
+
+:root {
+  background-color: light-dark(white, #121212);
+  color: light-dark(black, #BCBCBC);
+  color-scheme: light dark;
+  font-family: var(--text);
+  font-size: 16px;
+  font-size: clamp(1rem, 2vw, 1.5rem);
+}
+
+a {
+  color: light-dark(black, #E5E5E5);
+  font-weight: 500;
+  margin: 0 -.125rem;
+  padding: 0 .125rem;
+
+  &:hover {
+    background-color: light-dark(black, #E5E5E5);
+    color: light-dark(white, #121212);
+    text-decoration: none;;
+  }
+}
+
+article {
+  margin: auto;
+  max-width: 32rem;
+  padding: 0 1.5rem 7rem 1.5rem;
+  position: relative;
+  @media (max-width: 45rem) {padding-bottom: 3rem}
+  *:first-child {margin-top: 0}
+}
+
+aside {
+  color: light-dark(teal, #49DE80);
+  font-family: var(--note);
+  font-size: .875rem;
+  line-height: 1.25rem;
+  position: absolute;
+  width: 6rem;
+
+  @media (max-width: 47rem) {display: none}
+
+  &.left {
+    margin-left: -7.5rem;
+    text-align: right;
+    transform: rotate(-1deg);
+  }
+
+  &.right {
+    margin-right: -6rem;
+    right: 0;
+    transform: rotate(1deg);
+  }
+}
+
+blockquote {
+  font-size: 1.25rem;
+  margin: 1rem 0;
+  padding: 0;
+}
+
+body {margin: 0}
+
+h1 {
+  color: light-dark(black, #EEEEEE);
+  font-family: var(--heading);
+  font-size: 2rem;
+  font-weight: 900;
+  margin: 2rem 0 1rem 0;
+  text-transform: uppercase;
+}
+
+h2 {
+  color: light-dark(firebrick, #A68BFA);
+  font-size: 1.5rem;
+  font-weight: 900;
+  margin: 3rem 0 .5rem 0;
+}
+
+h3 {
+  color: light-dark(black, #EEEEEE);
+  font-size: 1.25rem;
+  font-weight: 700;
+  font-variant: all-small-caps;
+  margin: 1.5rem 0 .5rem 0;
+}
+
+header {
+  margin: auto;
+  max-width: 32rem;
+  padding: 3rem 1.5rem;
+  text-transform: lowercase;
+
+  a {
+    color: light-dark(silver, #404040);
+    margin-right: 1.5rem;
+    text-decoration: none;
+  }
+
+  a:first-child {
+    color: light-dark(blue, #A68BFA);
+
+    &:hover {color: light-dark(white, #121212)}
+
+    &:before {
+      content: "🚀";
+      display: inline-block;
+      margin: auto .5rem auto -2rem;
+      text-align: right;
+      width: 1.5rem;
+      @media (max-width: 37rem) {display: none}
+    }
+  }
+}
+
+hr {
+  background-color: light-dark(whitesmoke, #262626);
+  border: none;
+  height: .25rem;
+  margin: 3rem 0;
+}
+
+hr + h1, hr + h2, hr + h3 {margin-top: 0}
+
+mark, strong em {
+  background-color: light-dark(yellow, #14532D);
+  font-style: normal;
+  font-weight: 700;
+  margin: 0 -.125rem;
+  padding: 0 .125rem;
+  a {font-weight: 700}
+}
+
+ol, ul {
+  margin: 0 0 .5rem 0;
+  padding: 0;
+  @media (max-width: 37rem) {padding: 0 0 0 1.5rem}
+  li {margin-bottom: .5rem}
+}
+
+p {margin: 0 0 .5rem 0}
+
+strong {color: light-dark(black, #E5E5E5)}
