@@ -38,6 +38,13 @@ Localhost
 
 Run `mix run --no-halt` to host `docs/` at http://localhost:4000.
 
+The server follows the Github Pages default routes:
+
+- `/404.html` is used for any not found HTML requests.
+- `.html` can be removed from the route (`/foo.html` -> `/foo`).
+- `/index.html` files are attempted on routes without file components
+  (`/foo/index.html` at `/foo`).
+
 While the server is running, changes to `priv/live/` will automatically trigger
 rebuilds.
 
@@ -63,6 +70,9 @@ layout: _layout.md
 The layout uses `<%= @inner_content %>` to place its content.
 
 > The layout file path is relative to `priv/live/`.
+
+Frontmatter assigns are passed up to the layout.
+See `@pageClass` and `@pageId` as examples.
 
 ### Includes
 
