@@ -83,3 +83,8 @@ Use `Markdown.include/2` to include files.
 ```
 
 > The include file path is relative to `priv/live/`.
+
+Drafts
+------
+
+`priv/drafts/` is for storing WIP files. Drafts starting with an underscore (`priv/drafts/_foo.md`) are gitignored.
