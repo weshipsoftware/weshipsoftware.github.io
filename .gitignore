@@ -7,3 +7,4 @@ erl_crash.dump
 *.ez
 wss-*.tar
 /priv/drafts/_*
+.tool-versions
