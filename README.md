@@ -87,4 +87,5 @@ Use `Markdown.include/2` to include files.
 Drafts
 ------
 
-`priv/drafts/` is for storing WIP files. Drafts starting with an underscore (`priv/drafts/_foo.md`) are gitignored.
+`priv/drafts/` is for storing WIP files. Drafts starting with an underscore
+(`priv/drafts/_foo.md`) are gitignored.
