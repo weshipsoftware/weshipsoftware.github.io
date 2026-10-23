@@ -33,4 +33,4 @@ pipeline with 99.9% uptime.
 
 ---
 
-<%= Markdown.include("release-notes/_footer.md") %>
+<%= @include.("release-notes/_footer.md", []) %>

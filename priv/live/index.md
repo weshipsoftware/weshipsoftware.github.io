@@ -1,5 +1,6 @@
 ---
 layout: _layout.md
+pageTitle: "We Ship Software: README"
 pageId: readme
 ---
 

@@ -1,28 +1,25 @@
-::selection {
-  background-color: aqua;
-  color: light-dark(black, #0F172A);
-}
-
-* {line-height: calc(1em + .5rem)}
+::selection {background-color: light-dark(cyan, darkcyan)}
 
 :root {
-  background-color: light-dark(white, #121212);
-  color: light-dark(black, #BCBCBC);
+  background-color: light-dark(white, black);
+  color: light-dark(#222, gainsboro);
   color-scheme: light dark;
-  font-family: var(--text);
+  font-family: text, sans-serif;
   font-size: 16px;
   font-size: clamp(1rem, 2vw, 1.5rem);
 }
 
+* {line-height: calc(1em + .5rem)}
+
 a {
-  color: light-dark(black, #E5E5E5);
+  color: light-dark(black, white);
   font-weight: 500;
   margin: 0 -.125rem;
   padding: 0 .125rem;
 
   &:hover {
-    background-color: light-dark(black, #E5E5E5);
-    color: light-dark(white, #121212);
+    background-color: light-dark(black, white);
+    color: light-dark(white, black) !important;
     text-decoration: none;;
   }
 }
@@ -37,29 +34,30 @@ article {
 }
 
 aside {
-  color: light-dark(teal, #49DE80);
-  font-family: var(--note);
+  color: light-dark(rebeccapurple, skyblue);
+  font-family: note, sans-serif;
   font-size: .875rem;
   line-height: 1.25rem;
   position: absolute;
   width: 6rem;
 
-  @media (max-width: 47rem) {display: none}
+  @media (max-width: 48rem) {display: none}
 
   &.left {
-    margin-left: -7.5rem;
+    margin-left: -8rem;
     text-align: right;
     transform: rotate(-1deg);
   }
 
   &.right {
-    margin-right: -6rem;
+    margin-right: -6.5rem;
     right: 0;
     transform: rotate(1deg);
   }
 }
 
 blockquote {
+  color: light-dark(black, white);
   font-size: 1.25rem;
   margin: 1rem 0;
   padding: 0;
@@ -68,8 +66,7 @@ blockquote {
 body {margin: 0}
 
 h1 {
-  color: light-dark(black, #EEEEEE);
-  font-family: var(--heading);
+  color: light-dark(black, white);
   font-size: 2rem;
   font-weight: 900;
   margin: 2rem 0 1rem 0;
@@ -77,7 +74,7 @@ h1 {
 }
 
 h2 {
-  color: light-dark(firebrick, #A68BFA);
+  color: light-dark(crimson, skyblue);
   font-size: 1.25rem;
   font-weight: 900;
   margin: 3rem 0 .5rem 0;
@@ -86,7 +83,7 @@ h2 {
 }
 
 h3 {
-  color: light-dark(black, #EEEEEE);
+  color: light-dark(black, white);
   font-size: 1.25rem;
   font-weight: 700;
   font-variant: all-small-caps;
@@ -100,15 +97,13 @@ header {
   text-transform: lowercase;
 
   a {
-    color: light-dark(silver, #404040);
+    color: light-dark(silver, dimgray);
     margin-right: 1.5rem;
     text-decoration: none;
   }
 
   a:first-child {
-    color: light-dark(blue, #A68BFA);
-
-    &:hover {color: light-dark(white, #121212)}
+    color: light-dark(blue, greenyellow);
 
     &:before {
       content: "🚀";
@@ -122,7 +117,7 @@ header {
 }
 
 hr {
-  background-color: light-dark(whitesmoke, #262626);
+  background-color: light-dark(whitesmoke, #121212);
   border: none;
   height: .25rem;
   margin: 3rem 0;
@@ -131,7 +126,8 @@ hr {
 hr + h1, hr + h2, hr + h3 {margin-top: 0}
 
 mark, strong em {
-  background-color: light-dark(yellow, #14532D);
+  background-color: light-dark(yellow, skyblue);
+  color: light-dark(black, black);
   font-style: normal;
   font-weight: 700;
   margin: 0 -.125rem;
@@ -148,4 +144,7 @@ ol, ul {
 
 p {margin: 0 0 .5rem 0}
 
-strong {color: light-dark(black, #E5E5E5)}
+strong {
+  color: light-dark(black, white);
+  em a {color: light-dark(black, black)}
+}

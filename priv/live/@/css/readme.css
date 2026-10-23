@@ -11,9 +11,10 @@ body#readme {
   }
 
   article > p:last-child {
-    color: light-dark(firebrick, #A68BFA);
+    color: light-dark(rebeccapurple, greenyellow);
     font-family: note, sans-serif;
     font-size: 1.25rem;
+    font-weight: bold;
     margin-top: 1.5rem;
     text-align: right;
   }

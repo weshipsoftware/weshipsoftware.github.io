@@ -1,5 +1,6 @@
 ---
 layout: _layout.md
+pageTitle: "We Ship Software: Release Notes"
 pageClass: release-note
 pageId: index
 ---
