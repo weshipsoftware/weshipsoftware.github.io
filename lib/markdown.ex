@@ -13,8 +13,6 @@ defmodule Markdown do
     end)
 	end
 
-	def include(source, context \\ []), do: render("priv/live/#{source}", context)
-
 	defp valid?(path) do
 	  Path.extname(path) == ".md"
 		&& !(Path.basename(path) |> String.starts_with?("_"))
@@ -40,7 +38,7 @@ defmodule Markdown do
 	  %__MODULE__{file | changed?: changed?}
 	end
 
-	defp render(source, context \\ []) do
+	def render(source, context \\ []) do
 	  source
 		|> File.read!()
 		|> parse(:markdown)
@@ -73,6 +71,8 @@ defmodule Markdown do
 	end
 
 	defp eval({assigns, content, layout}) do
+		assigns = assigns
+		|> Keyword.put(:include, &Helpers.include/2)
     content
     |> EEx.eval_string(assigns: assigns)
     |> MDEx.to_html!(render: [unsafe: true])
