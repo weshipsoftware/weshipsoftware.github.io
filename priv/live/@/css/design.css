@@ -126,8 +126,8 @@ hr {
 hr + h1, hr + h2, hr + h3 {margin-top: 0}
 
 mark, strong em {
-  background-color: light-dark(yellow, skyblue);
-  color: light-dark(black, black);
+  background-color: light-dark(yellow, darkslateblue);
+  color: light-dark(black, white);
   font-style: normal;
   font-weight: 700;
   margin: 0 -.125rem;
@@ -144,7 +144,4 @@ ol, ul {
 
 p {margin: 0 0 .5rem 0}
 
-strong {
-  color: light-dark(black, white);
-  em a {color: light-dark(black, black)}
-}
+strong {color: light-dark(black, white)}
