@@ -55,7 +55,7 @@ Markdown files are eval’d as embedded Elixir before being parsed as Markdown.
 
 ### Frontmatter
 
-YAML at the top of the file is converted to `@assigns` variables.
+YAML at the top of the file is converted to assigns (`@`) variables.
 
 ### Layouts
 
@@ -76,10 +76,10 @@ See `@pageClass` and `@pageId` as examples.
 
 ### Includes
 
-Use `Markdown.include/2` to include files.
+Use `@include/2` to include files.
 
 ```elixir
-<%= Markdown.include("path/to/_file.md", foo: "bar") %>
+<%= @include.("path/to/_file.md", [foo: "bar"]) %>
 ```
 
 > The include file path is relative to `priv/live/`.
