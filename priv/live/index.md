@@ -73,7 +73,9 @@ and we **never claim any code or data** we produce for your project.
 
 ## We Look Forward to Meeting You
 
-Are you looking to de-risk your software project? Are you looking a high-impact software solution for a hard problem? Are you looking for angency that can manage your software project from ideation to delivery?.
+Are you looking to de-risk your software project? Are you looking a high-impact
+software solution for a hard problem? Are you looking for angency that can
+manage your software project from ideation to delivery?.
 
 **_[Let us know what you’re up to.](mailto:email@weshipsoftware.com?subject=I%20have%20a%20hard%20problem%20I$20need%20someone%20to%20solve&body=%3CWhat%20would%20you%20like%20help%20with%3F%3E)_**
 
