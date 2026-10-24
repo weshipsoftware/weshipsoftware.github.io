@@ -1,0 +1,269 @@
+@import "./css/readme.css";
+@import "./css/release-notes.css";
+
+/* ========================================================================= */
+/* === FONTS =============================================================== */
+/* ========================================================================= */
+
+@font-face {font-family: text; font-style: normal; font-weight: 100;
+  src: url("/@/fonts/100.woff2");}
+@font-face {font-family: text; font-style: normal; font-weight: 300;
+  src: url("/@/fonts/300.woff2");}
+@font-face {font-family: text; font-style: normal; font-weight: 400;
+  src: url("/@/fonts/400.woff2");}
+@font-face {font-family: text; font-style: normal; font-weight: 500;
+  src: url("/@/fonts/500.woff2");}
+@font-face {font-family: text; font-style: normal; font-weight: 700;
+  src: url("/@/fonts/700.woff2");}
+@font-face {font-family: text; font-style: normal; font-weight: 900;
+  src: url("/@/fonts/900.woff2");}
+
+@font-face {font-family: text; font-style: italic; font-weight: 100;
+  src: url("/@/fonts/100i.woff2");}
+@font-face {font-family: text; font-style: italic; font-weight: 300;
+  src: url("/@/fonts/300i.woff2");}
+@font-face {font-family: text; font-style: italic; font-weight: 400;
+  src: url("/@/fonts/400i.woff2");}
+@font-face {font-family: text; font-style: italic; font-weight: 500;
+  src: url("/@/fonts/500i.woff2");}
+@font-face {font-family: text; font-style: italic; font-weight: 700;
+  src: url("/@/fonts/700i.woff2");}
+@font-face {font-family: text; font-style: italic; font-weight: 900;
+  src: url("/@/fonts/900i.woff2");}
+
+@font-face {font-family: note; src: url("/@/fonts/note.woff2");}
+
+:root {font-family: text, sans-serif}
+aside {font-family: note, text, sans-serif}
+
+/* ========================================================================= */
+/* === COLORS ============================================================== */
+/* ========================================================================= */
+
+:root {
+  --gray-1: color(display-p3 1 1 1);
+  --gray-2: color(display-p3 0.85 0.85 0.85);
+  --gray-3: color(display-p3 0.6 0.6 0.6);
+  --gray-4: color(display-p3 0.16 0.16 0.16);
+  --gray-5: color(display-p3 0.11 0.11 0.11);
+  --gray-6: color(display-p3 0.06 0.06 0.06);
+
+  --red-1: color(display-p3 1 0.1647 0);
+  --red-2: color(display-p3 0.851 0.1435 0.0118);
+  --red-3: color(display-p3 0.702 0.1224 0.0235);
+  --red-4: color(display-p3 0.5529 0.1012 0.0353);
+  --red-5: color(display-p3 0.4039 0.08 0.0471);
+  --red-6: color(display-p3 0.2549 0.0588 0.0588);
+
+  --orange-1: color(display-p3 1 0.5333 0);
+  --orange-2: color(display-p3 0.851 0.4557 0.0118);
+  --orange-3: color(display-p3 0.702 0.378 0.0235);
+  --orange-4: color(display-p3 0.5529 0.3004 0.0353);
+  --orange-5: color(display-p3 0.4039 0.2228 0.0471);
+  --orange-6: color(display-p3 0.2549 0.1451 0.0588);
+
+  --yellow-1: color(display-p3 1 0.851 0);
+  --yellow-2: color(display-p3 0.851 0.7271 0.0118);
+  --yellow-3: color(display-p3 0.702 0.6031 0.0235);
+  --yellow-4: color(display-p3 0.5529 0.4792 0.0353);
+  --yellow-5: color(display-p3 0.4039 0.3553 0.0471);
+  --yellow-6: color(display-p3 0.2549 0.2314 0.0588);
+
+  --green-1: color(display-p3 0.3726 0.8902 0);
+  --green-2: color(display-p3 0.3098 0.7592 0.0118);
+  --green-3: color(display-p3 0.2471 0.6282 0.0235);
+  --green-4: color(display-p3 0.1843 0.4973 0.0353);
+  --green-5: color(display-p3 0.1216 0.3663 0.0471);
+  --green-6: color(display-p3 0.0588 0.2353 0.0588);
+
+  --cyan-1: color(display-p3 0 0.8667 1);
+  --cyan-2: color(display-p3 0.0118 0.7396 0.851);
+  --cyan-3: color(display-p3 0.0235 0.6126 0.702);
+  --cyan-4: color(display-p3 0.0353 0.4855 0.5529);
+  --cyan-5: color(display-p3 0.0471 0.3584 0.4039);
+  --cyan-6: color(display-p3 0.0588 0.2314 0.2549);
+
+  --blue-1: color(display-p3 0 0.6314 1);
+  --blue-2: color(display-p3 0.0118 0.5412 0.851);
+  --blue-3: color(display-p3 0.0235 0.451 0.702);
+  --blue-4: color(display-p3 0.0353 0.3608 0.5529);
+  --blue-5: color(display-p3 0.0471 0.2706 0.4039);
+  --blue-6: color(display-p3 0.0588 0.1804 0.2549);
+
+  --purple-1: color(display-p3 0.4784 0.349 0.9645);
+  --purple-2: color(display-p3 0.4055 0.291 0.8226);
+  --purple-3: color(display-p3 0.3325 0.2329 0.6807);
+  --purple-4: color(display-p3 0.2596 0.1749 0.5387);
+  --purple-5: color(display-p3 0.1867 0.1169 0.3968);
+  --purple-6: color(display-p3 0.1137 0.0588 0.2549);
+}
+
+:root {color-scheme: light dark}
+
+::selection {background: light-dark(var(--cyan-1), var(--cyan-4))}
+
+:root {
+  background: light-dark(var(--gray-1), var(--gray-6));
+  color: light-dark(var(--gray-5), var(--gray-2));
+}
+
+a {
+  color: light-dark(var(--gray-6), var(--gray-1));
+  &:hover {
+    background-color: light-dark(var(--gray-6), var(--gray-1));
+    color: light-dark(var(--gray-1), var(--gray-6)) !important;
+  }
+}
+
+aside {color: light-dark(var(--purple-3), var(--blue-4))}
+
+blockquote {color: light-dark(var(--gray-6), var(--gray-1))}
+
+h1 {color: light-dark(var(--gray-6), var(--gray-1))}
+h2 {color: light-dark(var(--red-4), var(--gray-1))}
+h3 {color: light-dark(var(--gray-6), var(--gray-1))}
+
+header a {
+  color: light-dark(var(--gray-6), var(--gray-1));
+  opacity: .25;
+  &:hover {opacity: 1}
+  &:first-child {
+    color: light-dark(var(--blue-2), var(--blue-2));
+    opacity: 1;
+  }
+}
+
+hr {
+  background-color: light-dark(var(--gray-6), var(--gray-1));
+  opacity: .0875;
+}
+
+mark, strong em {
+  background-color: light-dark(var(--yellow-1), var(--red-6));
+  color: light-dark(var(--gray-6), var(--gray-1));
+}
+
+strong {color: light-dark(var(--gray-6), var(--gray-1))}
+
+/* ========================================================================= */
+/* === DESIGN ============================================================== */
+/* ========================================================================= */
+
+:root {
+  font-size: 16px;
+  font-size: clamp(1rem, 2vw, 1.5rem);
+}
+
+* {line-height: calc(1em + .5rem)}
+
+a {
+  font-weight: 500;
+  margin: 0 -.125rem;
+  padding: 0 .125rem;
+  &:hover {text-decoration: none}
+}
+
+article {
+  margin: auto;
+  max-width: 32rem;
+  padding: 0 1.5rem 7rem 1.5rem;
+  position: relative;
+  @media (max-width: 45rem) {padding-bottom: 3rem}
+  *:first-child {margin-top: 0}
+}
+
+aside {
+  font-size: .875rem;
+  line-height: 1.25rem;
+  position: absolute;
+  width: 6rem;
+
+  @media (max-width: 48rem) {display: none}
+
+  &.left {
+    margin-left: -8rem;
+    text-align: right;
+    transform: rotate(-1deg);
+  }
+
+  &.right {
+    margin-right: -6.5rem;
+    right: 0;
+    transform: rotate(1deg);
+  }
+}
+
+blockquote {
+  font-size: 1.25rem;
+  margin: 1rem 0;
+  padding: 0;
+}
+
+body {margin: 0}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 900;
+  margin: 2rem 0 1rem 0;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 1.25rem;
+  font-weight: 900;
+  margin: 3rem 0 .5rem 0;
+  letter-spacing: -.01em;
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  font-variant: all-small-caps;
+  margin: 1.5rem 0 .5rem 0;
+}
+
+header {
+  margin: auto;
+  max-width: 32rem;
+  padding: 3rem 1.5rem;
+  text-transform: lowercase;
+
+  a {
+    margin-right: 1.5rem;
+    text-decoration: none;
+
+    &:first-child:before {
+      content: "🚀";
+      display: inline-block;
+      margin: auto .5rem auto -2rem;
+      text-align: right;
+      width: 1.5rem;
+      @media (max-width: 37rem) {display: none}
+    }
+  }
+}
+
+hr {
+  border: none;
+  height: .25rem;
+  margin: 3rem 0;
+}
+
+hr + h1, hr + h2, hr + h3 {margin-top: 0}
+
+mark, strong em {
+  font-style: normal;
+  font-weight: 700;
+  margin: 0 -.125rem;
+  padding: 0 .125rem;
+  a {font-weight: 700}
+}
+
+ol, ul {
+  margin: 0 0 .5rem 0;
+  padding: 0;
+  @media (max-width: 37rem) {padding: 0 0 0 1.5rem}
+  li {margin-bottom: .5rem}
+}
+
+p {margin: 0 0 .5rem 0}
