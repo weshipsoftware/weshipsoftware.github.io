@@ -8,40 +8,43 @@ pageId: readme
 > [Jarrod Taylor][jt] & [Richard Rissanen][rr] focused on one thing:
 > **shipping software**.
 
-## We Are Looking for Hard Projects
+## We Are Looking for Challenging Projects
 
 As veterans of the tech industry, hands–on engineers, we’re working to **de–risk
 software development** for our small roster of **independent, product–led
 clients** by building and shipping exactly what they need on a _predictable
-timeline_ for a _fair rate_.
+timeline_ at a _fair price_.
 
 ### FAQ: _Have you done this before?_
 
-Yes! Check out some of our **_biggest wins_**:
+Yes! We have decades of experience shipping software used every day by
+**thousands of companies and millions of customers**.
 
 - [Altman Vilandrie](#altman)
-  Track statistically significant brand health data.
+  _Track statistically significant brand health data._
 - [The Baupost Group](#baupost)
-  Manage investment portfolios without a DBA.
+  _Manage investment portfolios without a DBA._
 - [BrightFire](#f1probowl)
-  Purchase blocks of tickets for global sporting events.
+  _Purchase blocks of tickets for global sporting events._
 - [City Slicking](#cityslicking)
-  Quantity discounts/assurance contracts as local–based ads.
+  _Quantity discounts/assurance contracts as local–based ads._
 - [CloudHealth](#cloudhealth)
-  Understand and optimize cloud server resources.
+  _Understand and optimize cloud server resources._
 
 [...and there are many more.](/release-notes)
 
 ## We Are Easy to Work With
 
-Being a small agency is a strategic advantage, we have decades of experience
-shipping software used every day by **thousands of companies and millions of
-customers**.
+Need some text here.
 
 ### FAQ: _Why should I hire you?_
 
-<aside class="left">Hiring sites<br>are broken.</aside>
-<aside class="right">Freelancers<br>are unreliable.</aside>
+<aside class="left">
+  <p>Hiring sites<br>are broken.</p>
+  <p>Freelancers<br>are unreliable.</p>
+</aside>
+
+Being a small agency is a strategic advantage.
 
 We are project managers, solutions architects, and hands–on engineers all at
 once, doing **_high–impact, low–overhead, bespoke development_**.
@@ -53,7 +56,7 @@ so your project gets the attention it deserves.
 delayed or lost in communication.
 
 **We stand by our work**, never taking shortcuts or making short–term decisions,
-so your project will keep running long after we’re done.
+so your project will continue running long after we’re done.
 
 ### FAQ: _What are your rates?_
 
@@ -74,7 +77,7 @@ and we **never claim any code or data** we produce for your project.
 
 ## We Look Forward to Meeting You
 
-Are you looking to de-risk your software project? Are you looking a high-impact
+Are you looking to de–risk your software project? Are you looking a high–impact
 software solution for a hard problem? Are you looking for angency that can
 manage your software project from ideation to delivery?.
 

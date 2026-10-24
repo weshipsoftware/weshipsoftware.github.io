@@ -11,7 +11,7 @@ body#readme {
   }
 
   article > p:last-child {
-    color: light-dark(rebeccapurple, greenyellow);
+    color: light-dark(var(--blue-3), var(--cyan-3));
     font-family: note, sans-serif;
     font-size: 1.25rem;
     font-weight: bold;
