@@ -1,24 +1,29 @@
 defmodule Sitemap do
   require Logger
 
-  @domain  Application.compile_env! :wss, :domain
-  @sitemap Application.compile_env! :wss, :sitemap
+  @domain Application.compile_env!(:wss, :domain)
+  @sitemap Application.compile_env!(:wss, :sitemap)
 
   def build(paths) do
     paths
     |> Enum.filter(&valid?/1)
     |> Enum.map(&loc/1)
     |> render()
-    |> then(& if changed?(&1), do: save(&1))
+    |> then(&if changed?(&1), do: save(&1))
   end
 
-  defp valid?(path), do: Path.extname(path) == ".html" && Path.basename(path) != "404.html"
+  defp valid?(path) do
+    Path.extname(path) == ".html" &&
+      Path.basename(path) != "404.html"
+  end
 
   defp loc(path) do
-    loc = path
-    |> String.replace_prefix("docs/", "")
-    |> String.replace_suffix(".html", "")
-    |> String.replace_suffix("index", "")
+    loc =
+      path
+      |> String.replace_prefix("docs/", "")
+      |> String.replace_suffix(".html", "")
+      |> String.replace_suffix("index", "")
+
     "<url><loc>#{@domain}/#{loc}</loc></url>"
   end
 
@@ -31,10 +36,13 @@ defmodule Sitemap do
     """
   end
 
-  defp changed?(sitemap), do: !File.exists?(@sitemap) || File.read!(@sitemap) != sitemap
+  defp changed?(sitemap) do
+    !File.exists?(@sitemap) ||
+      File.read!(@sitemap) != sitemap
+  end
 
   defp save(sitemap) do
-    Logger.info "Building sitemap.xml"
-    File.write! @sitemap, sitemap
+    Logger.info("Building sitemap.xml")
+    File.write!(@sitemap, sitemap)
   end
 end

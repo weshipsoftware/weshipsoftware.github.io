@@ -1,8 +1,8 @@
 defmodule Markdown do
   require Logger
 
-  @source Application.compile_env! :wss, :source
-  @target Application.compile_env! :wss, :target
+  @src Application.compile_env!(:wss, :src)
+  @tgt Application.compile_env!(:wss, :tgt)
 
   def build(paths) do
     paths
@@ -13,46 +13,64 @@ defmodule Markdown do
     |> Enum.each(&save/1)
   end
 
-  defp valid?(path),
-    do: Path.extname(path) == ".md" && !(Path.basename(path) |> String.starts_with?("_"))
-
-  defp target(source) do
-    target = source
-    |> String.replace_prefix(@source, @target)
-    |> String.replace_suffix(".md", ".html")
-    {source, target}
+  defp valid?(path) do
+    Path.extname(path) == ".md" &&
+      !(Path.basename(path) |> String.starts_with?("_"))
   end
 
-  defp html({source, target}), do: {source, target, render(source)}
+  defp target(src) do
+    tgt =
+      src
+      |> String.replace_prefix(@src, @tgt)
+      |> String.replace_suffix(".md", ".html")
 
-  defp render(source, context \\ []) do
-    data = File.read!(source)
-
-    {yaml, md} = if !String.starts_with?(data, "---"), do: {[], data},
-    else: String.split(data, "---", parts: 3) |> then(fn [_, yaml, md] -> {yaml, md} end)
-
-    {template, assigns} = yaml
-    |> YamlElixir.read_from_string!(atoms: true)
-    |> Map.to_list
-    |> Keyword.merge(context)
-    |> Keyword.put(:include, &render("#{@source}/#{&1}", &2))
-    |> Keyword.pop_lazy(:layout, fn -> nil end)
-
-    html = md
-    |> EEx.eval_string(assigns: assigns)
-    |> MDEx.to_html!(render: [unsafe: true])
-    |> Floki.parse_fragment!
-    |> Floki.raw_html(pretty: true)
-
-    if template == nil, do: html,
-    else: render("#{@source}/#{template}", Keyword.put(assigns, :inner_content, html))
+    {src, tgt}
   end
 
-  defp changed?({_, target, html}), do: !File.exists?(target) || File.read!(target) != html
+  defp html({src, tgt}), do: {src, tgt, render(src)}
 
-  defp save({source, target, html}) do
-    Logger.info "Building #{source} -> #{target}"
-    File.mkdir_p! Path.dirname target
-    File.write! target, html
+  defp render(src, cxt \\ []) do
+    data = File.read!(src)
+
+    {yaml, md} =
+      if String.starts_with?(data, "---") do
+        [_, yaml, md] = String.split(data, "---", parts: 3)
+        {yaml, md}
+      else
+        {[], data}
+      end
+
+    {template, cxt} =
+      yaml
+      |> YamlElixir.read_from_string!(atoms: true)
+      |> Map.to_list()
+      |> Keyword.merge(cxt)
+      |> Keyword.put(:include, &render("#{@src}/#{&1}", &2))
+      |> Keyword.pop_lazy(:layout, fn -> false end)
+
+    html =
+      md
+      |> EEx.eval_string(assigns: cxt)
+      |> MDEx.to_html!(render: [unsafe: true])
+      |> Floki.parse_fragment!()
+      |> Floki.raw_html(pretty: true)
+
+    if template do
+      cxt = Keyword.put(cxt, :inner_content, html)
+      render("#{@src}/#{template}", cxt)
+    else
+      html
+    end
+  end
+
+  defp changed?({_, tgt, html}) do
+    !File.exists?(tgt) ||
+      File.read!(tgt) != html
+  end
+
+  defp save({src, tgt, html}) do
+    Logger.info("Building #{src} -> #{tgt}")
+    File.mkdir_p!(Path.dirname(tgt))
+    File.write!(tgt, html)
   end
 end
