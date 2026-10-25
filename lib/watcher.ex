@@ -15,13 +15,13 @@ defmodule Watcher do
     {:ok, {nil, nil, nil, nil}}
   end
 
-  def handle_info({:file_event, _pid, {path, _e}}, state) do
+  def handle_info({:file_event, _pid, {path, _e}}, {_, _, p_inode, p_time}) do
     event = path |> directory() |> inode() |> time()
     {path, dir, inode, time} = event
 
     if dir == @tgt, do: Mix.Task.rerun("build", ["sitemap"])
 
-    if dir == "priv" && (time != state.time || inode != state.inode) do
+    if dir == "priv" && (inode != p_inode || time != p_time) do
       case Path.extname(path) do
         ".css" -> Mix.Task.rerun("build", ["assets"])
         ".md" -> Mix.Task.rerun("build", ["markdown"])

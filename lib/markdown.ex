@@ -40,11 +40,6 @@ defmodule Markdown do
         {[], data}
       end
 
-    yaml
-    |> YamlElixir.read_from_string!(atoms: true)
-    |> Map.new(fn {k, v} -> {String.to_atom(k), v} end)
-    |> IO.inspect()
-
     {template, cxt} =
       yaml
       |> YamlElixir.read_from_string!(atoms: true)
