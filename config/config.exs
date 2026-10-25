@@ -13,3 +13,9 @@ config :esbuild,
     cd: Path.expand("../priv/live/@", __DIR__),
     env: %{"NODE_PATH" => Path.expand("../deps", __DIR__)}
   ]
+
+config :wss,
+  domain: "https://weshipsoftware.com",
+  sitemap: "docs/sitemap.xml",
+  source: "priv/live",
+  target: "docs"
