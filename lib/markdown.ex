@@ -1,95 +1,58 @@
 defmodule Markdown do
-	require Logger
+  require Logger
 
-	defstruct [:source, :target, :html, :changed?]
+  @source Application.compile_env! :wss, :source
+  @target Application.compile_env! :wss, :target
 
-	def build(paths) do
+  def build(paths) do
     paths
     |> Enum.filter(&valid?/1)
-    |> Enum.each(fn path ->
-      path
-      |> cast()
-      |> then(& if &1.changed?, do: save(&1))
-    end)
-	end
+    |> Enum.map(&target/1)
+    |> Enum.map(&html/1)
+    |> Enum.filter(&changed?/1)
+    |> Enum.each(&save/1)
+  end
 
-	defp valid?(path) do
-	  Path.extname(path) == ".md"
-		&& !(Path.basename(path) |> String.starts_with?("_"))
-	end
+  defp valid?(path),
+    do: Path.extname(path) == ".md" && !(Path.basename(path) |> String.starts_with?("_"))
 
-	defp cast(path) when is_binary(path), do: cast(%__MODULE__{source: path})
+  defp target(source) do
+    target = source
+    |> String.replace_prefix(@source, @target)
+    |> String.replace_suffix(".md", ".html")
+    {source, target}
+  end
 
-	defp cast(%__MODULE__{target: target} = file) when is_nil(target) do
-	  target = file.source
-		|> String.replace_prefix("priv/live", "docs")
-		|> String.replace_suffix(".md", ".html")
-		cast(%__MODULE__{file | target: target})
-	end
+  defp html({source, target}), do: {source, target, render(source)}
 
-	defp cast(%__MODULE__{html: html} = file) when is_nil(html) do
-	  html = render(file.source)
-		cast(%__MODULE__{file | html: html})
-	end
+  defp render(source, context \\ []) do
+    data = File.read!(source)
 
-	defp cast(%__MODULE__{changed?: changed?} = file) when is_nil(changed?) do
-	  changed? = !File.exists?(file.target)
-		|| File.read!(file.target) != file.html
-	  %__MODULE__{file | changed?: changed?}
-	end
+    {yaml, md} = if !String.starts_with?(data, "---"), do: {[], data},
+    else: String.split(data, "---", parts: 3) |> then(fn [_, yaml, md] -> {yaml, md} end)
 
-	def render(source, context \\ []) do
-	  source
-		|> File.read!()
-		|> parse(:markdown)
-		|> parse(:yaml)
-		|> merge(context)
-		|> eval()
-		|> layout()
-	end
+    {template, assigns} = yaml
+    |> YamlElixir.read_from_string!(atoms: true)
+    |> Map.to_list
+    |> Keyword.merge(context)
+    |> Keyword.put(:include, &render("#{@source}/#{&1}", &2))
+    |> Keyword.pop_lazy(:layout, fn -> nil end)
 
-	defp parse(data, :markdown) do
-	  if !String.starts_with?(data, "---"),
-			do: {[], data},
-		else: data
-      |> String.split("---", parts: 3)
-      |> then(fn [_, yaml, md] -> {yaml, md} end)
-	end
-
-	defp parse({yaml, markdown}, :yaml) do
-    yaml
-    |> YamlElixir.read_from_string!()
-    |> Enum.map(fn({k, v}) -> {String.to_atom(k), v} end)
-    |> then(fn yaml -> {yaml, markdown} end)
-	end
-
-	defp merge({assigns, content}, context) do
-		assigns
-		|> Keyword.merge(context)
-		|> Keyword.pop_lazy(:layout, fn -> nil end)
-		|> then(fn {layout, assigns} -> {assigns, content, layout} end)
-	end
-
-	defp eval({assigns, content, layout}) do
-		assigns = assigns
-		|> Keyword.put(:include, &Helpers.include/2)
-    content
+    html = md
     |> EEx.eval_string(assigns: assigns)
     |> MDEx.to_html!(render: [unsafe: true])
-    |> then(fn content -> {assigns, content, layout} end)
-	end
+    |> Floki.parse_fragment!
+    |> Floki.raw_html(pretty: true)
 
-	defp layout({_, content, nil}), do: content
-	defp layout({assigns, content, template}) do
-	  render("priv/live/#{template}",
-			Keyword.put(assigns, :inner_content, content))
-	end
+    if template == nil, do: html,
+    else: render("#{@source}/#{template}", Keyword.put(assigns, :inner_content, html))
+  end
 
-	defp save(%__MODULE__{} = file) do
-    Logger.info("Building #{file.source} -> #{file.target}")
-    file.target
-    |> Path.dirname()
-    |> File.mkdir_p!()
-    File.write!(file.target, file.html)
-	end
+  defp changed?({_, target, html}), do: !File.exists?(target) || File.read!(target) != html
+
+  defp save({source, target, html}) do
+    Logger.info "Building #{source} -> #{target}"
+    File.mkdir_p! Path.dirname target
+    File.write! target, html
+  end
 end

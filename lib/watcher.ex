@@ -1,67 +1,48 @@
 defmodule Watcher do
-	require Logger
-	use GenServer
+  require Logger
+  use GenServer
 
-	defstruct [:path, :directory, :inode, :time, :valid?]
+  @target Application.compile_env! :wss, :target
 
-	def start_link(args), do: GenServer.start_link(__MODULE__, args)
+  def start_link(args), do: GenServer.start_link(__MODULE__, args)
 
-	def init(dirs) do
-    {:ok, pid} = FileSystem.start_link(dirs: dirs)
-    FileSystem.subscribe(pid)
-    Logger.info("Watching for changes")
-    Mix.Task.rerun("build")
-    {:ok, %__MODULE__{}}
-	end
+  def init(dirs) do
+    {:ok, pid} = FileSystem.start_link dirs: dirs
+    FileSystem.subscribe pid
+    Logger.info "Watching for changes"
+    Mix.Task.rerun "build"
+    {:ok, {nil, nil, nil, nil}}
+  end
 
-	def handle_info({:file_event, _pid, {path, _e}}, state) do
-	  event = state
-		|> cast({path, state})
-		|> tap(&build/1)
-		{:noreply, event}
-	end
+  def handle_info({:file_event, _pid, {path, _e}}, state) do
+    event = path |> directory() |> inode() |> time()
+    {path, directory, inode, time} = event
+    if directory == @target, do: Mix.Task.rerun("build", ["sitemap"])
+    if directory == "priv" && (time != state.time || inode != state.inode) do
+      case Path.extname(path) do
+        ".md" -> Mix.Task.rerun "build", ["markdown"]
+        ext when ext == ".css" or ext == ".js" -> Mix.Task.rerun "build", ["assets"]
+        _ -> :ok
+      end
+    end
+    {:noreply, event}
+  end
 
-	defp cast(event = %__MODULE__{}, {path, previous_event})
-	when is_binary(path) do
-	  %__MODULE__{event | path: path}
-		|> cast(:directory)
-		|> cast(:inode)
-		|> cast(:time)
-		|> cast({:valid, previous_event})
-	end
+  defp directory(path) do
+    directory = path
+    |> String.replace_prefix(File.cwd!, "")
+    |> String.split("/")
+    |> Enum.at(1)
+    {path, directory}
+  end
 
-	defp cast(event = %__MODULE__{}, :directory) do
-	  %__MODULE__{event | directory: event.path
-     	|> String.replace_prefix(File.cwd!, "")
-     	|> String.split("/")
-     	|> Enum.at(1)
-		}
-	end
+  defp inode({path, directory}) do
+    inode = if File.exists?(path), do: File.stat!(path) |> then(& &1.inode), else: -1
+    {path, directory, inode}
+  end
 
-	defp cast(event = %__MODULE__{}, :inode) do
-	  %__MODULE__{event | inode: if(File.exists?(event.path),
-			do: File.stat!(event.path) |> then(& &1.inode),
-			else: -0
-		)}
-	end
-
-	defp cast(event = %__MODULE__{}, :time),
-	  do: %__MODULE__{event | time: System.os_time(:second)}
-
-	defp cast(event = %__MODULE__{}, {:valid, previous_event}) do
-    %__MODULE__{event | valid?:
-         event.time  != previous_event.time
-      || event.inode != previous_event.inode
-    }
-	end
-
-	defp build(event) do
-	  case {event.directory, Path.extname(event.path), event.valid?} do
-			{"docs", _,      _}    -> Mix.Task.rerun("build", ["sitemap"])
-			{"priv", ".css", true} -> Mix.Task.rerun("build", ["assets"])
-			{"priv", ".js",  true} -> Mix.Task.rerun("build", ["assets"])
-			{"priv", ".md",  true} -> Mix.Task.rerun("build", ["markdown"])
-			_                      -> :ok
-		end
-	end
+  defp time({path, directory, inode}) do
+    time = System.os_time :second
+    {path, directory, inode, time}
+  end
 end

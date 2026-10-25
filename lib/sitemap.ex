@@ -1,41 +1,40 @@
 defmodule Sitemap do
-	require Logger
+  require Logger
 
-	@sitemap "docs/sitemap.xml"
+  @domain  Application.compile_env! :wss, :domain
+  @sitemap Application.compile_env! :wss, :sitemap
 
-	def build(paths) do
-	  paths
-	  |> Enum.filter(&valid?/1)
-    |> Enum.map(&cast/1)
+  def build(paths) do
+    paths
+    |> Enum.filter(&valid?/1)
+    |> Enum.map(&loc/1)
     |> render()
     |> then(& if changed?(&1), do: save(&1))
-	end
+  end
 
-	defp valid?(path),
-	  do: Path.extname(path) == ".html" && Path.basename(path) != "404.html"
+  defp valid?(path), do: Path.extname(path) == ".html" && Path.basename(path) != "404.html"
 
-	defp cast(path) do
-  	path
+  defp loc(path) do
+    loc = path
     |> String.replace_prefix("docs/", "")
     |> String.replace_suffix(".html", "")
     |> String.replace_suffix("index", "")
-    |> then(&"<url><loc>https://weshipsoftware.com/#{&1}</loc></url>")
-	end
+    "<url><loc>#{@domain}/#{loc}</loc></url>"
+  end
 
-	defp render(urls) do
-	  """
+  defp render(urls) do
+    """
     <?xml version="1.0" encoding="UTF-8"?>
     <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
       #{Enum.join(urls, "\n  ")}
     </urlset>
     """
-	end
+  end
 
-	defp changed?(sitemap),
-	  do: !File.exists?(@sitemap) || File.read!(@sitemap) != sitemap
+  defp changed?(sitemap), do: !File.exists?(@sitemap) || File.read!(@sitemap) != sitemap
 
-	defp save(sitemap) do
-    Logger.info("Building sitemap.xml")
-    File.write!(@sitemap, sitemap)
-	end
+  defp save(sitemap) do
+    Logger.info "Building sitemap.xml"
+    File.write! @sitemap, sitemap
+  end
 end
