@@ -53,8 +53,6 @@ defmodule Markdown do
       md
       |> EEx.eval_string(assigns: cxt)
       |> MDEx.to_html!(render: [unsafe: true])
-      |> Floki.parse_fragment!()
-      |> Floki.raw_html(pretty: true)
 
     if template do
       cxt = Keyword.put(cxt, :inner_content, html)

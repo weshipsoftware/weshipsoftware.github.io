@@ -24,7 +24,6 @@ defmodule WSS.MixProject do
       {:bandit, "~> 1.13"},
       {:esbuild, "~> 0.10"},
       {:file_system, "~> 1.1"},
-      {:floki, "~> 0.38.4"},
       {:mdex, "~> 0.14"},
       {:yaml_elixir, "~> 2.12"}
     ]
