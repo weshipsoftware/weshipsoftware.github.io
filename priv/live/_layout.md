@@ -18,10 +18,9 @@
     <link rel="stylesheet" href="/@/styles.css">
     <script src="/@/async.js" async></script>
     <script src="/@/defer.js" defer></script>
-    <title><%= @pageTitle || "We Ship Software" %></title>
+    <title><%= assigns[:pageTitle] || "We Ship Software" %></title>
   </head>
-  <body
-    class='<%= @pageClass || "" %>' id='<%= @pageId || "" %>'>
+  <body class="<%= assigns[:pageClass] %>" id="<%= assigns[:pageId] %>">
     <main>
       <header>
         <a href="mailto:email@weshipsoftware.com">email@weshipsoftware.com</a>

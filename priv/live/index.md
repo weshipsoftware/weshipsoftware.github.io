@@ -4,14 +4,14 @@ pageTitle: "We Ship Software: README"
 pageId: readme
 ---
 
-> **_We Ship Software_** is a small development agency run by
+> **_We Ship Software_** is a small–batch internet studio run by
 > [Jarrod Taylor][jt] & [Richard Rissanen][rr] focused on one thing:
 > **shipping software**.
 
 ## We Are Looking for Challenging Projects
 
 As veterans of the tech industry, hands–on engineers, we’re working to **de–risk
-software development** for our small roster of **independent, product–led
+software development** for our limited roster of **independent, product–led
 clients** by building and shipping exactly what they need on a _predictable
 timeline_ at a _fair price_.
 
@@ -80,6 +80,8 @@ and we **never claim any code or data** we produce for your project.
 Are you looking to de–risk your software project? Are you looking a high–impact
 software solution for a hard problem? Are you looking for angency that can
 manage your software project from ideation to delivery?.
+
+<button>Email us</button>
 
 **_[Let us know what you’re up to.](mailto:email@weshipsoftware.com?subject=I%20have%20a%20hard%20problem%20I$20need%20someone%20to%20solve&body=%3CWhat%20would%20you%20like%20help%20with%3F%3E)_**
 

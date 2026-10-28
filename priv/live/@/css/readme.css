@@ -11,7 +11,7 @@ body#readme {
   }
 
   article > p:last-child {
-    color: firebrick;
+    color: navy;
     font-family: note, sans-serif;
     font-size: 1.25rem;
     font-weight: bold;

@@ -42,7 +42,7 @@ defmodule Markdown do
 
     {template, cxt} =
       yaml
-      |> YamlElixir.read_from_string!(atoms: true)
+      |> YamlElixir.read_from_string!()
       |> Map.new(fn {k, v} -> {String.to_atom(k), v} end)
       |> Map.to_list()
       |> Keyword.merge(cxt)

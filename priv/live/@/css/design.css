@@ -1,13 +1,11 @@
-* {line-height: calc(1em + 0.5rem)}
+* {line-height: calc(1em + 0.4rem)}
 
 ::selection {background: cyan}
 
 :root {
-  background: white;
-  color: black;
   font-family: text, sans-serif;
   font-size: 16px;
-  font-size: clamp(1rem, 2vw, 1.5rem);
+  font-size: clamp(1rem, 2vw, 3rem);
 }
 
 a {
@@ -15,9 +13,10 @@ a {
   font-weight: 500;
   margin: 0 -0.125rem;
   padding: 0 0.125rem;
+  text-decoration-color: mediumblue;
 
   &:hover {
-    background: black;
+    background: mediumblue;
     color: white !important;
     text-decoration: none;
   }
@@ -35,7 +34,7 @@ article {
 }
 
 aside {
-  color: purple;
+  color: mediumblue;
   font-family: note, text, sans-serif;
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -65,18 +64,28 @@ blockquote {
 
 body {margin: 0}
 
+/* button --> orangered */
+
 h1 {
+  background: black;
+  color: white;
+  display: inline-block;
   font-size: 2rem;
   font-weight: 900;
-  margin: 2rem 0 1rem 0;
+  /* margin: 2rem 0 1rem 0; */
+  margin: 2rem -0.25rem 1rem -0.25rem;
+  padding: 0 0.25rem;
   text-transform: uppercase;
+  transform: rotate(-1deg);
+
+  small {font-variant: all-small-caps}
 }
 
 h2 {
-  color: firebrick;
+  color: crimson;
   font-size: 1.25rem;
   font-weight: 900;
-  margin: 3rem 0 0.5rem 0;
+  margin: 3rem 0 0.4rem 0;
   letter-spacing: -0.01em;
 }
 
@@ -84,7 +93,7 @@ h3 {
   font-size: 1.25rem;
   font-weight: 700;
   font-variant: all-small-caps;
-  margin: 1.5rem 0 0.5rem 0;
+  margin: 1.5rem 0 0.4rem 0;
 }
 
 header {
@@ -99,7 +108,7 @@ header {
     text-decoration: none;
 
     &:first-child {
-      color: blue;
+      color: mediumblue;
 
       &:before {
         content: "🚀";
@@ -134,12 +143,12 @@ mark, strong em {
 }
 
 ol, ul {
-  margin: 0 0 0.5rem 0;
+  margin: 0 0 0.4rem 0;
   padding: 0;
 
   @media (max-width: 37rem) {padding: 0 0 0 1.5rem}
 
-  li {margin-bottom: 0.5rem}
+  li {margin-bottom: 0.4rem}
 }
 
-p {margin: 0 0 0.5rem 0}
+p {margin: 0 0 0.4rem 0}
