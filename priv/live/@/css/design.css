@@ -1,0 +1,154 @@
+* {line-height: calc(1em + 0.4rem)}
+
+::selection {background: cyan}
+
+:root {
+  font-family: text, sans-serif;
+  font-size: 16px;
+  font-size: clamp(1rem, 2vw, 3rem);
+}
+
+a {
+  color: inherit;
+  font-weight: 500;
+  margin: 0 -0.125rem;
+  padding: 0 0.125rem;
+  text-decoration-color: mediumblue;
+
+  &:hover {
+    background: mediumblue;
+    color: white !important;
+    text-decoration: none;
+  }
+}
+
+article {
+  margin: auto;
+  max-width: 32rem;
+  padding: 0 1.5rem 7rem 1.5rem;
+  position: relative;
+
+  @media (max-width: 45rem) {padding-bottom: 3rem}
+
+  *:first-child {margin-top: 0}
+}
+
+aside {
+  color: mediumblue;
+  font-family: note, text, sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  position: absolute;
+  width: 6rem;
+
+  @media (max-width: 48rem) {display: none}
+
+  &.left {
+    margin-left: -8rem;
+    text-align: right;
+    transform: rotate(-1deg);
+  }
+
+  &.right {
+    margin-right: -6.5rem;
+    right: 0;
+    transform: rotate(1deg);
+  }
+}
+
+blockquote {
+  font-size: 1.25rem;
+  margin: 1rem 0;
+  padding: 0;
+}
+
+body {margin: 0}
+
+/* button --> orangered */
+
+h1 {
+  background: black;
+  color: white;
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: 900;
+  /* margin: 2rem 0 1rem 0; */
+  margin: 2rem -0.25rem 1rem -0.25rem;
+  padding: 0 0.25rem;
+  text-transform: uppercase;
+  transform: rotate(-1deg);
+
+  small {font-variant: all-small-caps}
+}
+
+h2 {
+  color: crimson;
+  font-size: 1.25rem;
+  font-weight: 900;
+  margin: 3rem 0 0.4rem 0;
+  letter-spacing: -0.01em;
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  font-variant: all-small-caps;
+  margin: 1.5rem 0 0.4rem 0;
+}
+
+header {
+  margin: auto;
+  max-width: 32rem;
+  padding: 3rem 1.5rem;
+  text-transform: lowercase;
+
+  a {
+    color: silver;
+    margin-right: 1.5rem;
+    text-decoration: none;
+
+    &:first-child {
+      color: mediumblue;
+
+      &:before {
+        content: "🚀";
+        display: inline-block;
+        margin: auto 0.5rem auto -2rem;
+        text-align: right;
+        width: 1.5rem;
+
+        @media (max-width: 37rem) {display: none}
+      }
+    }
+  }
+}
+
+hr {
+  background: whitesmoke;
+  border: none;
+  height: 0.25rem;
+  margin: 3rem 0;
+}
+
+hr + h1, hr + h2, hr + h3 {margin-top: 0}
+
+mark, strong em {
+  background: yellow;
+  font-style: normal;
+  font-weight: 700;
+  margin: 0 -0.125rem;
+  padding: 0 0.125rem;
+
+  a {font-weight: 700}
+}
+
+ol, ul {
+  margin: 0 0 0.4rem 0;
+  padding: 0;
+
+  @media (max-width: 37rem) {padding: 0 0 0 1.5rem}
+
+  li {margin-bottom: 0.4rem}
+}
+
+p {margin: 0 0 0.4rem 0}

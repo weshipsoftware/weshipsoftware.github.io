@@ -1,0 +1,21 @@
+body#readme {
+  header a:last-child {display: none}
+
+  ul:nth-of-type(1) {
+    margin-bottom: 1rem;
+
+    @media (max-width: 37rem) {
+      li a {display: inline}
+      li a:after { content:"\a"; white-space: pre;}
+    }
+  }
+
+  article > p:last-child {
+    color: navy;
+    font-family: note, sans-serif;
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-top: 1.5rem;
+    text-align: right;
+  }
+}

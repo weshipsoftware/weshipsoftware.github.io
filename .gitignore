@@ -1,1 +1,10 @@
 .DS_Store
+/.elixir_ls/
+/_build/
+/deps/
+/tmp/
+erl_crash.dump
+*.ez
+wss-*.tar
+/priv/drafts/_*
+.tool-versions
