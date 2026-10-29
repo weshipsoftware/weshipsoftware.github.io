@@ -96,6 +96,7 @@ a {
   text-decoration-color: mediumblue;
   &:hover {
     background: mediumblue;
+    border-radius: 1px;
     color: white !important;
     text-decoration: none;
   }
@@ -146,6 +147,7 @@ body {
 }
 h1 {
   background: black;
+  border-radius: 1px;
   color: white;
   display: inline-block;
   font-size: 2rem;
@@ -174,7 +176,7 @@ h3 {
 header {
   margin: auto;
   max-width: 32rem;
-  padding: 3rem 1.5rem;
+  padding: 2.33rem 1.5rem 3rem 1.5rem;
   text-transform: lowercase;
   a {
     color: silver;
@@ -183,11 +185,16 @@ header {
     &:first-child {
       color: mediumblue;
       &:before {
-        content: "\1f680";
+        background-image: url(/@/images/rocket.jpg);
+        background-size: cover;
+        content: "";
+        height: 1rem;
         display: inline-block;
-        margin: auto 0.5rem auto -2rem;
+        height: 2rem;
+        margin: auto 0.5rem -.25rem -2.5rem;
         text-align: right;
-        width: 1.5rem;
+        width: 2rem;
+        transform: rotate(45deg);
         @media (max-width: 37rem) {
           display: none;
         }
@@ -209,6 +216,7 @@ hr + h3 {
 mark,
 strong em {
   background: yellow;
+  border-radius: 1px;
   font-style: normal;
   font-weight: 700;
   margin: 0 -0.125rem;

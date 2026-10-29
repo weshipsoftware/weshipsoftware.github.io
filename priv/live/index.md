@@ -20,18 +20,14 @@ timeline_ at a _fair price_.
 Yes! We have decades of experience shipping software used every day by
 **thousands of companies and millions of customers**.
 
-- [Altman Vilandrie](#altman)
-  _Track statistically significant brand health data._
+- [InCharge Energy](/previous-gigs/incharge-energy)
+  Millions of daily messages processed in realtime.
 - [The Baupost Group](#baupost)
-  _Manage investment portfolios without a DBA._
+  Manage investment portfolios without a DBA.
 - [BrightFire](#f1probowl)
-  _Purchase blocks of tickets for global sporting events._
-- [City Slicking](#cityslicking)
-  _Quantity discounts/assurance contracts as local–based ads._
-- [CloudHealth](#cloudhealth)
-  _Understand and optimize cloud server resources._
+  Purchase blocks of tickets for global sporting events.
 
-[...and there are many more.](/release-notes)
+[...and there are many more.](/previous-gigs)
 
 ## We Are Easy to Work With
 

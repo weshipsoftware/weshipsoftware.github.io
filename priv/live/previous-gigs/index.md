@@ -36,7 +36,7 @@ _predictable timeline_ for a _reasonable rate_.
   R&D/mobile ad prototypes to pay for free hotspot wifi.
 - [IDEXX Labs](#idexx)
   Veterinarian diagnostic testing and training, now in AU.
-- [InCharge Energy](/release-notes/incharge-energy)
+- [InCharge Energy](/previous-gigs/incharge-energy)
   Millions of daily messages processed in realtime.
 - [Localytics](#localytics)
   Use Twitter data to make smarter marketing decisions.
