@@ -34,6 +34,29 @@ article {
   *:first-child {margin-top: 0}
 }
 
+div {
+  &.center {
+    text-align: center;
+
+    a {
+      background-color: green !important;
+      border: 1px solid black;
+      border-radius: 5px 5px 5px;
+      color: white !important;
+      padding: 5px;
+      text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+    }
+
+    p {
+      line-height:unset;
+    }
+  }
+}
+
 aside {
   color: mediumblue;
   font-family: note, text, sans-serif;

@@ -71,16 +71,9 @@ so you never have to stress about overtime hours or minimum contract lengths.
 **_You do_**. You’ve payed for it, it belongs to you. We **don’t do lock–ins**
 and we **never claim any code or data** we produce for your project.
 
-## We Look Forward to Meeting You
+---
 
-Are you looking to de–risk your software project? Are you looking a high–impact
-software solution for a hard problem? Are you looking for studio that can
-manage your software project from ideation to delivery Let us know what you’re up to.
-
-**_[Book a 30 minute free consultation](https://calendly.com/email-weshipsoftware/30min)_**
-
-No pitch deck, no salesperson, just a conversation about what you're working on
-to figure out how we can help.
+<%= @include.("previous-gigs/_footer.md", [footer_intro: "Are you looking to de–risk your software project? Are you looking a high–impact software solution for a hard problem? Are you looking for studio that can manage your software project from ideation to delivery?"]) %>
 
 — Jarrod & Richard
 
