@@ -17,7 +17,7 @@ timeline_ at a _fair price_.
 
 ### FAQ: _Have you done this before?_
 
-Yes! We have decades of experience shipping software used every day by
+Yes! We have decades of experience shipping software used daily by
 **thousands of companies and millions of customers**.
 
 - [InCharge Energy](/previous-gigs/incharge-energy)
@@ -40,7 +40,7 @@ Need some text here.
   <p>Freelancers<br>are unreliable.</p>
 </aside>
 
-Being a small agency is a strategic advantage.
+Being a small studio is a strategic advantage.
 
 We are project managers, solutions architects, and hands–on engineers all at
 once, doing **_high–impact, low–overhead, bespoke development_**.
@@ -62,7 +62,7 @@ Between **_$5,000 and $15,000 per week_**, depending on the pace of the project,
 **paid up–front each Monday**.
 
 We roadmap the project, set milestones at **a pace we know we can sustain**,
-so you never have to stress about overtime hours or minimum contract lengths.
+so you never have to stress about missing deadlines or minimum contract lengths.
 
 ### FAQ: _Who owns the product?_
 
@@ -73,7 +73,7 @@ and we **never claim any code or data** we produce for your project.
 
 ---
 
-<%= @include.("previous-gigs/_footer.md", [footer_intro: "Are you looking to de–risk your software project? Are you looking a high–impact software solution for a hard problem? Are you looking for studio that can manage your software project from ideation to delivery?"]) %>
+<%= @include.("previous-gigs/_footer.md", [footer_intro: "Do you want to de–risk your project? Do you want a high–impact solution for a hard problem? Are you looking for someone that can manage your project from ideation to delivery?"]) %>
 
 — Jarrod & Richard
 
