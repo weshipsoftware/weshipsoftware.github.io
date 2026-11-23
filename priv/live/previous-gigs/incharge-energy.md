@@ -58,4 +58,4 @@ provide valuable insights** for their customers.
 
 ---
 
-<%= @include.("previous-gigs/_footer.md", [footer_intro: "Are you looking to build a data pipeline that scales? Are you looking for a secure and reliable software solution with 99.9% uptime? Are you looking to provide valuable insights to your customers?"]) %>
+<%= @include.("previous-gigs/_footer.md", [footer_intro: "Do you want to build a data pipeline that scales? Do you want a secure and reliable software solution with 99.9% uptime? Are you looking to provide valuable insights to your customers?"]) %>
