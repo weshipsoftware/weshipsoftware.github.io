@@ -4,8 +4,7 @@
 
 :root {
   font-family: text, sans-serif;
-  font-size: 16px;
-  font-size: clamp(1rem, 2vw, 3rem);
+  font-size: 17px;
 }
 
 a {
@@ -25,7 +24,7 @@ a {
 
 article {
   margin: auto;
-  max-width: 32rem;
+  max-width: 39.5rem;
   padding: 0 1.5rem 7rem 1.5rem;
   position: relative;
 
@@ -65,7 +64,7 @@ aside {
   position: absolute;
   width: 6rem;
 
-  @media (max-width: 48rem) {display: none}
+  @media (max-width: 62rem) {display: none}
 
   &.left {
     margin-left: -8rem;
@@ -122,7 +121,7 @@ h3 {
 
 header {
   margin: auto;
-  max-width: 32rem;
+  max-width: 39.5rem;
   padding: 2.33rem 1.5rem 3rem 1.5rem;
   text-transform: lowercase;
 
