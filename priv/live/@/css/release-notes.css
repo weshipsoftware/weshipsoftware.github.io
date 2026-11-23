@@ -1,0 +1,6 @@
+body.release-note#index {
+  @media (max-width: 37rem) {
+    li a {display: inline}
+    li a:after { content:"\a"; white-space: pre;}
+  }
+}
