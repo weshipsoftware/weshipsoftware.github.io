@@ -21,7 +21,7 @@ defmodule WSS.MixProject do
 
   defp deps do
     [
-      {:bandit, "~> 1.13"},
+      {:bandit, "~> 1.15"},
       {:esbuild, "~> 0.10"},
       {:file_system, "~> 1.1"},
       {:mdex, "~> 0.14"},
