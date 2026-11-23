@@ -31,7 +31,9 @@ Yes! We have decades of experience shipping software used daily by
 
 ## We Are Easy to Work With
 
-Need some text here.
+Being a small studio is a strategic advantage. We are project managers, 
+solutions architects, and hands–on engineers all at once, doing 
+**_high–impact, low–overhead, bespoke development_**.
 
 ### FAQ: _Why should I hire you?_
 
@@ -39,11 +41,6 @@ Need some text here.
   <p>Hiring sites<br>are broken.</p>
   <p>Freelancers<br>are unreliable.</p>
 </aside>
-
-Being a small studio is a strategic advantage.
-
-We are project managers, solutions architects, and hands–on engineers all at
-once, doing **_high–impact, low–overhead, bespoke development_**.
 
 **We focus on quality over quantity**, only working with a few clients at time,
 so your project gets the attention it deserves.
