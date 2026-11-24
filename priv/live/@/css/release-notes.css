@@ -4,3 +4,8 @@ body.release-note#index {
     li a:after { content:"\a"; white-space: pre;}
   }
 }
+
+body.release-note {
+  h4:nth-child(1) {margin: -.5em 0 0 0}
+  h1:nth-child(2) {margin-top: 0}
+}

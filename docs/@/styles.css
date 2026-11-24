@@ -1,4 +1,4 @@
-/* css/fonts.css */
+/* css/design.css */
 @font-face {
   font-family: text;
   font-style: normal;
@@ -75,8 +75,6 @@
   font-family: note;
   src: url(/@/fonts/note.woff2);
 }
-
-/* css/design.css */
 * {
   line-height: calc(1em + 0.4rem);
 }
@@ -85,7 +83,8 @@
 }
 :root {
   font-family: text, sans-serif;
-  font-size: 17px;
+  font-size: 16px;
+  font-size: clamp(1rem, 2vw, 1.5rem);
 }
 a {
   color: inherit;
@@ -102,7 +101,7 @@ a {
 }
 article {
   margin: auto;
-  max-width: 39.5rem;
+  max-width: 32rem;
   padding: 0 1.5rem 7rem 1.5rem;
   position: relative;
   @media (max-width: 45rem) {
@@ -110,25 +109,6 @@ article {
   }
   *:first-child {
     margin-top: 0;
-  }
-}
-div {
-  &.center {
-    text-align: center;
-    a {
-      background-color: green !important;
-      border: 1px solid black;
-      border-radius: 5px 5px 5px;
-      color: white !important;
-      padding: 5px;
-      text-decoration: none;
-      &:hover {
-        text-decoration: underline;
-      }
-    }
-    p {
-      line-height: unset;
-    }
   }
 }
 aside {
@@ -141,7 +121,7 @@ aside {
   line-height: 1.25rem;
   position: absolute;
   width: 6rem;
-  @media (max-width: 62rem) {
+  @media (max-width: 48rem) {
     display: none;
   }
   &.left {
@@ -193,7 +173,7 @@ h3 {
 }
 header {
   margin: auto;
-  max-width: 39.5rem;
+  max-width: 32rem;
   padding: 2.33rem 1.5rem 3rem 1.5rem;
   text-transform: lowercase;
   a {
@@ -257,6 +237,35 @@ ul {
 p {
   margin: 0 0 0.4rem 0;
 }
+section.cta {
+  background: mintcream;
+  border: 3px solid green;
+  border-width: .25rem 0;
+  border-radius: .25rem;
+  box-shadow: 0 0 3px green;
+  margin: 3rem 0;
+  padding: 1.5rem;
+  text-align: center;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  a {
+    background: green;
+    border-radius: .25rem;
+    box-shadow: 0 0 3px slateblue;
+    color: white;
+    display: inline-block;
+    font-weight: 700;
+    margin: .5rem 0;
+    padding: .5rem 1rem;
+    text-decoration: none;
+    transition: all 0.1s ease-in-out;
+    &:hover {
+      rotate: -0.05deg;
+      scale: 1.05;
+    }
+  }
+}
 
 /* css/readme.css */
 body#readme {
@@ -295,6 +304,14 @@ body.release-note#index {
       content: "\a";
       white-space: pre;
     }
+  }
+}
+body.release-note {
+  h4:nth-child(1) {
+    margin: -.5em 0 0 0;
+  }
+  h1:nth-child(2) {
+    margin-top: 0;
   }
 }
 

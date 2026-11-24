@@ -4,26 +4,21 @@ pageClass: release-note
 pageId: ev-charging
 ---
 
-<h1 style="margin-bottom: 0; margin-top: -.5em; color: black; background: white;">
-  <small>Previous Gig:</small>
-</h1>
-<br />
-<h1 style="margin-top: 0;">InCharge Energy</h1>
+#### Previous Gig:
+# InCharge Energy
 
 > Richard helped InCharge Energy ingest, store, and analyze **_millions of
 > daily messages in real–time_**.
 
-InCharge Energy is a full–lifecycle energy infrastructure partner delivering EV
-charging, electrical, and distributed energy solutions—from design and
-construction through long–term operations and maintenance.
+InCharge Energy is a full–lifecycle energy infrastructure partner delivering EV charging,
+electrical, and distributed energy solutions—from design and construction through long–term
+operations and maintenance.
 
-<aside class="right">
-  10,000 * 10,000 = 100,000,000 messages/day… minimum.
-</aside>
+<aside class="right">10,000 * 10,000 = 100,000,000 messages/day… minimum.</aside>
 
-One of InCharge Energy’s biggest customers needed to **onboard tens of thousands
-of EV chargers** that would **each send tens of thousands of messages per day**
-through InCharge Energy’s asset management platform.
+One of InCharge Energy’s biggest customers needed to **onboard tens of thousands of EV chargers**
+that would **each send tens of thousands of messages per day** through InCharge Energy’s asset
+management platform.
 
 ### The Challenge
 
@@ -33,29 +28,33 @@ through InCharge Energy’s asset management platform.
 
 ### The Solution
 
-From 2024 through 2026, Richard worked at InCharge Energy **building and scaling
-a data pipeline** that now processes **hundreds of millions of messages
-per day in real–time**. His work was foundational for ingesting, storing, and
-segmenting the massive amounts of data needed to provide the live status
-insights that customers demand.
+From 2024 through 2026, Richard worked at InCharge Energy **building and scaling a data
+pipeline** that now processes **hundreds of millions of messages per day in real–time**. His work
+was foundational for ingesting, storing, and segmenting the massive amounts of data needed to
+provide the live status insights that customers demand.
 
-<aside class="left">
-  Open standards don’t require onboarding.
-</aside>
+<aside class="left">Open standards don’t require onboarding.</aside>
 
-Richard researched and chose an open standard for communicating between
-distributed systems, providing **security and reliability through structured
-messaging**. He managed to reach **99.9+% uptime by designing the system to
-self–heal** by restarting itself after upstream issues, picking up where it left
-off, while handling automatic retries and idempotency to make sure it never
+Richard researched and chose an open standard for communicating between distributed systems,
+providing **security and reliability through structured messaging**. He managed to reach **99.9+%
+uptime by designing the system to self–heal** by restarting itself after upstream issues, picking
+up where it left off, while handling automatic retries and idempotency to make sure it never
 misses a message.
 
 ### The Result
 
-The pipeline is now secure, reliable, and durable at scale, allowing
-InCharge Energy to **_quickly add any number of EV chargers_** and **immediately
-provide valuable insights** for their customers.
+The pipeline is now secure, reliable, and durable at scale, allowing InCharge Energy to
+**_quickly add any number of EV chargers_** and **immediately provide valuable insights** for
+their customers.
 
----
+<section class="cta">
 
-<%= @include.("previous-gigs/_footer.md", [footer_intro: "Do you want to build a data pipeline that scales? Do you want a secure and reliable software solution with 99.9% uptime? Are you looking to provide valuable insights to your customers?"]) %>
+  Do you want to build a **data pipeline** that scales?
+
+  Do you want a secure and reliable solution with **99.9% uptime**?
+
+  Are you looking to provide **valuable insights** to your customers?
+
+  <%= @include.("_cta-calendly.md", []) %>
+
+</section>
