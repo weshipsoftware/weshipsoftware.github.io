@@ -2,7 +2,7 @@ defmodule Watcher do
   require Logger
   use GenServer
 
-  @tgt Application.compile_env!(:wss, :tgt)
+  @target Application.compile_env!(:wss, :target)
 
   def start_link(args), do: GenServer.start_link(__MODULE__, args)
 
@@ -16,10 +16,15 @@ defmodule Watcher do
   end
 
   def handle_info({:file_event, _pid, {path, _e}}, {_, _, p_inode, p_time}) do
-    event = path |> directory() |> inode() |> time()
+    event =
+      path
+      |> directory()
+      |> inode()
+      |> time()
+
     {path, dir, inode, time} = event
 
-    if dir == @tgt, do: Mix.Task.rerun("build", ["sitemap"])
+    if dir == @target, do: Mix.Task.rerun("build", ["sitemap"])
 
     if dir == "priv" && (inode != p_inode || time != p_time) do
       case Path.extname(path) do
@@ -44,14 +49,7 @@ defmodule Watcher do
   end
 
   defp inode({path, dir}) do
-    inode =
-      if File.exists?(path) do
-        stat = File.stat!(path)
-        stat.inode
-      else
-        -1
-      end
-
+    inode = if File.exists?(path), do: File.stat!(path).inode, else: -1
     {path, dir, inode}
   end
 

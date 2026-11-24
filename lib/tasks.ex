@@ -2,8 +2,8 @@ defmodule Mix.Tasks.Build do
   require Logger
   use Mix.Task
 
-  @src Application.compile_env!(:wss, :src)
-  @tgt Application.compile_env!(:wss, :tgt)
+  @source Application.compile_env!(:wss, :source)
+  @target Application.compile_env!(:wss, :target)
 
   def run(["assets"]) do
     Logger.info("Building assets")
@@ -11,13 +11,13 @@ defmodule Mix.Tasks.Build do
   end
 
   def run(["markdown"]) do
-    @src
+    @source
     |> tree()
     |> Markdown.build()
   end
 
   def run(["sitemap"]) do
-    @tgt
+    @target
     |> tree()
     |> Sitemap.build()
   end

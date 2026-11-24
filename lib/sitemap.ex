@@ -3,6 +3,7 @@ defmodule Sitemap do
 
   @domain Application.compile_env!(:wss, :domain)
   @sitemap Application.compile_env!(:wss, :sitemap)
+  @target Application.compile_env!(:wss, :target)
 
   def build(paths) do
     paths
@@ -12,15 +13,13 @@ defmodule Sitemap do
     |> then(&if changed?(&1), do: save(&1))
   end
 
-  defp valid?(path) do
-    Path.extname(path) == ".html" &&
-      Path.basename(path) != "404.html"
-  end
+  defp valid?(path),
+    do: Path.extname(path) == ".html" && Path.basename(path) != "404.html"
 
   defp loc(path) do
     loc =
       path
-      |> String.replace_prefix("docs/", "")
+      |> String.replace_prefix("#{@target}/", "")
       |> String.replace_suffix(".html", "")
       |> String.replace_suffix("index", "")
 
@@ -36,10 +35,8 @@ defmodule Sitemap do
     """
   end
 
-  defp changed?(sitemap) do
-    !File.exists?(@sitemap) ||
-      File.read!(@sitemap) != sitemap
-  end
+  defp changed?(sitemap),
+    do: !File.exists?(@sitemap) || File.read!(@sitemap) != sitemap
 
   defp save(sitemap) do
     Logger.info("Building sitemap.xml")
