@@ -8,13 +8,22 @@ pageId: readme
 > [Jarrod Taylor][jt] & [Richard Rissanen][rr] focused on one thing:
 > **shipping software**.
 
-## We Are Looking for Challenging Projects
 
-As veterans of the tech industry, hands–on engineers, we’re working to **de–risk software
+
+We are looking for challenging projects. As veterans of the tech industry, hands–on engineers, we’re working to **de–risk software
 development** for our limited roster of **independent, product–led clients** by building and
 shipping exactly what they need on a _predictable timeline_ at a _fair price_.
 
-### FAQ: _Have you done this before?_
+
+## What do you do?
+
+* **AI–Accelerated Development:** Bespoke software crafted around your unique workflows, built to last.
+* **Project Recovery & Stabilization:** Audit, stabilize, and ship at–risk projects.
+* **Software Architecture & Blueprinting:** A clear technical roadmap designed to grow with your business.
+
+## Why you should hire us?
+
+### FAQ: Have you done this before?
 
 Yes! We have decades of experience shipping software used daily by **thousands of companies and
 millions of customers**.
@@ -28,7 +37,7 @@ millions of customers**.
 
 [...and there are many more.](/previous-gigs)
 
-## We Are Easy to Work With
+### FAQ: Are you easy to work with?
 
 Being a small studio is a strategic advantage. We are project managers, solutions architects,
 and hands–on engineers all at once, doing **_high–impact, low–overhead, bespoke development_**.
